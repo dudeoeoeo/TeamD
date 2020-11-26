@@ -68,7 +68,7 @@ to get the desired effect
     <a href="#" class="brand-link">
       <img src="resources/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">kosmoDÆÀ</span>
+      <span class="brand-text font-weight-light">Dr.Link</span>
     </a>
 
     <!-- Sidebar -->
