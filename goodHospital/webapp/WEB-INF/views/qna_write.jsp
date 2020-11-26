@@ -265,7 +265,7 @@ to get the desired effect
         <div class="col-md-10" Style="margin:auto;">
           <div class="card card-outline card-info">
             <div class="card-header">
-              <h3 class="card-title">Q&A수정</h3>              
+              <h3 class="card-title">Q&A작성</h3>              
             </div><!-- card-header -->
             <div class="card-body"> 
 	            <div class="form-group">

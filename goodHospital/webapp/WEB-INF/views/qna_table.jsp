@@ -292,7 +292,7 @@ to get the desired effect
 		                  
 		                    <tr>
 		                      <td>1</td>
-		                      <td><a href="#">입원관련문의</a></td>
+		                      <td><a href="qna_detail">입원관련문의</a></td>
 		                      <td>김다다</td>
 		                      <td><span class="tag tag-success">2020.11.20</span></td>
 		                      <td>답변완료</td>
@@ -324,7 +324,7 @@ to get the desired effect
     </section>
     <!-- /.content -->
 			<div>
-				<a class="btn btn-info btn-sm" href="qna_detail" style="float: right; margin: 20px;"> 
+				<a class="btn btn-info btn-sm" href="qna_write" style="float: right; margin: 20px;"> 
 				<i class="fas fa-pencil-alt"> </i> 새글등록
 				</a>
 			</div>
