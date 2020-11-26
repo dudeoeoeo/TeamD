@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +43,7 @@ to get the desired effect
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Home</a>
+        <a href="index" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -61,10 +62,10 @@ to get the desired effect
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="#" class="brand-link">
+    <a href="index" class="brand-link">
       <img src="resources/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">kosmoD팀</span>
+      <span class="brand-text font-weight-light">Dr.Link</span>
     </a>
 
     <!-- Sidebar -->
@@ -184,7 +185,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
-				설문관리
+				설문
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -196,15 +197,15 @@ to get the desired effect
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="survey_list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>설문관리</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="survey_result" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>설문관리</p>
+                  <p>설문결과</p>
                 </a>
               </li>
             </ul>
@@ -231,9 +232,9 @@ to get the desired effect
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="free_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>게시판</p>
+                  <p>자유게시판</p>
                 </a>
               </li>
             </ul>
@@ -250,20 +251,7 @@ to get the desired effect
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">의료진 회원 관리</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <!-- <li class="breadcrumb-item active">Dashboard v3</li> -->
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+    <div class="content-header"><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
 
@@ -297,7 +285,7 @@ to get the desired effect
 		                      <th width="10%" >Date</th>
 		                      <th width="25%" >이메일</th>
 		                      <th width="15%" >전화</th>
-		                      <th width="5%" >수정</th>
+		                      <th width="5%" >삭제</th>
 		                    </tr>
 		                  </thead>
 		                  <tbody>
@@ -310,7 +298,7 @@ to get the desired effect
 		                      <td><span class="tag tag-success">dada97@naver.com</span></td>
 		                      <td>01025689876</td>
 		                      <td>
-								<button type="button" class="btn btn-block btn-info btn-xs">수정</button>
+								<button type="button" class="btn btn-block btn-info btn-xs">삭제</button>
                    			 </td>
 		                    </tr>
 		                  
@@ -323,7 +311,7 @@ to get the desired effect
 		                      <td><span class="tag tag-success">${m.email}</span></td>
 		                      <td>${m.phone}</td>
 		                      <td>
-								<button type="button" class="btn btn-block btn-info btn-xs">수정</button>
+								<button type="button" class="btn btn-block btn-info btn-xs">삭제</button>
 	                 		  </td>
 		                    </tr>
 							</c:forEach>

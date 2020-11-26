@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>ê´€ë¦¬ì í˜ì´ì§€</title>
+  <title>°ü¸®ÀÚ ÆäÀÌÁö</title>
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
@@ -44,10 +44,9 @@ to get the desired effect
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Home</a>
+        <a href="index" class="nav-link">Home</a>
       </li>
     </ul>
-
     
 
     <!-- Right navbar links -->
@@ -63,10 +62,10 @@ to get the desired effect
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="#" class="brand-link">
+    <a href="index" class="brand-link">
       <img src="resources/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">kosmoDíŒ€</span>
+      <span class="brand-text font-weight-light">Dr.Link</span>
     </a>
 
     <!-- Sidebar -->
@@ -77,7 +76,7 @@ to get the desired effect
           <img src="resources/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">ê´€ë¦¬ì, íšŒì›ìœ ì € ${id}</a>
+          <a href="#" class="d-block">°ü¸®ÀÚ</a>
         </div>
       </div>
 
@@ -91,7 +90,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
-                íšŒì›ê´€ë¦¬
+                È¸¿ø°ü¸®
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -99,13 +98,13 @@ to get the desired effect
               <li class="nav-item">
                 <a href="medical_user_management" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ì˜ë£Œì§„ íšŒì›</p>
+                  <p>ÀÇ·áÁø È¸¿ø</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="user_management" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ì¼ë°˜ íšŒì›</p>
+                  <p>ÀÏ¹İ È¸¿ø</p>
                 </a>
               </li>
               
@@ -115,7 +114,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                í†µê³„
+                Åë°è
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -123,19 +122,19 @@ to get the desired effect
               <li class="nav-item">
                 <a href="chart_board" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>í†µê³„</p>
+                  <p>Åë°è</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>í†µê³„</p>
+                  <p>Åë°è</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>í†µê³„</p>
+                  <p>Åë°è</p>
                 </a>
               </li>
             </ul>
@@ -144,7 +143,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-calendar-check"></i>
               <p>
-                ì˜ˆì•½ê´€ë¦¬
+                ¿¹¾à°ü¸®
                 <i class="fas fa-angle-left right"></i>
                 <!-- <span class="badge badge-info right">6</span> -->                
               </p>
@@ -153,31 +152,31 @@ to get the desired effect
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ì˜ˆì•½ê´€ë¦¬</p>
+                  <p>¿¹¾à°ü¸®</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ì˜ˆì•½ê´€ë¦¬</p>
+                  <p>¿¹¾à°ü¸®</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ì˜ˆì•½ê´€ë¦¬</p>
+                  <p>¿¹¾à°ü¸®</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ì˜ˆì•½ê´€ë¦¬</p>
+                  <p>¿¹¾à°ü¸®</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ì˜ˆì•½ê´€ë¦¬</p>
+                  <p>¿¹¾à°ü¸®</p>
                 </a>
               </li>
             </ul>
@@ -186,7 +185,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
-				ì„¤ë¬¸ê´€ë¦¬
+				¼³¹®
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -194,19 +193,19 @@ to get the desired effect
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ì„¤ë¬¸ë“±ë¡</p>
+                  <p>¼³¹®µî·Ï</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="survey_list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ì„¤ë¬¸ê´€ë¦¬</p>
+                  <p>¼³¹®°ü¸®</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="survey_result" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ì„¤ë¬¸ê´€ë¦¬</p>
+                  <p>¼³¹®°á°ú</p>
                 </a>
               </li>
             </ul>
@@ -215,7 +214,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-                ê²Œì‹œíŒ
+                °Ô½ÃÆÇ
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -223,7 +222,7 @@ to get the desired effect
               <li class="nav-item">
                 <a href="notice_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ê³µì§€ ê²Œì‹œíŒ</p>
+                  <p>°øÁö °Ô½ÃÆÇ</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -233,9 +232,9 @@ to get the desired effect
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="free_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ê²Œì‹œíŒ</p>
+                  <p>ÀÚÀ¯°Ô½ÃÆÇ</p>
                 </a>
               </li>
             </ul>
@@ -252,20 +251,7 @@ to get the desired effect
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">ì¼ë°˜ íšŒì› ê´€ë¦¬</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <!-- <li class="breadcrumb-item active">Dashboard v3</li> -->
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+    <div class="content-header"><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
 
@@ -276,7 +262,7 @@ to get the desired effect
 	        <div class="col-12">
 	            <div class="card">
 	              <div class="card-header">
-	                <h3 class="card-title">ì¼ë°˜ íšŒì›</h3>
+	                <h3 class="card-title">ÀÏ¹İ È¸¿ø</h3>
 	
 	                <div class="card-tools">
 	                  <div class="input-group input-group-sm" style="width: 150px;">
@@ -294,23 +280,23 @@ to get the desired effect
 	                  <thead>
 	                    <tr>
 	                      <th width="10%" >ID</th>
-	                      <th width="10%" >íšŒì›ëª…</th>
+	                      <th width="10%" >È¸¿ø¸í</th>
 	                      <th width="10%" >Date</th>
-	                      <th width="25%" >ì´ë©”ì¼</th>
-	                      <th width="15%" >ì „í™”</th>
-	                      <th width="4%" >ìˆ˜ì •</th>
+	                      <th width="25%" >ÀÌ¸ŞÀÏ</th>
+	                      <th width="15%" >ÀüÈ­</th>
+	                      <th width="4%" >»èÁ¦</th>
 	                    </tr>
 	                  </thead>
 	                  <tbody>
 		                  
 		                    <tr>
 		                      <td>dada97</td>
-		                      <td>ê¹€ë‹¤ë‹¤</td>
+		                      <td>±è´Ù´Ù</td>
 		                      <td>2020.11.20</td>
 		                      <td><span class="tag tag-success">dada97@naver.com</span></td>
 		                      <td>01025689876</td>
 		                      <td>
-								<button type="button" class="btn btn-block btn-info btn-xs">ìˆ˜ì •</button>
+								<button type="button" class="btn btn-block btn-info btn-xs">»èÁ¦</button>
                    			 </td>
 		                    </tr>
 	                  
@@ -323,7 +309,7 @@ to get the desired effect
 	                      <td><span class="tag tag-success">${m.eamil}</span></td>
 	                      <td>${m.phone}</td>
 	                      <td>
-							<button type="button" class="btn btn-block btn-info btn-xs">ìˆ˜ì •</button>
+							<button type="button" class="btn btn-block btn-info btn-xs">»èÁ¦</button>
                  		  </td>
 	                    </tr>
 						</c:forEach>
@@ -341,7 +327,7 @@ to get the desired effect
     </section>
     <!-- /.content -->
 			<div>
-				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;">íšŒì›ë“±ë¡</button>
+				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;">È¸¿øµî·Ï</button>
 			</div>
 		</div>
   </div>
@@ -382,13 +368,6 @@ to get the desired effect
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- AdminLTE App -->
 <script src="resources/js/adminlte.min.js"></script>
-
-<script>
-$(function(){
-	var i = "<c:out value='${id}'/>";
-	alert(i);
-}); // ì‹œì‘
-</script>
 
 </body>
 </html>
