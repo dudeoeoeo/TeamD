@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="resources/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- summernote -->
+  <link rel="stylesheet" href="resources/plugins/summernote/summernote-bs4.css">
 
 
 <style type="text/css">
@@ -259,74 +261,66 @@ to get the desired effect
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <div class="row">
-	        <div class="col-12">
-	            <div class="card">
-	              <div class="card-header">
-	                <h3 class="card-title">공지 게시판</h3>
-	
-	                <div class="card-tools">
-	                  <div class="input-group input-group-sm" style="width: 150px;">
-	                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-	
-	                    <div class="input-group-append">
-	                      <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-	                    </div>
-	                  </div>
-	                </div>
-	              </div>
-	              <!-- /.card-header -->
-	              <div class="card-body table-responsive p-0">
-	                <table class="table table-hover text-nowrap">
-	                  <thead>
-	                    <tr>
-	                      <th width="5%" >번호</th>
-	                      <th width="40%" >제목</th>
-	                      <th width="10%" >파일</th>
-	                      <th width="15%" >등록일</th>
-	                      <th width="5%" >조회수</th>
-	                    </tr>
-	                  </thead>
-	                  <tbody>
-		                  
-		                    <tr>
-		                      <td>1</td>
-		                      <td><a href="notice_detail">경증질환 외래환자 진료비 본인부담률 변경안내</a></td>
-		                      <td> </td>
-		                      <td><span class="tag tag-success">2020.11.20</span></td>
-		                      <td>270</td>
-		                    </tr>
-	                  
-	                  
-						<c:forEach var="m" items="${list}">
-	                    <tr>
-	                      <td>${m.no}</td>
-	                      <td>${m.subject}</td>
-	                      <td>${m.file}</td>
-	                      <td><span class="tag tag-success">${m.date}</span></td>
-	                      <td>${m.views}</td>
-	                    </tr>
-						</c:forEach>
-	                  </tbody>
-	                </table>
-	              </div>
-	              <!-- /.card-body -->
-	            </div>
-	            <!-- /.card -->
-	          </div>
-          <!-- /.col -->
+      <div class="row">
+        <div class="col-md-10" Style="margin:auto;">
+          <div class="card card-outline card-info">
+            <div class="card-header">
+              <h3 class="card-title">공지 작성</h3>              
+            </div><!-- card-header -->
+            <div class="card-body"> 
+	            <div class="form-group">
+		        	<input type="text" name="wr_name" value="" id="wr_name" class="col-sm-2 form-control" placeholder="이름*">		    
+		      	</div>	
+	            <div class="form-group">
+		      		<input type="password" name="wr_password" id="wr_password" class="col-sm-2 form-control" placeholder="비밀번호*">		    
+		        </div>
+	            <div class="form-group">
+		            <input type="text" name="wr_email" value="" id="wr_email" class="col-sm-4 form-control" placeholder="이메일">
+	       		</div>
+	            <div class="form-group">
+		       		<select class="col-sm-4 form-control custom-select">
+	                  <option selected="" disabled="">카테고리</option>
+	                  <option>입원 문의</option>
+	                  <option>예약 문의</option>
+	                  <option>기타 문의</option>
+	                </select>	
+	       		</div>
+	            <div class="form-group">
+					<div id="autosave_wrapper write_div">
+						<input type="text" name="wr_subject" value="" id="wr_subject"
+							required="" class="form-control" size="50"
+							maxlength="255" placeholder="제목*">
+					</div>
+				</div>	 
+	            <div class="form-group">
+					<div class="wr_content ">
+						<textarea id="wr_content" name="wr_content" class="form-control"
+							maxlength="65536" style="width: 100%; height: 300px"
+							placeholder="내용을 입력해 주세요."></textarea>
+					</div>
+				</div>           
+            </div><!-- card-body -->
+            
+            
+			
+			
+		</div>
         </div>
+        <!-- /.col-->
+      </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-			<div>
-				<a class="btn btn-info btn-sm" href="notice_write" style="float: right; margin: 20px;"> 
-				<i class="fas fa-pencil-alt"> </i> 새글등록
+			<div class="col-md-11">
+				<a class="btn bg-olive btn-info" href="qna_detail" style="float: right; margin: 7px;"> 
+				<i class="fas fa-pencil-alt"> </i> 등록
+				</a>
+				<a href="#" class="btn btn-secondary" style="float: right; margin: 7px;">
+				취소
 				</a>
 			</div>
 		</div>
-  </div>
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
@@ -359,11 +353,26 @@ to get the desired effect
 <script src="resources/js/demo.js"></script>
 <script src="resources/js/pages/dashboard3.js"></script>
 
+<!-- Summernote -->
+<script src="resources/plugins/summernote/summernote-bs4.min.js"></script>
 
 <!-- jQuery UI -->
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- AdminLTE App -->
 <script src="resources/js/adminlte.min.js"></script>
+<script>
+$(document).ready(function() {
+	//여기 아래 부분
+	$('#summernote').summernote({
+		  height: 300,                 // 에디터 높이
+		  minHeight: null,             // 최소 높이
+		  maxHeight: null,             // 최대 높이
+		  focus: true,                  // 에디터 로딩후 포커스를 맞출지 여부
+		  lang: "ko-KR",					// 한글 설정
+		  placeholder: '최대 2048자까지 쓸 수 있습니다'	//placeholder 설정
+          
+	});
+});
 
 </body>
 </html>
