@@ -26,10 +26,17 @@ public class MainController {
 		model.addAttribute("selectTableList", test);
 		return "main/Main";
 	}
-	
+	//AI 안과 진료
 	@RequestMapping(value = "ophthalmology")
 	public String ophthalmology() {
-		return "ophthalmology";
+		return "aiTest/ophthalmology";
+		
+	}
+	
+	//AI 피부과 진료
+	@RequestMapping(value = "Dermatology")
+	public String Dermatology() {
+		return "aiTest/Dermatology";
 		
 	}
 	
@@ -44,10 +51,10 @@ public class MainController {
     public String viewPage(@PathVariable String step, Model mm) {
 //	   Model m = new Model(); 
 		Date today = new Date();
-		String id = "다다다다";
+		String id = "�떎�떎�떎�떎";
 		String dy = "2020-10-23";
 		scheduleVO vo = new scheduleVO();
-		vo.setTitle("UI 맞추는 날짜");
+		vo.setTitle("UI 留욎텛�뒗 �궇吏�");
 		vo.setStart("2020-11-23");
 		vo.setBackgroundColor("#f56954");
 		vo.setBorderColor("#f56954");
@@ -55,7 +62,7 @@ public class MainController {
 		List<scheduleVO> voList = new ArrayList<scheduleVO>();
 		voList.add(vo);
 		scheduleVO vo1 = new scheduleVO();
-		vo1.setTitle("Test 제발");
+		vo1.setTitle("Test �젣諛�");
 		vo1.setStart("2020-11-23");
 		vo1.setBackgroundColor("#00c0ef");
 		vo1.setBorderColor("#00c0ef");
