@@ -278,14 +278,6 @@ to get the desired effect
 		            <input type="text" name="wr_email" value="" id="wr_email" class="col-sm-4 form-control" placeholder="이메일">
 	       		</div>
 	            <div class="form-group">
-		       		<select class="col-sm-4 form-control custom-select">
-	                  <option selected="" disabled="">카테고리</option>
-	                  <option>입원 문의</option>
-	                  <option>예약 문의</option>
-	                  <option>기타 문의</option>
-	                </select>	
-	       		</div>
-	            <div class="form-group">
 					<div id="autosave_wrapper write_div">
 						<input type="text" name="wr_subject" value="" id="wr_subject"
 							required="" class="form-control" size="50"
@@ -360,19 +352,5 @@ to get the desired effect
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- AdminLTE App -->
 <script src="resources/js/adminlte.min.js"></script>
-<script>
-$(document).ready(function() {
-	//여기 아래 부분
-	$('#summernote').summernote({
-		  height: 300,                 // 에디터 높이
-		  minHeight: null,             // 최소 높이
-		  maxHeight: null,             // 최대 높이
-		  focus: true,                  // 에디터 로딩후 포커스를 맞출지 여부
-		  lang: "ko-KR",					// 한글 설정
-		  placeholder: '최대 2048자까지 쓸 수 있습니다'	//placeholder 설정
-          
-	});
-});
-
 </body>
 </html>

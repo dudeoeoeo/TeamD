@@ -284,7 +284,7 @@ to get the desired effect
 	                      <th width="10%" >Date</th>
 	                      <th width="25%" >이메일</th>
 	                      <th width="15%" >전화</th>
-	                      <th width="4%" >삭제</th>
+	                      <th width="4%" >관리</th>
 	                    </tr>
 	                  </thead>
 	                  <tbody>
@@ -296,7 +296,7 @@ to get the desired effect
 		                      <td><span class="tag tag-success">dada97@naver.com</span></td>
 		                      <td>01025689876</td>
 		                      <td>
-								<button type="button" class="btn btn-block btn-info btn-xs">삭제</button>
+									<button type="button" class="btn btn-block btn-info btn-xs">수정</button>
                    			 </td>
 		                    </tr>
 	                  
@@ -309,8 +309,8 @@ to get the desired effect
 	                      <td><span class="tag tag-success">${m.eamil}</span></td>
 	                      <td>${m.phone}</td>
 	                      <td>
-							<button type="button" class="btn btn-block btn-info btn-xs">삭제</button>
-                 		  </td>
+								<button type="button" class="btn btn-block btn-info btn-xs">수정</button>
+               			 </td>
 	                    </tr>
 						</c:forEach>
 	                  </tbody>
