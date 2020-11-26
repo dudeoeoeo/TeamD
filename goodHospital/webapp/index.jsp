@@ -188,27 +188,27 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
-				설문관리
+				설문
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="survey_add" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>설문등록</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="survey_list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>설문관리</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="survey_result" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>설문관리</p>
+                  <p>설문결과</p>
                 </a>
               </li>
             </ul>
@@ -235,9 +235,9 @@ to get the desired effect
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="free_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>게시판</p>
+                  <p>자유게시판</p>
                 </a>
               </li>
             </ul>
