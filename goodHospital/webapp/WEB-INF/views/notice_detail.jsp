@@ -268,15 +268,20 @@ to get the desired effect
               <h3 class="card-title">공지 수정</h3>              
             </div><!-- card-header -->
             <div class="card-body"> 
-	            <div class="form-group">
-		        	<input type="text" name="wr_name" value="" id="wr_name" class="col-sm-2 form-control" placeholder="이름*">		    
-		      	</div>	
-	            <div class="form-group">
-		      		<input type="password" name="wr_password" id="wr_password" class="col-sm-2 form-control" placeholder="비밀번호*">		    
-		        </div>
-	            <div class="form-group">
-		            <input type="text" name="wr_email" value="" id="wr_email" class="col-sm-4 form-control" placeholder="이메일">
-	       		</div>
+            
+	           <div class="form-group">
+            <div class="row">
+                   <div class="col-lg-2">
+                     <input type="text" class="form-control" placeholder="이름*">
+                   </div>
+                   <div class="col-lg-3">
+                     <input type="text" class="form-control" placeholder="비밀번호*">
+                   </div>
+                   <div class="col-lg-4">
+                     <input type="text" class="form-control" placeholder="이메일">
+                   </div>
+               </div>
+               </div>
 	            <div class="form-group">
 					<div id="autosave_wrapper write_div">
 						<input type="text" name="wr_subject" value="" id="wr_subject"
