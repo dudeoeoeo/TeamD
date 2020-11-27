@@ -286,7 +286,7 @@ to get the desired effect
 					<div id="autosave_wrapper write_div">
 						<input type="text" name="wr_subject" value="" id="wr_subject"
 							required="" class="form-control" size="50"
-							maxlength="255" placeholder="力格*">
+							maxlength="255" placeholder="*力格*">
 					</div>
 				</div>	 
 	            <div class="form-group">
