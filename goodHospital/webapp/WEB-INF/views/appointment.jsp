@@ -18,20 +18,6 @@
   <link rel="stylesheet" href="resources/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  
-  <!-- daterange picker -->
-  <link rel="stylesheet" href="resources/plugins/daterangepicker/daterangepicker.css">
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="resources/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="resources/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
-  <!-- Tempusdominus Bbootstrap 4 -->
-  <link rel="stylesheet" href="resources/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="resources/plugins/select2/css/select2.min.css">
-  <link rel="stylesheet" href="resources/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
-  <!-- Bootstrap4 Duallistbox -->
-  <link rel="stylesheet" href="resources/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
 
 
 <style type="text/css">
@@ -61,7 +47,6 @@ to get the desired effect
         <a href="mainPage" class="nav-link">Home</a>
       </li>
     </ul>
-
     
 
     <!-- Right navbar links -->
@@ -206,7 +191,7 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="survey_add" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>설문등록</p>
                 </a>
@@ -271,45 +256,259 @@ to get the desired effect
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-      	<div class="col-md-6" style="max-width:80%; margin:0 auto;">
-          <div class="card card-primary">
-          <div class="card-header">
-                <h3 class="card-title">설문 등록</h3>
-              </div>
-              <!-- form start -->
-              <form role="form">
-                <div class="card-body">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="" placeholder="질문1">
-                    <input type="text" class="form-control" id="" placeholder="항목1">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="" placeholder="질문2">
-                    <input type="text" class="form-control" id="" placeholder="항목1">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="" placeholder="질문3">
-                    <input type="text" class="form-control" id="" placeholder="항목1">
-                  </div>
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="">
-                    <label class="form-check-label" for="">Check me out</label>
-                  </div>
-                </div>
-                <!-- /.card-body -->
+			<div class="page-content">
+				<div class="card mb-0">
+					<div class="card-body">
+						<div class="table-responsive">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th scope="col">Photo</th>
+										<th scope="col">Name</th>
+										<th scope="col">Email</th>
+										<th scope="col">Date</th>
+										<th scope="col">Visit time</th>
+										<th scope="col">Number</th>
+										<th scope="col">Doctor</th>
+										<th scope="col">Injury / Condition</th>
+										<th scope="col">Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="../assets/content/user-40-1.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Liam</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												liam@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">10 Feb 2018</div></td>
+										<td><div class="text-muted text-nowrap">9:15 - 9:45</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Benjamin</td>
+										<td>mumps</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
 
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
-            </div>
-            </div>
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-2.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Emma</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												emma@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">5 Dec 2018</div></td>
+										<td><div class="text-muted text-nowrap">9:00 - 9:30</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Liam</td>
+										<td>arthritis</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-3.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Olivia</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												olivia@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">13 Oct 2018</div></td>
+										<td><div class="text-muted text-nowrap">12:00 -
+												12:45</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Noah</td>
+										<td>depression</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-4.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Ava</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												ava@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">26 Dec 2018</div></td>
+										<td><div class="text-muted text-nowrap">14:15 -
+												14:30</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Emma</td>
+										<td>diarrhoea</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-5.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Noah</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												noah@gmail.co
+											</div></td>
+										<td><div class="text-muted text-nowrap">15 Jun 2018</div></td>
+										<td><div class="text-muted text-nowrap">17:30 -
+												18:00</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. James</td>
+										<td>dyslexia</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-6.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Isabella</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												isabella@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">2 Jul 2018</div></td>
+										<td><div class="text-muted text-nowrap">10:00 -
+												10:15</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Noah</td>
+										<td>flu</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-7.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Sophia</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												sophia@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">9 Oct 2018</div></td>
+										<td><div class="text-muted text-nowrap">8:30 - 8:45</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Olivia</td>
+										<td>fracture</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-8.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Mia</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												mia000@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">17 Mar 2018</div></td>
+										<td><div class="text-muted text-nowrap">11:30 -
+												11:40</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Emma</td>
+										<td>hypothermia</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>						
+						
+						<ul class="pagination pagination-sm m-0 float-middle">
+		                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+		                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+		                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+		                </ul>
+								
+					</div>
+				</div>
+				
+			</div>
+			<!-- /.content -->
+			<div>
+				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;">회원등록</button>
+			</div>
 		</div>
+  </div>
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
@@ -336,29 +535,17 @@ to get the desired effect
 <script src="resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE -->
 <script src="resources/js/adminlte.js"></script>
+
 <!-- OPTIONAL SCRIPTS -->
 <script src="resources/plugins/chart.js/Chart.min.js"></script>
 <script src="resources/js/demo.js"></script>
 <script src="resources/js/pages/dashboard3.js"></script>
+
+
 <!-- jQuery UI -->
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- AdminLTE App -->
 <script src="resources/js/adminlte.min.js"></script>
-<!-- Select2 -->
-<script src="resources/plugins/select2/js/select2.full.min.js"></script>
-<!-- Bootstrap4 Duallistbox -->
-<script src="resources/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
-<!-- InputMask -->
-<script src="resources/plugins/moment/moment.min.js"></script>
-<script src="resources/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
-<!-- date-range-picker -->
-<script src="resources/plugins/daterangepicker/daterangepicker.js"></script>
-<!-- bootstrap color picker -->
-<script src="resources/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="resources/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Bootstrap Switch -->
-<script src="resources/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 
 </body>
 </html>

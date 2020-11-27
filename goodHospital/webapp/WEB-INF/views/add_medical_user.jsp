@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>ÀÇ·áÁø È¸¿ø Ãß°¡ ÆäÀÌÁö</title>
+  <title>ì˜ë£Œì§„ íšŒì› ì¶”ê°€ í˜ì´ì§€</title>
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
@@ -76,7 +76,7 @@ to get the desired effect
           <img src="resources/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">°ü¸®ÀÚ</a>
+          <a href="#" class="d-block">ê´€ë¦¬ì</a>
         </div>
       </div>
 
@@ -90,7 +90,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
-                È¸¿ø°ü¸®
+                íšŒì›ê´€ë¦¬
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -98,13 +98,13 @@ to get the desired effect
               <li class="nav-item">
                 <a href="medical_user_management" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ÀÇ·áÁø È¸¿ø</p>
+                  <p>ì˜ë£Œì§„ íšŒì›</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="user_management" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ÀÏ¹İ È¸¿ø</p>
+                  <p>ì¼ë°˜ íšŒì›</p>
                 </a>
               </li>
               
@@ -114,7 +114,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Åë°è
+                í†µê³„
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -122,19 +122,19 @@ to get the desired effect
               <li class="nav-item">
                 <a href="chart_board" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Åë°è</p>
+                  <p>í†µê³„</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Åë°è</p>
+                  <p>í†µê³„</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Åë°è</p>
+                  <p>í†µê³„</p>
                 </a>
               </li>
             </ul>
@@ -143,7 +143,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-calendar-check"></i>
               <p>
-                ¿¹¾à°ü¸®
+                ì˜ˆì•½ê´€ë¦¬
                 <i class="fas fa-angle-left right"></i>
                 <!-- <span class="badge badge-info right">6</span> -->                
               </p>
@@ -152,31 +152,31 @@ to get the desired effect
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¿¹¾à°ü¸®</p>
+                  <p>ì˜ˆì•½ê´€ë¦¬</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¿¹¾à°ü¸®</p>
+                  <p>ì˜ˆì•½ê´€ë¦¬</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¿¹¾à°ü¸®</p>
+                  <p>ì˜ˆì•½ê´€ë¦¬</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¿¹¾à°ü¸®</p>
+                  <p>ì˜ˆì•½ê´€ë¦¬</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¿¹¾à°ü¸®</p>
+                  <p>ì˜ˆì•½ê´€ë¦¬</p>
                 </a>
               </li>
             </ul>
@@ -185,7 +185,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
-				¼³¹®
+				ì„¤ë¬¸
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -193,19 +193,19 @@ to get the desired effect
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¼³¹®µî·Ï</p>
+                  <p>ì„¤ë¬¸ë“±ë¡</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="survey_list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¼³¹®°ü¸®</p>
+                  <p>ì„¤ë¬¸ê´€ë¦¬</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="survey_result" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¼³¹®°á°ú</p>
+                  <p>ì„¤ë¬¸ê²°ê³¼</p>
                 </a>
               </li>
             </ul>
@@ -214,7 +214,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-                °Ô½ÃÆÇ
+                ê²Œì‹œíŒ
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -222,7 +222,7 @@ to get the desired effect
               <li class="nav-item">
                 <a href="notice_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>°øÁö °Ô½ÃÆÇ</p>
+                  <p>ê³µì§€ ê²Œì‹œíŒ</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -234,7 +234,7 @@ to get the desired effect
               <li class="nav-item">
                 <a href="free_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ÀÚÀ¯°Ô½ÃÆÇ</p>
+                  <p>ììœ ê²Œì‹œíŒ</p>
                 </a>
               </li>
             </ul>
@@ -262,7 +262,7 @@ to get the desired effect
 	        <div class="col-12">
 		            <div class="card">
 		              <div class="card-header">
-		                <h3 class="card-title">ÀÇ·áÁø È¸¿ø µî·Ï</h3>
+		                <h3 class="card-title">ì˜ë£Œì§„ íšŒì› ë“±ë¡</h3>
 		
 		                <div class="card-tools">
 		                  <div class="input-group input-group-sm" style="width: 150px;">
@@ -281,31 +281,31 @@ to get the desired effect
                   <div class="tab-pane active" id="settings">
                     <form class="form-horizontal">
                       <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">ÀÌ¸§</label>
+                        <label for="inputName" class="col-sm-2 col-form-label">ì´ë¦„</label>
                         <div class="col-sm-4">
-                          <input type="email" class="form-control" id="inputName" placeholder="ÀÌ¸§">
+                          <input type="email" class="form-control" id="inputName" placeholder="ì´ë¦„">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">È¸¿ø ±¸ºĞ</label>
+                        <label for="inputEmail" class="col-sm-2 col-form-label">íšŒì› êµ¬ë¶„</label>
                         <div class="col-sm-4">
 				       		<select class="form-control custom-select">
-			                  <option selected="" disabled="">±¸ºĞ</option>
-			                  <option>±³¼ö</option>
-			                  <option>°£È£»ç</option>
-			                  <option>·¹Áö´øÆ®</option>
-			                  <option>Àü°øÀÇ</option>
+			                  <option selected="" disabled="">êµ¬ë¶„</option>
+			                  <option>êµìˆ˜</option>
+			                  <option>ê°„í˜¸ì‚¬</option>
+			                  <option>ë ˆì§€ë˜íŠ¸</option>
+			                  <option>ì „ê³µì˜</option>
 			                </select>	
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">´ã´ç °ú¸ñ</label>
+                        <label for="inputEmail" class="col-sm-2 col-form-label">ë‹´ë‹¹ ê³¼ëª©</label>
                         <div class="col-sm-4">
 				       		<select class="form-control custom-select">
-			                  <option selected="" disabled="">±¸ºĞ</option>
-			                  <option>¾È°ú</option>
-			                  <option>³»°ú</option>
-			                  <option>¿Ü°ú</option>
+			                  <option selected="" disabled="">êµ¬ë¶„</option>
+			                  <option>ì•ˆê³¼</option>
+			                  <option>ë‚´ê³¼</option>
+			                  <option>ì™¸ê³¼</option>
 			                </select>	
                         </div>
                       </div>
@@ -316,29 +316,29 @@ to get the desired effect
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputAddress" class="col-sm-2 col-form-label">ÁÖ¼Ò</label>
+                        <label for="inputAddress" class="col-sm-2 col-form-label">ì£¼ì†Œ</label>
                         <div class="col-sm-10">
-							<input type="text" name="zipcode" id="zipcode" class="form-control" placeholder="¿ìÆí¹øÈ£" readonly><br/>
-							<!-- <input type="button" onclick="execPostCode()" id="zipcode_btn" value="¿ìÆí¹øÈ£ Ã£±â"><br/> -->
-							<input type="text" id="addr1" name="addr1" class="form-control" size="40" placeholder="ÁÖ¼Ò"><br/>
-							<input type="text" id="addr2" name="addr2" class="form-control" size="40" placeholder="»ó¼¼ÁÖ¼Ò">
+							<input type="text" name="zipcode" id="zipcode" class="form-control" placeholder="ìš°í¸ë²ˆí˜¸" readonly><br/>
+							<!-- <input type="button" onclick="execPostCode()" id="zipcode_btn" value="ìš°í¸ë²ˆí˜¸ ì°¾ê¸°"><br/> -->
+							<input type="text" id="addr1" name="addr1" class="form-control" size="40" placeholder="ì£¼ì†Œ"><br/>
+							<input type="text" id="addr2" name="addr2" class="form-control" size="40" placeholder="ìƒì„¸ì£¼ì†Œ">
 						 </div>
                       </div>
 										
                       <div class="form-group row">
-                        <label for="inputName2" class="col-sm-2 col-form-label">ÀÏ¹İ ÀüÈ­</label>
+                        <label for="inputName2" class="col-sm-2 col-form-label">ì¼ë°˜ ì „í™”</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputName2" placeholder="ÀÏ¹İ ÀüÈ­">
+                          <input type="text" class="form-control" id="inputName2" placeholder="ì¼ë°˜ ì „í™”">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputExperience" class="col-sm-2 col-form-label">ÈŞ´ëÀüÈ­</label>
+                        <label for="inputExperience" class="col-sm-2 col-form-label">íœ´ëŒ€ì „í™”</label>
                         <div class="col-sm-10">
-                          <textarea class="form-control" id="inputExperience" placeholder="ÈŞ´ëÀüÈ­"></textarea>
+                          <textarea class="form-control" id="inputExperience" placeholder="íœ´ëŒ€ì „í™”"></textarea>
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputSkills" class="col-sm-2 col-form-label">ÀÔ»ç ³¯Â¥</label>
+                        <label for="inputSkills" class="col-sm-2 col-form-label">ì…ì‚¬ ë‚ ì§œ</label>
                         <div class="col-sm-10">
                       	  <input type="date" value="xxx" min="1980-01-01" max="">
                         </div>
@@ -346,7 +346,7 @@ to get the desired effect
                       
                       <div class="form-group row">
                         <div class="offset-sm-2 col-sm-10">
-                          <button type="submit" class="btn btn-danger">µî·Ï</button>
+                          <button type="submit" class="btn btn-danger">ë“±ë¡</button>
                         </div>
                       </div>
                     </form>

@@ -19,19 +19,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   
-  <!-- daterange picker -->
-  <link rel="stylesheet" href="resources/plugins/daterangepicker/daterangepicker.css">
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="resources/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="resources/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
-  <!-- Tempusdominus Bbootstrap 4 -->
-  <link rel="stylesheet" href="resources/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="resources/plugins/select2/css/select2.min.css">
-  <link rel="stylesheet" href="resources/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
-  <!-- Bootstrap4 Duallistbox -->
-  <link rel="stylesheet" href="resources/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+  <link rel="shortcut icon" href="resources/img/favicon.ico">
 
 
 <style type="text/css">
@@ -61,7 +49,6 @@ to get the desired effect
         <a href="mainPage" class="nav-link">Home</a>
       </li>
     </ul>
-
     
 
     <!-- Right navbar links -->
@@ -206,7 +193,7 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="survey_add" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>설문등록</p>
                 </a>
@@ -271,45 +258,160 @@ to get the desired effect
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-      	<div class="col-md-6" style="max-width:80%; margin:0 auto;">
-          <div class="card card-primary">
-          <div class="card-header">
-                <h3 class="card-title">설문 등록</h3>
-              </div>
-              <!-- form start -->
-              <form role="form">
-                <div class="card-body">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="" placeholder="질문1">
-                    <input type="text" class="form-control" id="" placeholder="항목1">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="" placeholder="질문2">
-                    <input type="text" class="form-control" id="" placeholder="항목1">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="" placeholder="질문3">
-                    <input type="text" class="form-control" id="" placeholder="항목1">
-                  </div>
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="">
-                    <label class="form-check-label" for="">Check me out</label>
-                  </div>
-                </div>
-                <!-- /.card-body -->
-
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
-            </div>
-            </div>
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
+			<div class="page-content">
+				<div class="card mb-0">
+					<div class="card-body" id="bar-parent">
+									<form action="#" id="form_sample_1" class="form-horizontal" novalidate="novalidate">
+										<div class="form-body">
+											<div class="form-group row">
+												<label class="control-label col-md-3">Title
+													<span class="required" aria-required="true"> * </span>
+												</label>
+												<div class="col-md-5">
+													<select class="form-control input-height" name="select">
+														<option value="">Select...</option>
+														<option value="Category 1">Miss</option>
+														<option value="Category 2">Mr.</option>
+														<option selected="selected" value="Category 3">Mrs.</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">First Name
+													<span class="required" aria-required="true"> * </span>
+												</label>
+												<div class="col-md-5">
+													<input type="text" name="firstname" data-required="1" placeholder="enter first name" value="John" class="form-control input-height">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Last Name
+													<span class="required" aria-required="true"> * </span>
+												</label>
+												<div class="col-md-5">
+													<input type="text" name="lastname" data-required="1" placeholder="enter last name" value="Smith" class="form-control input-height">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Date Of Appointment
+													<span class="required" aria-required="true"> * </span>
+												</label>
+												<div class="input-append date" id="dp1">
+													<input class="formDatePicker" placeholder="Date Of Appointment" value="05/08/2018" size="44" type="text" readonly="">
+													<span class="add-on"><i class="fa fa-calendar"></i></span>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">From</label>
+												<div class="col-md-5">
+													<div class="row">
+														<div class="col-md-5">
+															<input class="form-control input-height" type="time" value="13:45:00" id="example-time-input">
+														</div>
+														<label class="control-label small-label col-md-2">To</label>
+														<div class="col-md-5">
+															<input class="form-control input-height" type="time" value="13:45:00" id="example-time-input2">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Address
+													<span class="required" aria-required="true"> * </span>
+												</label>
+												<div class="col-md-5">
+													<textarea name="address" placeholder="address" class="form-control-textarea" rows="5">A-32, Malbar Flat, Washington DC.</textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Date Of Birth
+													<span class="required" aria-required="true"> * </span>
+												</label>
+												<div class="input-append date" id="dp2">
+													<input class="formDatePicker" placeholder="Date Of Birth" value="05/08/2018" size="44" type="text" readonly="">
+													<span class="add-on"><i class="fa fa-calendar"></i></span>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Mobile No.
+													<span class="required" aria-required="true"> * </span>
+												</label>
+												<div class="col-md-5">
+													<input name="number" type="text" placeholder="mobile number" value="1234567890" class="form-control input-height">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Email
+												</label>
+												<div class="col-md-5">
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="fa fa-envelope"></i>
+														</span>
+														<input type="text" class="form-control input-height" name="email" value="test@example.com" placeholder="Email Address">
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Consulting Doctor
+													<span class="required" aria-required="true"> * </span>
+												</label>
+												<div class="col-md-5">
+													<select class="form-control input-height" name="select">
+														<option value="">Select...</option>
+														<option value="Category 1">Dr. Rajesh</option>
+														<option selected="selected" value="Category 2">Dr. Sarah Smith
+														</option>
+														<option value="Category 3">Dr. John Deo</option>
+														<option value="Category 3">Dr. Jay Soni</option>
+														<option value="Category 3">Dr. Jacob Ryan</option>
+														<option value="Category 3">Dr. Megha Trivedi</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Injury/Condition
+												</label>
+												<div class="col-md-5">
+													<input name="creditcard" type="text" placeholder="Injury/Condition" value="fever" class="form-control input-height">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Therapy Started Date
+													<span class="required" aria-required="true"> * </span>
+												</label>
+												<div class="input-append date" id="dp3">
+													<input class="formDatePicker" placeholder="Therapy Started Date" value="05/08/2018" size="44" type="text" readonly="">
+													<span class="add-on"><i class="fa fa-calendar"></i></span>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Note
+												</label>
+												<div class="col-md-5">
+													<textarea name="address" class="form-control-textarea" placeholder="note" rows="5">nothing</textarea>
+												</div>
+											</div>
+										</div>
+										<div class="form-actions">
+											<div class="row">
+												<div class="offset-md-3 col-md-9">
+													<button type="submit" class="btn btn-info m-r-20">Submit</button>
+													<button type="button" class="btn btn-default">Cancel</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+				</div>
+				
+			</div>
+			<!-- /.content -->
+			<div>
+				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;">회원등록</button>
+			</div>
 		</div>
+  </div>
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
@@ -336,29 +438,17 @@ to get the desired effect
 <script src="resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE -->
 <script src="resources/js/adminlte.js"></script>
+
 <!-- OPTIONAL SCRIPTS -->
 <script src="resources/plugins/chart.js/Chart.min.js"></script>
 <script src="resources/js/demo.js"></script>
 <script src="resources/js/pages/dashboard3.js"></script>
+
+
 <!-- jQuery UI -->
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- AdminLTE App -->
 <script src="resources/js/adminlte.min.js"></script>
-<!-- Select2 -->
-<script src="resources/plugins/select2/js/select2.full.min.js"></script>
-<!-- Bootstrap4 Duallistbox -->
-<script src="resources/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
-<!-- InputMask -->
-<script src="resources/plugins/moment/moment.min.js"></script>
-<script src="resources/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
-<!-- date-range-picker -->
-<script src="resources/plugins/daterangepicker/daterangepicker.js"></script>
-<!-- bootstrap color picker -->
-<script src="resources/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="resources/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Bootstrap Switch -->
-<script src="resources/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
 
 </body>
 </html>
