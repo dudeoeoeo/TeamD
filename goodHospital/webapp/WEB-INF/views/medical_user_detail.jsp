@@ -43,7 +43,7 @@ to get the desired effect
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index" class="nav-link">Home</a>
+        <a href="mainPage" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -262,7 +262,7 @@ to get the desired effect
 	        <div class="col-12">
 		            <div class="card">
 		              <div class="card-header">
-		                <h3 class="card-title">의료진 회원</h3>
+		                <h3 class="card-title">의료진 회원 수정</h3>
 		
 		                <div class="card-tools">
 		                  <div class="input-group input-group-sm" style="width: 150px;">
@@ -338,9 +338,9 @@ to get the desired effect
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputSkills" class="col-sm-2 col-form-label">Skills</label>
+                        <label for="inputSkills" class="col-sm-2 col-form-label">입사 날짜</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                      	  <input type="date" value="xxx" min="1980-01-01" max="">
                         </div>
                       </div>
                       

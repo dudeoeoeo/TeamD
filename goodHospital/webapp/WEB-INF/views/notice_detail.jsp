@@ -46,7 +46,7 @@ to get the desired effect
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index" class="nav-link">Home</a>
+        <a href="mainPage" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -286,7 +286,7 @@ to get the desired effect
 					<div id="autosave_wrapper write_div">
 						<input type="text" name="wr_subject" value="" id="wr_subject"
 							required="" class="form-control" size="50"
-							maxlength="255" placeholder="*力格*">
+							maxlength="255" placeholder="力格*">
 					</div>
 				</div>	 
 	            <div class="form-group">

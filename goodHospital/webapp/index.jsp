@@ -46,7 +46,7 @@ to get the desired effect
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Home</a>
+        <a href="mainPage" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -146,8 +146,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-calendar-check"></i>
               <p>
-                예약관리
-                <i class="fas fa-angle-left right"></i>
+                예약현황
                 <!-- <span class="badge badge-info right">6</span> -->                
               </p>
             </a>
@@ -155,33 +154,15 @@ to get the desired effect
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
+                  <p>진료과목</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
+                  <p>분기</p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
+              </li>              
             </ul>
           </li>
           <li class="nav-item has-treeview">
@@ -351,9 +332,15 @@ to get the desired effect
             </div>
             <!-- /.card -->
           </div>
-          
+                
+			
           <!-- /.col -->
-        </div>
+          <div class="col-md-12">
+				<input type="button" class="btn bg-olive btn-info" style="float: right; margin: 7px;" value="저장"> 
+				<input type="button" class="btn btn-secondary" style="float: right; margin: 7px;"value="삭제">
+				
+			</div>
+        </div>        
         <!-- /.row -->
       </div><!-- /.container-fluid -->
       
