@@ -140,46 +140,13 @@ to get the desired effect
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="appointment" class="nav-link">
               <i class="nav-icon fas fa-calendar-check"></i>
               <p>
-                예약관리
-                <i class="fas fa-angle-left right"></i>
+                예약현황
                 <!-- <span class="badge badge-info right">6</span> -->                
               </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-            </ul>
+            </a>            
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
@@ -294,7 +261,7 @@ to get the desired effect
 										<td>Dr. Benjamin</td>
 										<td>mumps</td>
 										<td><div class="actions">
-												<a class="btn btn-info btn-sm" href="#"> <i
+												<a class="btn btn-info btn-sm" href="edit_appointment"> <i
 													class="fas fa-pencil-alt"> </i>
 												</a> <a class="btn btn-danger btn-sm" href="#"> <i
 													class="fas fa-trash"> </i> 	</a>
