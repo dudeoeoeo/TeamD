@@ -223,7 +223,7 @@ to get the desired effect
 	        <div class="col-12">
 		            <div class="card">
 		              <div class="card-header">
-		                <h3 class="card-title">의료진 회원</h3>
+		                <h3 class="card-title">일반 회원 수정</h3>
 		
 		                <div class="card-tools">
 		                  <div class="input-group input-group-sm" style="width: 150px;">
@@ -236,61 +236,80 @@ to get the desired effect
 		                </div>
 		              </div>
 		              <!-- /.card-header -->
-		              <div class="card-body table-responsive p-0">
-		                <table class="table table-hover text-nowrap">
-		                  <thead>
-		                    <tr>
-		                      <th width="10%" >ID</th>
-			                  <th width="10%" >직급</th>	                      
-		                      <th width="10%" >회원명</th>
-		                      <th width="10%" >Date</th>
-		                      <th width="25%" >이메일</th>
-		                      <th width="15%" >전화</th>
-		                      <th width="5%" >관리</th>
-		                    </tr>
-		                  </thead>
-		                  <tbody>
-		                  
-		                    <tr>
-		                      <td>dada97</td>
-		                      <th>레지던트</th>
-		                      <td>김다다</td>
-		                      <td>2020.11.20</td>
-		                      <td><span class="tag tag-success">dada97@naver.com</span></td>
-		                      <td>01025689876</td>
-		                      <td>
-									<button type="button" class="btn btn-block btn-info btn-xs">수정</button>
-                   			 </td>
-		                    </tr>
-		                    
-		                    <tr>
-		                      <td>dada97</td>
-		                      <th>레지던트</th>
-		                      <td>김다다</td>
-		                      <td>2020.11.20</td>
-		                      <td><span class="tag tag-success">dada97@naver.com</span></td>
-		                      <td>01025689876</td>
-		                      <td>
-									<button type="button" class="btn btn-block btn-info btn-xs" formaction="medical_user_detail">수정</button>
-                   			 </td>
-		                    </tr>
-		                  
-							<c:forEach var="m" items="${list}">
-		                    <tr>
-		                      <td>${m.userid}</td>
-		                      <th></th>
-		                      <td>${m.username}</td>
-		                      <td>${m.signupdate}</td>
-		                      <td><span class="tag tag-success">${m.email}</span></td>
-		                      <td>${m.phone}</td>
-		                      <td>
-									<button type="button" class="btn btn-block btn-info btn-xs" formaction="medical_user_detail">수정</button>
-                   			 </td>
-		                    </tr>
-							</c:forEach>
-		                  </tbody>
-		                </table>
-		              </div>
+		              <div class="card-body">
+                <div class="tab-content">
+
+                  <div class="tab-pane active" id="settings">
+                    <form class="form-horizontal">
+                      <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">이름</label>
+                        <div class="col-sm-4">
+                          <input type="email" class="form-control" id="inputName" placeholder="이름">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">회원 구분</label>
+                        <div class="col-sm-4">
+				       		<select class="form-control custom-select">
+			                  <option selected="" disabled="">구분</option>
+			                  <option>교수</option>
+			                  <option>간호사</option>
+			                  <option>레지던트</option>
+			                  <option>전공의</option>
+			                </select>	
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">담당의</label>
+                        <div class="col-sm-4">
+				       		<select class="form-control custom-select">
+			                  <option selected="" disabled="">구분</option>
+			                  <option>안과</option>
+			                  <option>내과</option>
+			                  <option>외과</option>
+			                </select>	
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-4">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputAddress" class="col-sm-2 col-form-label">주소</label>
+                        <div class="col-sm-10">
+							<input type="text" name="zipcode" id="zipcode" class="form-control" placeholder="우편번호" readonly><br/>
+							<!-- <input type="button" onclick="execPostCode()" id="zipcode_btn" value="우편번호 찾기"><br/> -->
+							<input type="text" id="addr1" name="addr1" class="form-control" size="40" placeholder="주소"><br/>
+							<input type="text" id="addr2" name="addr2" class="form-control" size="40" placeholder="상세주소">
+						 </div>
+                      </div>
+										
+                      <div class="form-group row">
+                        <label for="inputName2" class="col-sm-2 col-form-label">일반 전화</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputName2" placeholder="일반 전화">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputExperience" class="col-sm-2 col-form-label">휴대전화</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control" id="inputExperience" placeholder="휴대전화"></textarea>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                          <button type="submit" class="btn btn-danger">등록</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- /.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+              </div>
 		              <!-- /.card-body -->
 		            </div>
 		            <!-- /.card -->
@@ -302,9 +321,7 @@ to get the desired effect
     </section>
     <!-- /.content -->
 			<div>
-			<a href="add_medical_user">
 				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;">회원등록</button>
-			</a>
 			</div>
     
     

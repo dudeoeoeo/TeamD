@@ -288,7 +288,11 @@ to get the desired effect
     </section>
     <!-- /.content -->
 			<div>
+			
+			<a href="add_user">
 				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;">회원등록</button>
+			</a>
+				
 			</div>
 		</div>
   </div>
