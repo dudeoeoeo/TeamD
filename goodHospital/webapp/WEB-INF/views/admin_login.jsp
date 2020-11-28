@@ -89,8 +89,8 @@ to get the desired effect
           </div>
           <!-- /.col -->
           <div class="col-8" style = "margin : auto;">
-            <button type="submit" class="btn btn-primary btn-block">로그인</button>
-            <button type="submit" class="btn btn-primary btn-block">PW 찾기</button>
+            <button type="submit" class="btn btn-primary btn-block" formaction = "">로그인</button>
+            <button type="submit" class="btn btn-primary btn-block" formaction = "">PW 찾기</button>
           </div>
           <!-- /.col -->
         </div>
