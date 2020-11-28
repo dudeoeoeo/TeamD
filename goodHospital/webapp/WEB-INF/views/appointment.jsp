@@ -237,7 +237,7 @@ to get the desired effect
 								</thead>
 								<tbody>
 									<tr>
-										<td><img src="../assets/content/user-40-1.jpg" alt=""
+										<td><img src="${pageContext.request.contextPath}/resources/img/AdminLTELogo.png" alt=""
 											width="40" height="40" class="rounded-500"></td>
 										<td><strong>Liam</strong></td>
 										<td><div
