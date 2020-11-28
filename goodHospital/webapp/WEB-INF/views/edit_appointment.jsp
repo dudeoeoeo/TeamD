@@ -208,7 +208,7 @@ to get the desired effect
 					<div class="col-12">
 						<div class="card">
 							<div class="card-header">
-								<h3 class="card-title">Q&A 게시판</h3>
+								<h3 class="card-title">예약 수정</h3>
 							</div>
 							<!-- /.card-header -->
 							<div class="card-body" id="bar-parent">
@@ -243,9 +243,7 @@ to get the desired effect
 													* </span>
 											</label>
 											<div class="col-md-5 input-append date" id="dp1">
-												<input class="formDatePicker" placeholder="예약날짜" value=""
-													size="44" type="text" readonly=""> <span
-													class="add-on"><i class="fa fa-calendar"></i></span>
+												<input type="date" value="" min="1980-01-01" max=""  class="formDatePicker" >
 											</div>
 										</div>
 										<div class="form-group row">
@@ -253,8 +251,7 @@ to get the desired effect
 											<div class="col-md-5">
 												<div class="row">
 													<div class="col-md-5">
-														<input class="form-control" type="time"
-															value="" id="" min="9:30" max="18:30" step="600">
+														<input type="time" value="" min="9:30" max="18:30" step="600" class="form-control" >
 													</div>
 													<label class="control-label small-label col-md-2 text-right">To</label>
 													<div class="col-md-5">
@@ -278,8 +275,7 @@ to get the desired effect
 												<span class="required" aria-required="true"> * </span>
 											</label>
 											<div class="col-md-5 input-append date" id="dp2">
-												<input class="formDatePicker" placeholder="Date Of Birth" value="" size="44" type="text" readonly="">
-												<span class="add-on"><i class="fa fa-calendar"></i></span>
+												<input type="date" value="" min="1980-01-01" max=""  class="formDatePicker" >
 											</div>
 										</div>
 										<div class="form-group row">
@@ -318,17 +314,7 @@ to get the desired effect
 													class="form-control input-height">
 											</div>
 										</div>
-										<div class="form-group row">
-											<label class="control-label col-md-3 text-right">치료 시작일<span class="required" aria-required="true">
-													* </span>
-											</label>
-											<div class="col-md-5 input-append date" id="dp3">
-												<input class="formDatePicker" placeholder="치료 시작일" value=""
-													type="text" readonly=""> 
-													<span
-													class="add-on"><i class="fa fa-calendar"></i></span>
-											</div>
-										</div>
+										
 										<div class="form-group row">
 											<label class="control-label col-md-3 text-right">비고</label>
 											<div class="col-md-5">
@@ -340,8 +326,8 @@ to get the desired effect
 									<div class="form-actions">
 										<div class="row">
 											<div class="offset-md-3 col-md-9">
-												<button type="submit" class="btn btn-info m-r-20">Submit</button>
-												<button type="button" class="btn btn-default">Cancel</button>
+												<button type="submit" class="btn btn-info m-r-20" formaction="appointment">Submit</button>
+												<button type="button" class="btn btn-default" formaction="appointment">Cancel</button>
 											</div>
 										</div>
 									</div>

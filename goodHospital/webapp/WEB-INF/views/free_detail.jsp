@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="resources/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- summernote -->
+  <link rel="stylesheet" href="resources/plugins/summernote/summernote-bs4.css">
 
 
 <style type="text/css">
@@ -194,7 +196,7 @@ to get the desired effect
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="free_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>자유게시판</p>
                 </a>
@@ -220,70 +222,73 @@ to get the desired effect
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <div class="row">
-	        <div class="col-12">
-	            <div class="card">
-	              <div class="card-header">
-	                <h3 class="card-title">자유 게시판</h3>
-	
-	                <div class="card-tools">
-	                  <div class="input-group input-group-sm" style="width: 150px;">
-	                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-	
-	                    <div class="input-group-append">
-	                      <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-	                    </div>
-	                  </div>
-	                </div>
-	              </div>
-	              <!-- /.card-header -->
-	              <div class="card-body table-responsive p-0">
-	                <table class="table table-hover text-nowrap">
-	                  <thead>
-	                    <tr>
-	                      <th width="5%" >번호</th>
-	                      <th width="40%" >제목</th>
-	                      <th width="10%" >글쓴이</th>
-	                      <th width="15%" >등록일</th>
-	                      <th width="5%" >조회수</th>
-	                    </tr>
-	                  </thead>
-	                  <tbody>
-		                  
-		                    <tr>
-		                      <td>1</td>
-		                      <td><a href="free_detail">자유게시판</a></td>
-		                      <td>김다다</td>
-		                      <td><span class="tag tag-success">2020.11.20</span></td>
-		                      <td>270</td>
-		                    </tr>
-	                  
-	                  
-						<c:forEach var="m" items="${list}">
-	                    <tr>
-	                      <td>${m.no}</td>
-	                      <td>${m.subject}</td>
-	                      <td>${m.writer}</td>
-	                      <td><span class="tag tag-success">${m.date}</span></td>
-	                      <td>${m.views}</td>
-	                    </tr>
-						</c:forEach>
-	                  </tbody>
-	                </table>
-	              </div>
-	              <!-- /.card-body -->
-	            </div>
-	            <!-- /.card -->
-	          </div>
-          <!-- /.col -->
+      <div class="row">
+        <div class="col-md-10" Style="margin:auto;">
+          <div class="card card-outline card-info">
+            <div class="card-header">
+              <h3 class="card-title">자유게시판 수정</h3>              
+            </div><!-- card-header -->
+            <div class="card-body"> 
+            
+	           <div class="form-group">
+            <div class="row">
+                   <div class="col-lg-2">
+                     <input type="text" class="form-control" placeholder="이름*">
+                   </div>
+                   <div class="col-lg-3">
+                     <input type="text" class="form-control" placeholder="비밀번호*">
+                   </div>
+                   <div class="col-lg-4">
+                     <input type="text" class="form-control" placeholder="이메일">
+                   </div>
+               </div>
+               </div>
+	            
+	           <div class="form-group">
+                    <div class=" row col-lg-6">
+                      <select class="form-control m-bot15">
+                                              <option>카테고리</option>
+                                              <option>카테고리2</option>
+                                              <option>카테고리3</option>
+                                              <option>카테고리4</option>
+                                              <option>카테고리5</option>
+                       </select>
+                    </div>
+                  </div>
+                    
+	            <div class="form-group">
+					<div id="autosave_wrapper write_div">
+						<input type="text" name="wr_subject" value="" id="wr_subject"
+							required="" class="form-control" size="50"
+							maxlength="255" placeholder="제목*">
+					</div>
+				</div>	 
+	            <div class="form-group">
+					<div class="wr_content ">
+						<textarea id="wr_content" name="wr_content" class="form-control"
+							maxlength="65536" style="width: 100%; height: 300px"
+							placeholder="내용을 입력해 주세요."></textarea>
+					</div>
+				</div>           
+            </div><!-- card-body -->
+            
+            
+			
+			
+		</div>
         </div>
+        <!-- /.col-->
+      </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-			<div>
-				<a class="btn btn-info btn-sm" href="free_detail" style="float: right; margin: 20px;"> 
-				<i class="fas fa-pencil-alt"> </i> 새글등록
+			<div class="col-md-11">
+				<a class="btn bg-olive btn-info" href="free_table" style="float: right; margin: 7px;"> 
+				<i class="fas fa-trash"> </i> 삭제
+				</a>
+				<a href=""free_table"" class="btn btn-secondary" style="float: right; margin: 7px;">
+				취소
 				</a>
 			</div>
 		</div>
@@ -319,6 +324,8 @@ to get the desired effect
 <script src="resources/js/demo.js"></script>
 <script src="resources/js/pages/dashboard3.js"></script>
 
+<!-- Summernote -->
+<script src="resources/plugins/summernote/summernote-bs4.min.js"></script>
 
 <!-- jQuery UI -->
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>

@@ -271,10 +271,13 @@ to get the desired effect
     </section>
     <!-- /.content -->
 			<div class="col-md-11">
-				<a class="btn bg-olive btn-info" href="qna_detail" style="float: right; margin: 7px;"> 
+				<a class="btn bg-olive btn-info" href="free_table" style="float: right; margin: 7px;"> 
+				<i class="fas fa-trash"> </i> 삭제
+				</a>
+				<a href=""free_table"" class="btn btn-secondary" style="float: right; margin: 7px;">
 				<i class="fas fa-pencil-alt"> </i> 등록
 				</a>
-				<a href="#" class="btn btn-secondary" style="float: right; margin: 7px;">
+				<a href=""free_table"" class="btn btn-secondary" style="float: right; margin: 7px;">
 				취소
 				</a>
 			</div>
