@@ -1,31 +1,46 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>관리자 페이지</title>
-  
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
-  <!-- IonIcons -->
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="resources/css/adminlte.min.css">
-  <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  
-  <link rel="shortcut icon" href="resources/img/favicon.ico">
+<title>관리자 페이지</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet"
+	href="resources/plugins/fontawesome-free/css/all.min.css">
+<!-- IonIcons -->
+<link rel="stylesheet"
+	href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="resources/css/adminlte.min.css">
+<!-- Google Font: Source Sans Pro -->
+<link
+	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
+	rel="stylesheet">
+
+<link rel="shortcut icon" href="resources/img/favicon.ico">
 
 
 <style type="text/css">
- a:link { color: black; text-decoration: none;}
- a:visited { color: black; text-decoration: none;}
- a:hover { color: blue; text-decoration: underline;}
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
 </style>
 
 </head>
@@ -40,360 +55,330 @@ to get the desired effect
 |---------------------------------------------------------|
 -->
 <body class="hold-transition sidebar-mini">
-<div class="wrapper">
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="mainPage" class="nav-link">Home</a>
-      </li>
-    </ul>
-    
+	<div class="wrapper">
+		<!-- Navbar -->
+	<nav
+		class="main-header navbar navbar-expand navbar-white navbar-light">
+		<!-- Left navbar links -->
+		<ul class="navbar-nav">
+			<li class="nav-item d-none d-sm-inline-block"><a
+				href="mainPage" class="nav-link">Home</a></li>
+		</ul>
 
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">      
-      <!-- <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"><i
-            class="fas fa-th-large"></i></a>
-      </li> -->
-    </ul>
-  </nav>
-  <!-- /.navbar -->
 
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="index" class="brand-link">
-      <img src="resources/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
-      <span class="brand-text font-weight-light">Dr.Link</span>
-    </a>
+		<!-- Right navbar links -->
+		<ul class="navbar-nav ml-auto">
+			<!-- <li class="nav-item">
+       <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"><i
+           class="fas fa-th-large"></i></a>
+     </li> -->
+		</ul>
+	</nav>
+	<!-- /.navbar -->
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="resources/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">관리자</a>
-        </div>
-      </div>
+	<!-- Main Sidebar Container -->
+	<aside class="main-sidebar sidebar-dark-primary elevation-4">
+		<!-- Brand Logo -->
+		<a href="#" class="brand-link"> <img
+			src="resources/img/AdminLTELogo.png" alt="AdminLTE Logo"
+			class="brand-image img-circle elevation-3" style="opacity: .8">
+			<span class="brand-text font-weight-light">Dr.Link</span>
+		</a>
 
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-          
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-users"></i>
-              <p>
-                회원관리
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="medical_user_management" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>의료진 회원</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="user_management" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>일반 회원</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                통계
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="chart_board" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>통계</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>통계</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>통계</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="appointment" class="nav-link">
-              <i class="nav-icon fas fa-calendar-check"></i>
-              <p>
-                예약현황
-                <!-- <span class="badge badge-info right">6</span> -->                
-              </p>
-            </a>            
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-file-alt"></i>
-              <p>
-				설문
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>설문등록</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="survey_list" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>설문관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="survey_result" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>설문결과</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-                게시판
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="notice_table" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>공지 게시판</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="qna_table" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Q&A</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="free_table" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>자유게시판</p>
-                </a>
-              </li>
-            </ul>
-          </li>          
-        </ul>
-       </li>
-      </ul>
-    </nav>
-    <!-- /.sidebar-menu -->
-  </div>
-  <!-- /.sidebar -->
-</aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header"><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-			<div class="page-content">
-				<div class="card mb-0">
-					<div class="card-body" id="bar-parent">
-									<form action="#" id="form_sample_1" class="form-horizontal" novalidate="novalidate">
-										<div class="form-body">
-											<div class="form-group row">
-												<label class="control-label col-md-3">Title
-													<span class="required" aria-required="true"> * </span>
-												</label>
-												<div class="col-md-5">
-													<select class="form-control input-height" name="select">
-														<option value="">Select...</option>
-														<option value="Category 1">Miss</option>
-														<option value="Category 2">Mr.</option>
-														<option selected="selected" value="Category 3">Mrs.</option>
-													</select>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="control-label col-md-3">First Name
-													<span class="required" aria-required="true"> * </span>
-												</label>
-												<div class="col-md-5">
-													<input type="text" name="firstname" data-required="1" placeholder="enter first name" value="John" class="form-control input-height">
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="control-label col-md-3">Last Name
-													<span class="required" aria-required="true"> * </span>
-												</label>
-												<div class="col-md-5">
-													<input type="text" name="lastname" data-required="1" placeholder="enter last name" value="Smith" class="form-control input-height">
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="control-label col-md-3">Date Of Appointment
-													<span class="required" aria-required="true"> * </span>
-												</label>
-												<div class="input-append date" id="dp1">
-													<input class="formDatePicker" placeholder="Date Of Appointment" value="05/08/2018" size="44" type="text" readonly="">
-													<span class="add-on"><i class="fa fa-calendar"></i></span>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="control-label col-md-3">From</label>
-												<div class="col-md-5">
-													<div class="row">
-														<div class="col-md-5">
-															<input class="form-control input-height" type="time" value="13:45:00" id="example-time-input">
-														</div>
-														<label class="control-label small-label col-md-2">To</label>
-														<div class="col-md-5">
-															<input class="form-control input-height" type="time" value="13:45:00" id="example-time-input2">
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="control-label col-md-3">Address
-													<span class="required" aria-required="true"> * </span>
-												</label>
-												<div class="col-md-5">
-													<textarea name="address" placeholder="address" class="form-control-textarea" rows="5">A-32, Malbar Flat, Washington DC.</textarea>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="control-label col-md-3">Date Of Birth
-													<span class="required" aria-required="true"> * </span>
-												</label>
-												<div class="input-append date" id="dp2">
-													<input class="formDatePicker" placeholder="Date Of Birth" value="05/08/2018" size="44" type="text" readonly="">
-													<span class="add-on"><i class="fa fa-calendar"></i></span>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="control-label col-md-3">Mobile No.
-													<span class="required" aria-required="true"> * </span>
-												</label>
-												<div class="col-md-5">
-													<input name="number" type="text" placeholder="mobile number" value="1234567890" class="form-control input-height">
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="control-label col-md-3">Email
-												</label>
-												<div class="col-md-5">
-													<div class="input-group">
-														<span class="input-group-addon">
-															<i class="fa fa-envelope"></i>
-														</span>
-														<input type="text" class="form-control input-height" name="email" value="test@example.com" placeholder="Email Address">
-													</div>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="control-label col-md-3">Consulting Doctor
-													<span class="required" aria-required="true"> * </span>
-												</label>
-												<div class="col-md-5">
-													<select class="form-control input-height" name="select">
-														<option value="">Select...</option>
-														<option value="Category 1">Dr. Rajesh</option>
-														<option selected="selected" value="Category 2">Dr. Sarah Smith
-														</option>
-														<option value="Category 3">Dr. John Deo</option>
-														<option value="Category 3">Dr. Jay Soni</option>
-														<option value="Category 3">Dr. Jacob Ryan</option>
-														<option value="Category 3">Dr. Megha Trivedi</option>
-													</select>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="control-label col-md-3">Injury/Condition
-												</label>
-												<div class="col-md-5">
-													<input name="creditcard" type="text" placeholder="Injury/Condition" value="fever" class="form-control input-height">
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="control-label col-md-3">Therapy Started Date
-													<span class="required" aria-required="true"> * </span>
-												</label>
-												<div class="input-append date" id="dp3">
-													<input class="formDatePicker" placeholder="Therapy Started Date" value="05/08/2018" size="44" type="text" readonly="">
-													<span class="add-on"><i class="fa fa-calendar"></i></span>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="control-label col-md-3">Note
-												</label>
-												<div class="col-md-5">
-													<textarea name="address" class="form-control-textarea" placeholder="note" rows="5">nothing</textarea>
-												</div>
-											</div>
-										</div>
-										<div class="form-actions">
-											<div class="row">
-												<div class="offset-md-3 col-md-9">
-													<button type="submit" class="btn btn-info m-r-20">Submit</button>
-													<button type="button" class="btn btn-default">Cancel</button>
-												</div>
-											</div>
-										</div>
-									</form>
-								</div>
+		<!-- Sidebar -->
+		<div class="sidebar">
+			<!-- Sidebar user panel (optional) -->
+			<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+				<div class="image">
+					<img src="resources/img/user2-160x160.jpg"
+						class="img-circle elevation-2" alt="User Image">
 				</div>
-				
+				<div class="info">
+					<a href="#" class="d-block">관리자</a>
+				</div>
 			</div>
-			<!-- /.content -->
-			<div>
-				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;">회원등록</button>
-			</div>
+
+			<!-- Sidebar Menu -->
+			<nav class="mt-2">
+				<ul class="nav nav-pills nav-sidebar flex-column"
+					data-widget="treeview" role="menu" data-accordion="false">
+					<!-- Add icons to the links using the .nav-icon class
+              with font-awesome or any other icon font library -->
+
+					<li class="nav-item has-treeview"><a href="#"
+						class="nav-link"> <i class="nav-icon fas fa-users"></i>
+							<p>
+								회원관리 <i class="fas fa-angle-left right"></i>
+							</p>
+					</a>
+						<ul class="nav nav-treeview">
+							<li class="nav-item"><a href="medical_user_management"
+								class="nav-link"> <i class="far fa-circle nav-icon"></i>
+									<p>의료진 회원</p>
+							</a></li>
+							<li class="nav-item"><a href="user_management"
+								class="nav-link"> <i class="far fa-circle nav-icon"></i>
+									<p>일반 회원</p>
+							</a></li>
+
+						</ul></li>
+					<li class="nav-item has-treeview"><a href="#"
+						class="nav-link"> <i class="nav-icon fas fa-chart-pie"></i>
+							<p>
+								통계 <i class="right fas fa-angle-left"></i>
+							</p>
+					</a>
+						<ul class="nav nav-treeview">
+							<li class="nav-item"><a href="chart_board" class="nav-link">
+									<i class="far fa-circle nav-icon"></i>
+									<p>통계</p>
+							</a></li>
+							<li class="nav-item"><a href="#" class="nav-link"> <i
+									class="far fa-circle nav-icon"></i>
+									<p>통계</p>
+							</a></li>
+							<li class="nav-item"><a href="#" class="nav-link"> <i
+									class="far fa-circle nav-icon"></i>
+									<p>통계</p>
+							</a></li>
+						</ul></li>
+					<li class="nav-item has-treeview"><a href="appointment"
+						class="nav-link"> <i class="nav-icon fas fa-calendar-check"></i>
+							<p>
+								예약현황
+								<!-- <span class="badge badge-info right">6</span> -->
+							</p>
+					</a></li>
+					<li class="nav-item has-treeview"><a href="#"
+						class="nav-link"> <i class="nav-icon fas fa-file-alt"></i>
+							<p>
+								설문 <i class="fas fa-angle-left right"></i>
+							</p>
+					</a>
+						<ul class="nav nav-treeview">
+							<li class="nav-item"><a href="#" class="nav-link"> <i
+									class="far fa-circle nav-icon"></i>
+									<p>설문등록</p>
+							</a></li>
+							<li class="nav-item"><a href="survey_list" class="nav-link">
+									<i class="far fa-circle nav-icon"></i>
+									<p>설문관리</p>
+							</a></li>
+							<li class="nav-item"><a href="survey_result"
+								class="nav-link"> <i class="far fa-circle nav-icon"></i>
+									<p>설문결과</p>
+							</a></li>
+						</ul></li>
+					<li class="nav-item has-treeview"><a href="#"
+						class="nav-link"> <i class="nav-icon fas fa-edit"></i>
+							<p>
+								게시판 <i class="fas fa-angle-left right"></i>
+							</p>
+					</a>
+						<ul class="nav nav-treeview">
+							<li class="nav-item"><a href="notice_table"
+								class="nav-link"> <i class="far fa-circle nav-icon"></i>
+									<p>공지 게시판</p>
+							</a></li>
+							<li class="nav-item"><a href="qna_table" class="nav-link">
+									<i class="far fa-circle nav-icon"></i>
+									<p>Q&A</p>
+							</a></li>
+							<li class="nav-item"><a href="free_table" class="nav-link">
+									<i class="far fa-circle nav-icon"></i>
+									<p>자유게시판</p>
+							</a></li>
+						</ul></li>
+				</ul>
+				</li>
+				</ul>
+			</nav>
+			<!-- /.sidebar-menu -->
 		</div>
-  </div>
-  <!-- /.content-wrapper -->
+		<!-- /.sidebar -->
+	</aside>
 
-  <!-- Control Sidebar -->
-  <!-- <aside class="control-sidebar control-sidebar-dark"> -->
-    <!-- Control sidebar content goes here -->
-  <!-- </aside> -->
-  <!-- /.control-sidebar -->
+	<!-- Content Wrapper. Contains page content -->
+	<div class="content-wrapper">
+		<div class="content-header">
+			<!-- /.container-fluid -->
+		</div>
 
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-    </div>
-  </footer>
+		<!-- Main content -->
+
+		<section class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="card">
+							<div class="card-header">
+								<h3 class="card-title">Q&A 게시판</h3>
+							</div>
+							<!-- /.card-header -->
+							<div class="card-body" id="bar-parent">
+								<form action="#" id="form_sample_1" class="form-horizontal"
+									novalidate="novalidate">
+									<div class="form-body">
+										<div class="form-group row">
+											<label class="control-label col-md-3 text-right">성별 <span
+												class="required" aria-required="true"> * </span>
+											</label>
+											<div class="col-md-5">
+												<select class="form-control input-height" name="select">
+													<option value="">Select...</option>
+													<option value="Category 1">여자</option>
+													<option value="Category 2">남자</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 text-right">이름
+											<span class="required" aria-required="true"> * </span>
+											</label>
+											<div class="col-md-5">
+												<input type="text" name="name" data-required="1"
+													placeholder="이름" value=""
+													class="form-control input-height">
+											</div>
+										</div>
+										
+										<div class="form-group row">
+											<label class="control-label col-md-3 text-right">예약날짜<span class="required" aria-required="true">
+													* </span>
+											</label>
+											<div class="col-md-5 input-append date" id="dp1">
+												<input class="formDatePicker" placeholder="예약날짜" value=""
+													size="44" type="text" readonly=""> <span
+													class="add-on"><i class="fa fa-calendar"></i></span>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 text-right">From</label>
+											<div class="col-md-5">
+												<div class="row">
+													<div class="col-md-5">
+														<input class="form-control" type="time"
+															value="" id="" min="9:30" max="18:30" step="600">
+													</div>
+													<label class="control-label small-label col-md-2 text-right">To</label>
+													<div class="col-md-5">
+														<input class="form-control" type="time"
+															value="" id="" min="9:30" max="18:30" step="600">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 text-right">주소<span
+												class="required" aria-required="true"> * </span>
+											</label>
+											<div class="col-md-5">
+												<textarea name="address" placeholder="address"
+													class="form-control-textarea" style="resize: none;"></textarea>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 text-right">생년월일
+												<span class="required" aria-required="true"> * </span>
+											</label>
+											<div class="col-md-5 input-append date" id="dp2">
+												<input class="formDatePicker" placeholder="Date Of Birth" value="" size="44" type="text" readonly="">
+												<span class="add-on"><i class="fa fa-calendar"></i></span>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 text-right">전화번호<span
+												class="required" aria-required="true"> * </span>
+											</label>
+											<div class="col-md-5">
+												<input name="number" type="text"
+													placeholder="전화번호" value=""
+													class="form-control input-height">
+											</div>
+										</div>
+										
+										<div class="form-group row">
+											<label class="control-label col-md-3 text-right">담당의사<span class="required" aria-required="true">
+													* </span>
+											</label>
+											<div class="col-md-5">
+												<select class="form-control input-height" name="select">
+													<option value="">Select...</option>
+													<option value="Category 1">Dr. Rajesh</option>
+													<option value="Category 2">Dr. Sarah Smith</option>
+													<option value="Category 3">Dr. John Deo</option>
+													<option value="Category 3">Dr. Jay Soni</option>
+													<option value="Category 3">Dr. Jacob Ryan</option>
+													<option value="Category 3">Dr. Megha Trivedi</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 text-right">증상
+											</label>
+											<div class="col-md-5">
+												<input name="creditcard" type="text"
+													placeholder="증상" value=""
+													class="form-control input-height">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 text-right">치료 시작일<span class="required" aria-required="true">
+													* </span>
+											</label>
+											<div class="col-md-5 input-append date" id="dp3">
+												<input class="formDatePicker" placeholder="치료 시작일" value=""
+													type="text" readonly=""> 
+													<span
+													class="add-on"><i class="fa fa-calendar"></i></span>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-md-3 text-right">비고</label>
+											<div class="col-md-5">
+												<textarea name="address" class="form-control-textarea"
+													placeholder="비고" style="resize: none;"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="form-actions">
+										<div class="row">
+											<div class="offset-md-3 col-md-9">
+												<button type="submit" class="btn btn-info m-r-20">Submit</button>
+												<button type="button" class="btn btn-default">Cancel</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<!-- /.card-body -->
+						</div>
+						<!-- /.card -->
+					</div>
+					<!-- /.col -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container-fluid -->
+		</section>
+		<!-- /.content -->
+
+	</div>
+	<!-- /.content-wrapper -->
+
+	<!-- Control Sidebar -->
+	<!-- <aside class="control-sidebar control-sidebar-dark"> -->
+	<!-- Control sidebar content goes here -->
+	<!-- </aside> -->
+	<!-- /.control-sidebar -->
+
+	<!-- Main Footer -->
+	<footer class="main-footer">
+		<strong>Copyright &copy; 2014-2019 <a
+			href="http://adminlte.io">AdminLTE.io</a>.
+		</strong> All rights reserved.
+		<div class="float-right d-none d-sm-inline-block"></div>
+	</footer>
 </div>
 <!-- ./wrapper -->
 
@@ -415,7 +400,7 @@ to get the desired effect
 <!-- jQuery UI -->
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- AdminLTE App -->
-<script src="resources/js/adminlte.min.js"></script>
+	<script src="resources/js/adminlte.min.js"></script>
 
 </body>
 </html>
