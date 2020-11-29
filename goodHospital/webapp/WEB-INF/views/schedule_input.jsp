@@ -236,15 +236,23 @@ to get the desired effect
 	                      <th width="5%" >allDay</th>
 	                    </tr>
 	                  </thead>
+	                  <div class="row">
+                   <div class="col-lg-2">
+                     <input type="text" class="form-control" placeholder="이름*">
+                   </div>
+                   <div class="col-lg-3">
+                     <input type="text" class="form-control" placeholder="비밀번호*">
+                   </div>
+                   <div class="col-lg-4">
+                     <input type="text" class="form-control" placeholder="이메일">
+                   </div>
+               </div>
 	                  <tbody>
 		                    <tr>
-		                      <td><input type="text" ></td>
-		                      <td><input type="text" ></td>
-		                      <td><input type="text" ></td>
-		                    </tr>
-		                  
-		                  
-		                    
+		                      <td><input type="text" class="form-control" ></td>
+		                      <td><input type="text" class="form-control" ></td>
+		                      <td><input type="text" class="form-control" ></td>
+		                    </tr>  
 	                  
 	                  </tbody>
 	                </table>
