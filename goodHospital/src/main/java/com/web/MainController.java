@@ -40,6 +40,13 @@ public class MainController {
 		
 	}
 	
+	//AI 피부과 진료
+	@RequestMapping(value = "medicineSearch")
+	public String medicineSearch() {
+		return "patient/medicineSearch";
+		
+	}
+	
 	@RequestMapping(value = "testCal")
 	public String ophthalmology22() {
 		

@@ -8,7 +8,7 @@
     <meta name="keywords" content="Adventure Tours &amp; Trips">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Page 1</title>
+    <title>눈 검사</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/aiTest/ophthalmology/nicepage.css" media="screen">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/aiTest/ophthalmology/Page-1.css" media="screen">
     <script class="u-script" type="text/javascript" src="${pageContext.request.contextPath}/resources/js/aiTest/ophthalmology/jquery.js" defer=""></script>

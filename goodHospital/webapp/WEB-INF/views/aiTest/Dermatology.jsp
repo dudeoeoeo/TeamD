@@ -8,7 +8,7 @@
     <meta name="keywords" content="안녕하세요. AI 피부 진단 서비스입니다., -진단 예측 결과-">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Page 2</title>
+    <title>피부검사</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/aiTest/Dermatology/nicepage.css" media="screen">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/aiTest/Dermatology/Page-2.css" media="screen">
     <script class="u-script" type="text/javascript" src="${pageContext.request.contextPath}/resources/js/aiTest/Dermatology/jquery.js" defer=""></script>
