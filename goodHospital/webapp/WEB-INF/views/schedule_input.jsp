@@ -224,17 +224,7 @@ to get the desired effect
 	        <div class="col-12">
 	            <div class="card">
 	              <div class="card-header">
-	                <h3 class="card-title">설문 관리</h3>
-	
-	                <div class="card-tools">
-	                  <div class="input-group input-group-sm" style="width: 150px;">
-	                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-	
-	                    <div class="input-group-append">
-	                      <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-	                    </div>
-	                  </div>
-	                </div>
+	                <h3 class="card-title">일정 관리</h3>
 	              </div>
 	              <!-- /.card-header -->
 	              <div class="card-body table-responsive p-0">
@@ -248,25 +238,14 @@ to get the desired effect
 	                  </thead>
 	                  <tbody>
 		                    <tr>
-		                      <td>1</td>
-		                      <td><a href="#">환자 의료진 서비스 만족도 조사</a></td>
-		                      <td> </td>
-		                      <td><span class="tag tag-success">2020.11.20</span></td>
-		                      <td>270</td>
+		                      <td><input type="text" ></td>
+		                      <td><input type="text" ></td>
+		                      <td><input type="text" ></td>
 		                    </tr>
 		                  
 		                  
 		                    
 	                  
-						<c:forEach var="m" items="${list}">
-	                    <tr>
-	                      <td>${m.no}</td>
-	                      <td>${m.subject}</td>
-	                      <td>${m.file}</td>
-	                      <td><span class="tag tag-success">${m.date}</span></td>
-	                      <td>${m.views}</td>
-	                    </tr>
-						</c:forEach>
 	                  </tbody>
 	                </table>
 	              </div>
