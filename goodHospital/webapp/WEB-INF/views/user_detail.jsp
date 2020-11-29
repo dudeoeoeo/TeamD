@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>공지게시판 수정</title>
+  <title>회원 수정</title>
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
@@ -18,9 +18,6 @@
   <link rel="stylesheet" href="resources/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <!-- summernote -->
-  <link rel="stylesheet" href="resources/plugins/summernote/summernote-bs4.css">
-
 
 <style type="text/css">
  a:link { color: black; text-decoration: none;}
@@ -222,66 +219,113 @@ to get the desired effect
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-10" Style="margin:auto;">
-          <div class="card card-outline card-info">
-            <div class="card-header">
-              <h3 class="card-title">공지 수정</h3>              
-            </div><!-- card-header -->
-            <div class="card-body"> 
-            
-	           <div class="form-group">
-            <div class="row">
-                   <div class="col-lg-2">
-                     <input type="text" class="form-control" placeholder="이름*">
-                   </div>
-                   <div class="col-lg-3">
-                     <input type="text" class="form-control" placeholder="비밀번호*">
-                   </div>
-                   <div class="col-lg-4">
-                     <input type="text" class="form-control" placeholder="이메일">
-                   </div>
-               </div>
-               </div>
-	            <div class="form-group">
-					<div id="autosave_wrapper write_div">
-						<input type="text" name="wr_subject" value="" id="wr_subject"
-							required="" class="form-control" size="50"
-							maxlength="255" placeholder="제목*">
-					</div>
-				</div>	 
-	            <div class="form-group">
-					<div class="wr_content ">
-						<textarea id="wr_content" name="wr_content" class="form-control"
-							maxlength="65536" style="width: 100%; height: 300px"
-							placeholder="내용을 입력해 주세요."></textarea>
-					</div>
-				</div>           
-            </div><!-- card-body -->
-            
-            
-			
-			
-		</div>
+        <div class="row">
+	        <div class="col-12">
+		            <div class="card">
+		              <div class="card-header">
+		                <h3 class="card-title">일반 회원 수정</h3>
+		
+		                <div class="card-tools">
+		                  <div class="input-group input-group-sm" style="width: 150px;">
+		                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+		
+		                    <div class="input-group-append">
+		                      <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+		                    </div>
+		                  </div>
+		                </div>
+		              </div>
+		              <!-- /.card-header -->
+		              <div class="card-body">
+                <div class="tab-content">
+
+                  <div class="tab-pane active" id="settings">
+                    <form class="form-horizontal">
+                      <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">이름</label>
+                        <div class="col-sm-4">
+                          <input type="email" class="form-control" id="inputName" placeholder="이름">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">회원 구분</label>
+                        <div class="col-sm-4">
+				       		<select class="form-control custom-select">
+			                  <option selected="" disabled="">구분</option>
+			                  <option>교수</option>
+			                  <option>간호사</option>
+			                  <option>레지던트</option>
+			                  <option>전공의</option>
+			                </select>	
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">담당의</label>
+                        <div class="col-sm-4">
+				       		<select class="form-control custom-select">
+			                  <option selected="" disabled="">구분</option>
+			                  <option>안과</option>
+			                  <option>내과</option>
+			                  <option>외과</option>
+			                </select>	
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-4">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputAddress" class="col-sm-2 col-form-label">주소</label>
+                        <div class="col-sm-10">
+							<input type="text" name="zipcode" id="zipcode" class="form-control" placeholder="우편번호" readonly><br/>
+							<!-- <input type="button" onclick="execPostCode()" id="zipcode_btn" value="우편번호 찾기"><br/> -->
+							<input type="text" id="addr1" name="addr1" class="form-control" size="40" placeholder="주소"><br/>
+							<input type="text" id="addr2" name="addr2" class="form-control" size="40" placeholder="상세주소">
+						 </div>
+                      </div>
+										
+                      <div class="form-group row">
+                        <label for="inputName2" class="col-sm-2 col-form-label">일반 전화</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputName2" placeholder="일반 전화">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputExperience" class="col-sm-2 col-form-label">휴대전화</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control" id="inputExperience" placeholder="휴대전화"></textarea>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                          <button type="submit" class="btn btn-danger">등록</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- /.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+              </div>
+		              <!-- /.card-body -->
+		            </div>
+		            <!-- /.card -->
+		          </div>
+          <!-- /.col -->
         </div>
-        <!-- /.col-->
-      </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-			<div class="col-md-11">
-				<a class="btn bg-olive btn-info" href="free_table" style="float: right; margin: 7px;"> 
-				<i class="fas fa-trash"> </i> 삭제
-				</a>
-				<a href=""free_table"" class="btn btn-secondary" style="float: right; margin: 7px;">
-				<i class="fas fa-pencil-alt"> </i> 등록
-				</a>
-				<a href=""free_table"" class="btn btn-secondary" style="float: right; margin: 7px;">
-				취소
-				</a>
+			<div>
+				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;">회원등록</button>
 			</div>
-		</div>
+    
+    
+  </div>
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
@@ -314,8 +358,6 @@ to get the desired effect
 <script src="resources/js/demo.js"></script>
 <script src="resources/js/pages/dashboard3.js"></script>
 
-<!-- Summernote -->
-<script src="resources/plugins/summernote/summernote-bs4.min.js"></script>
 
 <!-- jQuery UI -->
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>

@@ -46,7 +46,7 @@ to get the desired effect
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Home</a>
+        <a href="mainPage" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -65,7 +65,7 @@ to get the desired effect
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="#" class="brand-link">
+    <a href="admin_login" class="brand-link">
       <img src="resources/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">Dr.Link</span>
@@ -143,46 +143,13 @@ to get the desired effect
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="appointment" class="nav-link">
               <i class="nav-icon fas fa-calendar-check"></i>
               <p>
-                예약관리
-                <i class="fas fa-angle-left right"></i>
+                예약현황
                 <!-- <span class="badge badge-info right">6</span> -->                
               </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-            </ul>
+            </a>            
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
@@ -351,9 +318,15 @@ to get the desired effect
             </div>
             <!-- /.card -->
           </div>
-          
+                
+			
           <!-- /.col -->
-        </div>
+          <div class="col-md-12">
+				<input type="button" class="btn bg-olive btn-info" style="float: right; margin: 7px;" value="저장"> 
+				<input type="button" class="btn btn-secondary" style="float: right; margin: 7px;"value="삭제">
+				
+			</div>
+        </div>        
         <!-- /.row -->
       </div><!-- /.container-fluid -->
       

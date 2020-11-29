@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>공지게시판 수정</title>
+  <title>자유게시판 수정</title>
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
@@ -226,7 +226,7 @@ to get the desired effect
         <div class="col-md-10" Style="margin:auto;">
           <div class="card card-outline card-info">
             <div class="card-header">
-              <h3 class="card-title">공지 수정</h3>              
+              <h3 class="card-title">자유게시판 수정</h3>              
             </div><!-- card-header -->
             <div class="card-body"> 
             
@@ -243,6 +243,19 @@ to get the desired effect
                    </div>
                </div>
                </div>
+	            
+	           <div class="form-group">
+                    <div class=" row col-lg-6">
+                      <select class="form-control m-bot15">
+                                              <option>카테고리</option>
+                                              <option>카테고리2</option>
+                                              <option>카테고리3</option>
+                                              <option>카테고리4</option>
+                                              <option>카테고리5</option>
+                       </select>
+                    </div>
+                  </div>
+                    
 	            <div class="form-group">
 					<div id="autosave_wrapper write_div">
 						<input type="text" name="wr_subject" value="" id="wr_subject"
@@ -273,9 +286,6 @@ to get the desired effect
 			<div class="col-md-11">
 				<a class="btn bg-olive btn-info" href="free_table" style="float: right; margin: 7px;"> 
 				<i class="fas fa-trash"> </i> 삭제
-				</a>
-				<a href=""free_table"" class="btn btn-secondary" style="float: right; margin: 7px;">
-				<i class="fas fa-pencil-alt"> </i> 등록
 				</a>
 				<a href=""free_table"" class="btn btn-secondary" style="float: right; margin: 7px;">
 				취소

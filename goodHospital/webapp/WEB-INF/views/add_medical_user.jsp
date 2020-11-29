@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>∞¸∏Æ¿⁄ ∆‰¿Ã¡ˆ</title>
+  <title>ÏùòÎ£åÏßÑ ÌöåÏõê Ï∂îÍ∞Ä</title>
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
@@ -43,7 +43,7 @@ to get the desired effect
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index" class="nav-link">Home</a>
+        <a href="mainPage" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -76,7 +76,7 @@ to get the desired effect
           <img src="resources/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">∞¸∏Æ¿⁄</a>
+          <a href="#" class="d-block">Í¥ÄÎ¶¨Ïûê</a>
         </div>
       </div>
 
@@ -90,7 +90,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
-                »∏ø¯∞¸∏Æ
+                ÌöåÏõêÍ¥ÄÎ¶¨
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -98,13 +98,13 @@ to get the desired effect
               <li class="nav-item">
                 <a href="medical_user_management" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¿«∑·¡¯ »∏ø¯</p>
+                  <p>ÏùòÎ£åÏßÑ ÌöåÏõê</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="user_management" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¿œπ› »∏ø¯</p>
+                  <p>ÏùºÎ∞ò ÌöåÏõê</p>
                 </a>
               </li>
               
@@ -114,7 +114,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                ≈Î∞Ë
+                ÌÜµÍ≥Ñ
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -122,90 +122,51 @@ to get the desired effect
               <li class="nav-item">
                 <a href="chart_board" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>≈Î∞Ë</p>
+                  <p>ÌÜµÍ≥Ñ</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>≈Î∞Ë</p>
+                  <p>ÌÜµÍ≥Ñ</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>≈Î∞Ë</p>
+                  <p>ÌÜµÍ≥Ñ</p>
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="appointment" class="nav-link">
               <i class="nav-icon fas fa-calendar-check"></i>
               <p>
-                øπæ‡∞¸∏Æ
-                <i class="fas fa-angle-left right"></i>
+                ÏòàÏïΩÌòÑÌô©
                 <!-- <span class="badge badge-info right">6</span> -->                
               </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>øπæ‡∞¸∏Æ</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>øπæ‡∞¸∏Æ</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>øπæ‡∞¸∏Æ</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>øπæ‡∞¸∏Æ</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>øπæ‡∞¸∏Æ</p>
-                </a>
-              </li>
-            </ul>
+            </a>            
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
-				º≥πÆ
+				ÏÑ§Î¨∏
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>º≥πÆµÓ∑œ</p>
-                </a>
-              </li>
-              <li class="nav-item">
                 <a href="survey_list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>º≥πÆ∞¸∏Æ</p>
+                  <p>ÏÑ§Î¨∏Í¥ÄÎ¶¨</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="survey_result" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>º≥πÆ∞·∞˙</p>
+                  <p>ÏÑ§Î¨∏Í≤∞Í≥º</p>
                 </a>
               </li>
             </ul>
@@ -214,7 +175,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-                ∞‘Ω√∆«
+                Í≤åÏãúÌåê
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -222,7 +183,7 @@ to get the desired effect
               <li class="nav-item">
                 <a href="notice_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>∞¯¡ˆ ∞‘Ω√∆«</p>
+                  <p>Í≥µÏßÄ Í≤åÏãúÌåê</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -234,7 +195,7 @@ to get the desired effect
               <li class="nav-item">
                 <a href="free_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¿⁄¿Ø∞‘Ω√∆«</p>
+                  <p>ÏûêÏú†Í≤åÏãúÌåê</p>
                 </a>
               </li>
             </ul>
@@ -262,7 +223,7 @@ to get the desired effect
 	        <div class="col-12">
 		            <div class="card">
 		              <div class="card-header">
-		                <h3 class="card-title">¿«∑·¡¯ »∏ø¯ µÓ∑œ</h3>
+		                <h3 class="card-title">ÏùòÎ£åÏßÑ ÌöåÏõê Îì±Î°ù</h3>
 		
 		                <div class="card-tools">
 		                  <div class="input-group input-group-sm" style="width: 150px;">
@@ -275,61 +236,86 @@ to get the desired effect
 		                </div>
 		              </div>
 		              <!-- /.card-header -->
-		              <div class="card-body table-responsive p-0">
-		                <table class="table table-hover text-nowrap">
-		                  <thead>
-		                    <tr>
-		                      <th width="10%" >ID</th>
-			                  <th width="10%" >¡˜±ﬁ</th>	                      
-		                      <th width="10%" >»∏ø¯∏Ì</th>
-		                      <th width="10%" >Date</th>
-		                      <th width="25%" >¿Ã∏ﬁ¿œ</th>
-		                      <th width="15%" >¿¸»≠</th>
-		                      <th width="5%" >∞¸∏Æ</th>
-		                    </tr>
-		                  </thead>
-		                  <tbody>
-		                  
-		                    <tr>
-		                      <td>dada97</td>
-		                      <th>∑π¡ˆ¥¯∆Æ</th>
-		                      <td>±Ë¥Ÿ¥Ÿ</td>
-		                      <td>2020.11.20</td>
-		                      <td><span class="tag tag-success">dada97@naver.com</span></td>
-		                      <td>01025689876</td>
-		                      <td>
-									<button type="button" class="btn btn-block btn-info btn-xs">ºˆ¡§</button>
-                   			 </td>
-		                    </tr>
-		                    
-		                    <tr>
-		                      <td>dada97</td>
-		                      <th>∑π¡ˆ¥¯∆Æ</th>
-		                      <td>±Ë¥Ÿ¥Ÿ</td>
-		                      <td>2020.11.20</td>
-		                      <td><span class="tag tag-success">dada97@naver.com</span></td>
-		                      <td>01025689876</td>
-		                      <td>
-									<button type="button" class="btn btn-block btn-info btn-xs">ºˆ¡§</button>
-                   			 </td>
-		                    </tr>
-		                  
-							<c:forEach var="m" items="${list}">
-		                    <tr>
-		                      <td>${m.userid}</td>
-		                      <th></th>
-		                      <td>${m.username}</td>
-		                      <td>${m.signupdate}</td>
-		                      <td><span class="tag tag-success">${m.email}</span></td>
-		                      <td>${m.phone}</td>
-		                      <td>
-									<button type="button" class="btn btn-block btn-info btn-xs">ºˆ¡§</button>
-                   			 </td>
-		                    </tr>
-							</c:forEach>
-		                  </tbody>
-		                </table>
-		              </div>
+		              <div class="card-body">
+                <div class="tab-content">
+
+                  <div class="tab-pane active" id="settings">
+                    <form class="form-horizontal">
+                      <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">Ïù¥Î¶Ñ</label>
+                        <div class="col-sm-4">
+                          <input type="email" class="form-control" id="inputName" placeholder="Ïù¥Î¶Ñ">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">ÌöåÏõê Íµ¨Î∂Ñ</label>
+                        <div class="col-sm-4">
+				       		<select class="form-control custom-select">
+			                  <option selected="" disabled="">Íµ¨Î∂Ñ</option>
+			                  <option>ÍµêÏàò</option>
+			                  <option>Í∞ÑÌò∏ÏÇ¨</option>
+			                  <option>Î†àÏßÄÎçòÌä∏</option>
+			                  <option>Ï†ÑÍ≥µÏùò</option>
+			                </select>	
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Îã¥Îãπ Í≥ºÎ™©</label>
+                        <div class="col-sm-4">
+				       		<select class="form-control custom-select">
+			                  <option selected="" disabled="">Íµ¨Î∂Ñ</option>
+			                  <option>ÏïàÍ≥º</option>
+			                  <option>ÎÇ¥Í≥º</option>
+			                  <option>Ïô∏Í≥º</option>
+			                </select>	
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-4">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputAddress" class="col-sm-2 col-form-label">Ï£ºÏÜå</label>
+                        <div class="col-sm-10">
+							<input type="text" name="zipcode" id="zipcode" class="form-control" placeholder="Ïö∞Ìé∏Î≤àÌò∏" readonly><br/>
+							<!-- <input type="button" onclick="execPostCode()" id="zipcode_btn" value="Ïö∞Ìé∏Î≤àÌò∏ Ï∞æÍ∏∞"><br/> -->
+							<input type="text" id="addr1" name="addr1" class="form-control" size="40" placeholder="Ï£ºÏÜå"><br/>
+							<input type="text" id="addr2" name="addr2" class="form-control" size="40" placeholder="ÏÉÅÏÑ∏Ï£ºÏÜå">
+						 </div>
+                      </div>
+										
+                      <div class="form-group row">
+                        <label for="inputName2" class="col-sm-2 col-form-label">ÏùºÎ∞ò Ï†ÑÌôî</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputName2" placeholder="ÏùºÎ∞ò Ï†ÑÌôî">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputExperience" class="col-sm-2 col-form-label">Ìú¥ÎåÄÏ†ÑÌôî</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control" id="inputExperience" placeholder="Ìú¥ÎåÄÏ†ÑÌôî"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputSkills" class="col-sm-2 col-form-label">ÏûÖÏÇ¨ ÎÇ†Ïßú</label>
+                        <div class="col-sm-10">
+                      	  <input type="date" value="xxx" min="1980-01-01" max="">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                          <button type="submit" class="btn btn-danger">Îì±Î°ù</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- /.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+              </div>
 		              <!-- /.card-body -->
 		            </div>
 		            <!-- /.card -->
@@ -340,10 +326,6 @@ to get the desired effect
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-			<div>
-				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;">»∏ø¯µÓ∑œ</button>
-			</div>
-    
     
   </div>
   <!-- /.content-wrapper -->

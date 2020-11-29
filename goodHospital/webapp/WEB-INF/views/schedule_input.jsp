@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>공지게시판 수정</title>
+  <title>관리자 페이지</title>
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
@@ -18,8 +18,6 @@
   <link rel="stylesheet" href="resources/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <!-- summernote -->
-  <link rel="stylesheet" href="resources/plugins/summernote/summernote-bs4.css">
 
 
 <style type="text/css">
@@ -222,16 +220,23 @@ to get the desired effect
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-10" Style="margin:auto;">
-          <div class="card card-outline card-info">
-            <div class="card-header">
-              <h3 class="card-title">공지 수정</h3>              
-            </div><!-- card-header -->
-            <div class="card-body"> 
-            
-	           <div class="form-group">
-            <div class="row">
+        <div class="row">
+	        <div class="col-12">
+	            <div class="card">
+	              <div class="card-header">
+	                <h3 class="card-title">일정 관리</h3>
+	              </div>
+	              <!-- /.card-header -->
+	              <div class="card-body table-responsive p-0">
+	                <table class="table table-hover text-nowrap">
+	                  <thead>
+	                    <tr>
+	                      <th width="5%" >title</th>
+	                      <th width="40%" >date</th>
+	                      <th width="5%" >allDay</th>
+	                    </tr>
+	                  </thead>
+	                  <div class="row">
                    <div class="col-lg-2">
                      <input type="text" class="form-control" placeholder="이름*">
                    </div>
@@ -242,46 +247,31 @@ to get the desired effect
                      <input type="text" class="form-control" placeholder="이메일">
                    </div>
                </div>
-               </div>
-	            <div class="form-group">
-					<div id="autosave_wrapper write_div">
-						<input type="text" name="wr_subject" value="" id="wr_subject"
-							required="" class="form-control" size="50"
-							maxlength="255" placeholder="제목*">
-					</div>
-				</div>	 
-	            <div class="form-group">
-					<div class="wr_content ">
-						<textarea id="wr_content" name="wr_content" class="form-control"
-							maxlength="65536" style="width: 100%; height: 300px"
-							placeholder="내용을 입력해 주세요."></textarea>
-					</div>
-				</div>           
-            </div><!-- card-body -->
-            
-            
-			
-			
-		</div>
+	                  <tbody>
+		                    <tr>
+		                      <td><input type="text" class="form-control" ></td>
+		                      <td><input type="text" class="form-control" ></td>
+		                      <td><input type="text" class="form-control" ></td>
+		                    </tr>  
+	                  
+	                  </tbody>
+	                </table>
+	              </div>
+	              <!-- /.card-body -->
+	            </div>
+	            <!-- /.card -->
+	          </div>
+          <!-- /.col -->
         </div>
-        <!-- /.col-->
-      </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-			<div class="col-md-11">
-				<a class="btn bg-olive btn-info" href="free_table" style="float: right; margin: 7px;"> 
-				<i class="fas fa-trash"> </i> 삭제
-				</a>
-				<a href=""free_table"" class="btn btn-secondary" style="float: right; margin: 7px;">
-				<i class="fas fa-pencil-alt"> </i> 등록
-				</a>
-				<a href=""free_table"" class="btn btn-secondary" style="float: right; margin: 7px;">
-				취소
-				</a>
+			<div>
+				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;" formaction="survey_add">새글등록</button>
 			</div>
 		</div>
+  </div>
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
@@ -314,8 +304,6 @@ to get the desired effect
 <script src="resources/js/demo.js"></script>
 <script src="resources/js/pages/dashboard3.js"></script>
 
-<!-- Summernote -->
-<script src="resources/plugins/summernote/summernote-bs4.min.js"></script>
 
 <!-- jQuery UI -->
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>

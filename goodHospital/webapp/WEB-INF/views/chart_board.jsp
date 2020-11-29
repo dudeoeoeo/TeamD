@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>°ü¸®ÀÚ ÆäÀÌÁö</title>
+  <title>í†µê³„</title>
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
@@ -43,7 +43,7 @@ to get the desired effect
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="" class="nav-link">Home</a>
+        <a href="mainPage" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -76,7 +76,7 @@ to get the desired effect
           <img src="resources/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">°ü¸®ÀÚ</a>
+          <a href="#" class="d-block">ê´€ë¦¬ì</a>
         </div>
       </div>
 
@@ -90,7 +90,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
-                È¸¿ø°ü¸®
+                íšŒì›ê´€ë¦¬
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -98,13 +98,13 @@ to get the desired effect
               <li class="nav-item">
                 <a href="medical_user_management" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ÀÇ·áÁø È¸¿ø</p>
+                  <p>ì˜ë£Œì§„ íšŒì›</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="user_management" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ÀÏ¹İ È¸¿ø</p>
+                  <p>ì¼ë°˜ íšŒì›</p>
                 </a>
               </li>
               
@@ -114,7 +114,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Åë°è
+                í†µê³„
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -122,90 +122,51 @@ to get the desired effect
               <li class="nav-item">
                 <a href="chart_board" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Åë°è</p>
+                  <p>í†µê³„</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Åë°è</p>
+                  <p>í†µê³„</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Åë°è</p>
+                  <p>í†µê³„</p>
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="appointment" class="nav-link">
               <i class="nav-icon fas fa-calendar-check"></i>
               <p>
-                ¿¹¾à°ü¸®
-                <i class="fas fa-angle-left right"></i>
+                ì˜ˆì•½í˜„í™©
                 <!-- <span class="badge badge-info right">6</span> -->                
               </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>¿¹¾à°ü¸®</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>¿¹¾à°ü¸®</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>¿¹¾à°ü¸®</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>¿¹¾à°ü¸®</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>¿¹¾à°ü¸®</p>
-                </a>
-              </li>
-            </ul>
+            </a>            
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
-				¼³¹®
+				ì„¤ë¬¸
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>¼³¹®µî·Ï</p>
-                </a>
-              </li>
-              <li class="nav-item">
                 <a href="survey_list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¼³¹®°ü¸®</p>
+                  <p>ì„¤ë¬¸ê´€ë¦¬</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="survey_result" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¼³¹®°á°ú</p>
+                  <p>ì„¤ë¬¸ê²°ê³¼</p>
                 </a>
               </li>
             </ul>
@@ -214,7 +175,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-                °Ô½ÃÆÇ
+                ê²Œì‹œíŒ
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -222,7 +183,7 @@ to get the desired effect
               <li class="nav-item">
                 <a href="notice_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>°øÁö °Ô½ÃÆÇ</p>
+                  <p>ê³µì§€ ê²Œì‹œíŒ</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -234,7 +195,7 @@ to get the desired effect
               <li class="nav-item">
                 <a href="free_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ÀÚÀ¯°Ô½ÃÆÇ</p>
+                  <p>ììœ ê²Œì‹œíŒ</p>
                 </a>
               </li>
             </ul>
@@ -261,7 +222,7 @@ to get the desired effect
             <!-- AREA CHART -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">¿¬·Éº°</h3>
+                <h3 class="card-title">ì—°ë ¹ë³„</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -281,7 +242,7 @@ to get the desired effect
             <!-- DONUT CHART -->
             <div class="card card-danger">
               <div class="card-header">
-                <h3 class="card-title">¼ºº°</h3>
+                <h3 class="card-title">ì„±ë³„</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -299,7 +260,7 @@ to get the desired effect
             <!-- PIE CHART -->
             <div class="card card-danger">
               <div class="card-header">
-                <h3 class="card-title">Áúº´º°</h3>
+                <h3 class="card-title">ì§ˆë³‘ë³„</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -320,7 +281,7 @@ to get the desired effect
             <!-- LINE CHART -->
             <div class="card card-info">
               <div class="card-header">
-                <h3 class="card-title">¿ùº°</h3>
+                <h3 class="card-title">ì›”ë³„</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -340,7 +301,7 @@ to get the desired effect
             <!-- BAR CHART -->
             <div class="card card-success">
               <div class="card-header">
-                <h3 class="card-title">¿¹¾àÃë¼ÒÅë°è</h3>
+                <h3 class="card-title">ì˜ˆì•½ì·¨ì†Œí†µê³„</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
@@ -360,7 +321,7 @@ to get the desired effect
             <!-- STACKED BAR CHART -->
             <div class="card card-success">
               <div class="card-header">
-                <h3 class="card-title">È¯ÀÚ Àç¹æ¹®À²</h3>
+                <h3 class="card-title">í™˜ì ì¬ë°©ë¬¸ìœ¨</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
