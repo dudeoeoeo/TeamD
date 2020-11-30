@@ -55,6 +55,7 @@ public class MainController {
 	}
  
 	@RequestMapping("/{step}")
+	
     public String viewPage(@PathVariable String step, Model mm) {
 //	   Model m = new Model(); 
 		Date today = new Date();
