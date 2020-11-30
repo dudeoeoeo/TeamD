@@ -243,7 +243,7 @@ to get the desired effect
 													* </span>
 											</label>
 											<div class="col-md-5 input-append date" id="dp1">
-												<input type="date" value="" min="1980-01-01" max=""  class="formDatePicker" >
+												<input type="date" value="" min="1980-01-01" max=""  class="form-control formDatePicker" >
 											</div>
 										</div>
 										<div class="form-group row">
@@ -267,7 +267,7 @@ to get the desired effect
 											</label>
 											<div class="col-md-5">
 												<textarea name="address" placeholder="address"
-													class="form-control-textarea" style="resize: none;"></textarea>
+													class="form-control form-control-textarea" style="resize: none;"></textarea>
 											</div>
 										</div>
 										<div class="form-group row">
@@ -275,7 +275,7 @@ to get the desired effect
 												<span class="required" aria-required="true"> * </span>
 											</label>
 											<div class="col-md-5 input-append date" id="dp2">
-												<input type="date" value="" min="1980-01-01" max=""  class="formDatePicker" >
+												<input type="date" value="" min="1980-01-01" max=""  class="form-control formDatePicker" >
 											</div>
 										</div>
 										<div class="form-group row">
@@ -318,7 +318,7 @@ to get the desired effect
 										<div class="form-group row">
 											<label class="control-label col-md-3 text-right">비고</label>
 											<div class="col-md-5">
-												<textarea name="address" class="form-control-textarea"
+												<textarea name="address" class="form-control form-control-textarea"
 													placeholder="비고" style="resize: none;"></textarea>
 											</div>
 										</div>
