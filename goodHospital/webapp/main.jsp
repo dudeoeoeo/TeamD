@@ -1,0 +1,139 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="resources/css/main_default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="resources/css/main_fonts.css" rel="stylesheet" type="text/css" media="all" />
+<style>
+#header-wrapper{
+	background-image: url("${pageContext.request.contextPath}/resorces/img/banner.jpg");
+	background-size : cover;
+}
+</style>
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+
+<nav class="main-header navbar navbar-expand navbar-white navbar-light" style=" height:40px; background-color:white">
+
+	<ul class="navbar-nav ml-auto" style="margin:auto; padding:10px; text-align:right">
+      
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">로그인</a>
+        
+        <a href="#" class="nav-link">회원가입</a>
+        <a href="#" class="nav-link">오시는길</a>
+      </li>
+    </ul>
+    <!-- Left navbar links -->
+    
+</nav>
+
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">Dr.Link</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="active"><a href="#" accesskey="1" title="">병원이야기</a></li>
+				<li><a href="#" accesskey="2" title="">진료예약/안내</a></li>
+				<li><a href="#" accesskey="3" title="">AI/설문진단</a></li>
+				<li><a href="#" accesskey="4" title="">건강/약품정보</a></li>
+			</ul>
+		</div>
+		
+		<!-- <div id="menu" style="position: absolute;">
+			<ul>
+				<li><a href="#" accesskey="1" title="">로그인</a></li>
+				<li><a href="#" accesskey="1" title="">회원가입</a></li>
+			</ul>
+		</div> -->
+	</div>
+	
+</div>
+<div id="wrapper">
+	<div id="staff" class="container">
+		<div class="title">
+			<h2>TEST</h2>
+			<span>test</span> </div>
+		<div class="boxA"><img src="${pageContext.request.contextPath}/resources/img/pic01.jpg" width="300" height="450" alt="" /></div>
+		<div class="boxB"><img src="${pageContext.request.contextPath}/resources/img/pic02.jpg" width="300" height="450" alt="" /></div>
+		<div class="boxC"><img src="${pageContext.request.contextPath}/resources/img/pic03.jpg" width="300" height="450" alt="" /></div>
+	</div>
+	<div id="page" class="container">
+		<div class="boxA">
+			<h2>TEST<br />
+				<span>TEST</span></h2>
+			<p>TESTtestTESTtestTEST</p>
+			<ul class="style4">
+				<li class="first"><a href="#">TESTtestTESTtestTEST</a></li>
+				<li><a href="#">TESTtestTESTtestTEST</a></li>
+				<li><a href="#">TESTtestTESTtestTEST</a></li>
+			</ul>
+		</div>
+		<div class="boxB">
+			<h2>Praesent<br />
+				<span> scelerisque scelerisque</span></h2>
+			<ul class="style3">
+				<li class="first">
+					<p class="date"><a href="#">Jan<b>30</b></a></p>
+					<h3>Amet sed volutpat mauris</h3>
+					<p><a href="#">Mauris tempus nibh sodales adipiscing dolore.</a></p>
+				</li>
+				<li>
+					<p class="date"><a href="#">Jan<b>28</b></a></p>
+					<h3>Sagittis diam dolor amet</h3>
+					<p><a href="#">Duis arcu tortor fringilla sed  sed magna.</a></p>
+				</li>
+			</ul>
+		</div>
+		<div class="boxC">
+			<h2>Etiam posuere<br />
+				<span>augue sit amet</span></h2>
+			<ul class="style4">
+				<li class="first"><a href="#">Consectetuer adipiscing elit</a></li>
+				<li><a href="#">Metus aliquam pellentesque</a></li>
+				<li><a href="#">Suspendisse iaculis mauris</a></li>
+				<li><a href="#">Urnanet non molestie semper</a></li>
+				<li><a href="#">Suspendisse iaculis mauris</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="welcome-wrapper">
+	<div id="welcome" class="container">
+		<div class="title">
+			<h2>Welcome to our website</h2>
+		</div>
+			<p>
+				This is <strong>OpenSpace</strong>, a free, fully
+				standards-compliant CSS template designed by <a
+					href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos
+				in this template are from <a href="http://fotogrph.com/">
+					Fotogrph</a>. This free template is released under the <a
+					href="http://templated.co/license">Creative Commons Attribution</a>
+				license, so you're pretty much free to do whatever you want with it
+				(even use it commercially) provided you give us credit for it. Have
+				fun :)
+			</p>
+		</div>
+</div>
+<div id="copyright" class="container">
+		<p>
+			&copy; Untitled. All rights reserved. | Photos by <a
+				href="http://fotogrph.com/">Fotogrph</a> | Design by <a
+				href="http://templated.co" rel="nofollow">TEMPLATED</a>.
+		</p>
+	</div>
+</body>
+</html>
