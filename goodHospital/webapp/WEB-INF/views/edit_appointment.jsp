@@ -382,7 +382,7 @@ to get the desired effect
 <!-- jQuery UI -->
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- AdminLTE App -->
-	<script src="resources/js/adminlte.min.js"></script>
+<script src="resources/js/adminlte.min.js"></script>
 
 </body>
 </html>

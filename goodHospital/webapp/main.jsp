@@ -11,6 +11,14 @@
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 <link href="resources/css/main_default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="resources/css/main_fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
+<!-- IonIcons -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="resources/css/adminlte.min.css">
+<!-- Google Font: Source Sans Pro -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 <style>
 #header-wrapper{
 	background-image: url("${pageContext.request.contextPath}/resorces/img/banner.jpg");
@@ -23,22 +31,26 @@
 </head>
 <body>
 
-<nav class="main-header navbar navbar-expand navbar-white navbar-light" style=" height:40px; background-color:white">
+<nav class="main-header navbar navbar-expand navbar-white navbar-light" >
 
-	<ul class="navbar-nav ml-auto" style="margin:auto; padding:10px; text-align:right">
+	<ul class="navbar-nav ml-auto" >
       
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">로그인</a>
-        
-        <a href="#" class="nav-link">회원가입</a>
-        <a href="#" class="nav-link">오시는길</a>
-      </li>
+        <a href="#" class="nav-link">로그인</a>           
+      </li>     
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">회원가입</a>           
+      </li>     
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">오시는길</a>           
+      </li>     
     </ul>
     <!-- Left navbar links -->
     
 </nav>
 
-<div id="header-wrapper">
+
+<div id="header-wrapper" style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)">
 	<div id="header" class="container">
 		<div id="logo">
 			<h1><a href="#">Dr.Link</a></h1>
@@ -51,6 +63,7 @@
 				<li><a href="#" accesskey="4" title="">건강/약품정보</a></li>
 			</ul>
 		</div>
+			
 		
 		<!-- <div id="menu" style="position: absolute;">
 			<ul>
@@ -64,11 +77,26 @@
 <div id="wrapper">
 	<div id="staff" class="container">
 		<div class="title">
-			<h2>TEST</h2>
-			<span>test</span> </div>
-		<div class="boxA"><img src="${pageContext.request.contextPath}/resources/img/pic01.jpg" width="300" height="450" alt="" /></div>
-		<div class="boxB"><img src="${pageContext.request.contextPath}/resources/img/pic02.jpg" width="300" height="450" alt="" /></div>
-		<div class="boxC"><img src="${pageContext.request.contextPath}/resources/img/pic03.jpg" width="300" height="450" alt="" /></div>
+			<h2>test</h2>
+			<span>최선의 진료로 환자의 건강한 삶에 기여한다</span> 
+		</div>
+		<div class="row">
+		<div class="col-sm-4">
+			<div class="position-relative">
+			<img src="${pageContext.request.contextPath}/resources/img/pic01.jpg" width="225" height="350" alt="" />
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="position-relative">
+			<img src="${pageContext.request.contextPath}/resources/img/pic02.jpg" width="225" height="350" alt="" />
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="position-relative">
+			<img src="${pageContext.request.contextPath}/resources/img/pic03.jpg" width="225" height="350" alt="" />
+			</div>
+		</div>
+		</div>
 	</div>
 	<div id="page" class="container">
 		<div class="boxA">
@@ -135,5 +163,24 @@
 				href="http://templated.co" rel="nofollow">TEMPLATED</a>.
 		</p>
 	</div>
+	
+	
+<!-- jQuery -->
+<script src="resources/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="resources/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="resources/plugins/chart.js/Chart.min.js"></script>
+<script src="resources/js/demo.js"></script>
+<script src="resources/js/pages/dashboard3.js"></script>
+
+
+<!-- jQuery UI -->
+<script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- AdminLTE App -->
+<script src="resources/js/adminlte.min.js"></script>
 </body>
 </html>

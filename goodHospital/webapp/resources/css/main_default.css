@@ -270,7 +270,7 @@ ul.contact li a.icon-rss:before
 
 	#header-wrapper
 {
-	background: url(resorces/img/banner.jpg) no-repeat center;
+	background: url("resorces/img/banner.jpg") no-repeat center;
 	background-size: cover;
 }
 
