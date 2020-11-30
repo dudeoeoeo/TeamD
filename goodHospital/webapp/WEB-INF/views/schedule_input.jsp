@@ -247,7 +247,6 @@ to get the desired effect
                      <input type="text" class="form-control" placeholder="이메일">
                    </div>
                    
-                   왜 커밋 안돼!
                </div>
 	                  <tbody>
 		                    <tr>
