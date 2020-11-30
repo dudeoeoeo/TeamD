@@ -220,7 +220,11 @@ to get the desired effect
     <section class="content">
 		<div class="container-fluid">
 			<div class="card">
-				<div class="card-body">
+			<div class="card-header">
+				<h3 class="card-title">회원가입</h3>
+			</div>
+				<div class="card-body">				
+				<form action="#" id="" class="form-horizontal" novalidate="novalidate">
 				<div class="form-group row">
                         <label for="inputName" class="col-sm-2 col-form-label">아이디</label>
                         <div class="col-sm-4">
@@ -246,36 +250,54 @@ to get the desired effect
 						<button type="submit" style="float: left;" class="btn btn-info m-r-20" formaction="#">Save</button>
 					</div>
 				</div>
+				</form>
 				</div><!-- /card-body  -->
 				
 				
 			</div>
 			
 			<div class="card">				
-				<div class="card-body">
-				<div class="form-group">
-		            <div class="row">
-	                   <div class="col-lg-2">
-	                   	<input type="date" value="" min="1980-01-01" max="" class="form-control formDatePicker">
-	                   </div>
-	                   <div class="col-lg-3">
-	                     <input type="text" class="form-control" placeholder="연락처">
-	                   </div>
-	                   <div class="col-lg-4">
+				<div class="card-body" >
+				<form action="#" id="form_sample_1" class="form-horizontal" novalidate="novalidate">
+				<div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">생년월일</label>
+                    <div class="col-sm-4">
+                   	<input type="date" value="" min="1980-01-01" max="" class="form-control formDatePicker">
+                   </div>
+	            </div>
+	                   
+				<div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">연락처</label>
+                    <div class="col-sm-4">
+                     <input type="text" class="form-control" placeholder="연락처">
+                   </div>
+	            </div>
+				<div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">혈액형</label>
+                    <div class="col-sm-4">
 		                   <select class="form-control input-height" name="select">
 								<option value="">혈액형</option>
-								<option value="Category 1">A+</option>
-								<option value="Category 1">A-</option>
-								<option value="Category 2">B+</option>
-								<option value="Category 2">B-</option>
-								<option value="Category 2">AB+</option>
-								<option value="Category 2">AB-</option>
-								<option value="Category 2">O+</option>
-								<option value="Category 2">O-</option>
+								<option value="A+">A+</option>
+								<option value="A-">A-</option>
+								<option value="B+">B+</option>
+								<option value="B-">B-</option>
+								<option value="AB+">AB+</option>
+								<option value="AB-">AB-</option>
+								<option value="O+">O+</option>
+								<option value="O-">O-</option>
 							</select>
 	                   </div>
-	               </div>
                </div>
+               
+               
+				
+				<div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">주소</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="" placeholder="주소" >
+                        </div>
+                </div>
+                
 				
 				
 				<div class="form-actions">
@@ -283,6 +305,7 @@ to get the desired effect
 						<button type="submit" style="float: left;" class="btn btn-info m-r-20" formaction="#">Save</button>
 					</div>
 				</div>
+				</form>
 				</div><!-- /card-body  -->
 			</div>
 		</div>
