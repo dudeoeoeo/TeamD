@@ -298,7 +298,11 @@ to get the desired effect
     </section>
     <!-- /.content -->
 			<div>
-				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;" formaction="survey_add">새글등록</button>
+				<a href="survey_add">
+				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;" >
+				새글등록
+				</button>
+				</a>
 			</div>
 		</div>
   </div>
