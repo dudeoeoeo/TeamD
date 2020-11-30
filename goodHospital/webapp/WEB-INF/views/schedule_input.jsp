@@ -246,6 +246,8 @@ to get the desired effect
                    <div class="col-lg-4">
                      <input type="text" class="form-control" placeholder="이메일">
                    </div>
+                   
+                   왜 커밋 안돼!
                </div>
 	                  <tbody>
 		                    <tr>
