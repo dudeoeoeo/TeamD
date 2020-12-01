@@ -133,7 +133,7 @@ body {
 		</div>
 		<div class="col-sm-4">
 			<h2>온라인채널</h2>
-			<img width="300" src="${pageContext.request.contextPath}/resources/img/insta_content.jpg">
+			<img width="300" src="${pageContext.request.contextPath}/resources/img/insta_empty.jpg">
 			<img width="300" src="${pageContext.request.contextPath}/resources/img/insta.jpg">
 		</div>
 	</div>
