@@ -45,12 +45,13 @@ to get the desired effect
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
+    <!--  
     <ul class="navbar-nav">
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Home</a>
       </li>
     </ul>
-
+-->
     
 
     <!-- Right navbar links -->
@@ -69,7 +70,7 @@ to get the desired effect
     <a href="#" class="brand-link">
       <img src="resources/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">kosmoD팀</span>
+      <span class="brand-text font-weight-light">Dr.Link</span>
     </a>
 
     <!-- Sidebar -->
@@ -189,27 +190,27 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
-				설문관리
+            설문
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="survey_add" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>설문등록</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="survey_list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>설문관리</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="survey_result" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>설문관리</p>
+                  <p>설문결과</p>
                 </a>
               </li>
             </ul>
@@ -236,9 +237,9 @@ to get the desired effect
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="free_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>게시판</p>
+                  <p>자유게시판</p>
                 </a>
               </li>
             </ul>
@@ -262,10 +263,11 @@ to get the desired effect
             <h1 class="m-0 text-dark">관리자님 환영합니다 :)</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
+          <!--  
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <!-- <li class="breadcrumb-item active">Dashboard v3</li> -->
-            </ol>
+              <!-- <li class="breadcrumb-item active">Dashboard v3</li> 
+            </ol>-->
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -279,34 +281,37 @@ to get the desired effect
           <div class="col-md-3">
             <div class="sticky-top mb-3">
               <div class="card">
+              <!--  
                 <div class="card-header">
                   <h4 class="card-title">Draggable Events</h4>
                 </div>
                 <div class="card-body">
+                -->
                   <!-- the events -->
                   <div id="external-events">
                     <!-- <div class="external-event bg-success">Lunch</div>
                     <div class="external-event bg-warning">Go home</div>
                     <div class="external-event bg-primary">Work on UI design</div>
-                    <div class="external-event bg-danger">Sleep tight</div> -->
+                    <div class="external-event bg-danger">Sleep tight</div> 
                     <div class="checkbox">
                       <label for="drop-remove">
                         <input type="checkbox" id="drop-remove">
                         remove after drop
                       </label>
                     </div>
-                  </div>
+                  </div>-->
                 </div>
                 <!-- /.card-body -->
               </div>
               <!-- /.card -->
               <div class="card">
                 <div class="card-header">
-                  <h3 class="card-title">Create Event</h3>
+                
+                <input type="text" id="timeSet" value="" disabled="disabled" style="border:0; background-color : transparent;"/>
+                  <!--  <h3 class="card-title">Create Event</h3>
                 </div>
                 <div class="card-body">
                   <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
-                    <!--<button type="button" id="color-chooser-btn" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Color <span class="caret"></span></button>-->
                     <ul class="fc-color-picker" id="color-chooser">
                       <li><a class="text-primary" href="#"><i class="fas fa-square"></i></a></li>
                       <li><a class="text-warning" href="#"><i class="fas fa-square"></i></a></li>
@@ -314,49 +319,62 @@ to get the desired effect
                       <li><a class="text-danger" href="#"><i class="fas fa-square"></i></a></li>
                       <li><a class="text-muted" href="#"><i class="fas fa-square"></i></a></li>
                     </ul>
-                  </div>
-                  <!-- /btn-group -->
+                  </div>-->
+                  <!-- /btn-group
                   <div class="input-group">
                     <input id="new-event" type="text" class="form-control" placeholder="Event Title">
 
                     <div class="input-group-append">
                       <button id="add-new-event" type="button" class="btn btn-primary">Add</button>
-                    </div>
+                    </div> -->
                     <!-- /btn-group -->
                   </div>
                   <!-- /input-group -->
                 </div>
               </div>
             </div>
-           <div class="card tagtrash" style="visibility: ">
-                <div class="card-header">
+            
+            <!--  이벤트를 드랍해서 버리는 곳 -->
+<!--              
+           <div id="card tagtrash" ondragenter="dragenter(event)"
+					ondragover="dragover(event)"
+					ondragleave="dragleave(event)" style="visibility: 'visible' ">
+           
+           <div class="card-header">
+                  <h3 class="card-title">Delete Event</h3>
                 </div>
-                <div class="card-body">                  
-                  <!-- /btn-group -->
-                  <div class="input-group">
-                    <!-- /btn-group -->
+                <div class="card-body">
+                  <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
                   </div>
-                  <!-- /input-group -->
+					<h5>DropZone</h5>
                 </div>
-              </div>
+                
+              </div>-->
+              <!-- Drop Zone 끝 -->
           </div>
           <!-- /.col -->
-          <form id="scheduleEvents" method="get" action="testCal">
           <div class="col-md-9">
             <div class="card card-primary">
               <div class="card-body p-0">
-                <!-- THE CALENDAR 캘린더 안의 있는 이벤트들 -->
+                <!-- THE CALENDAR  --> 
                 <div id="calendar"></div>
-                여기인가
               </div>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
           </div>
-          <!-- /.col --></form>
-        </div>
+                
+         
+          <!-- /.col -->
+          <!-- 
+          <div class="col-md-12">
+            <input type="button" class="btn bg-olive btn-info" style="float: right; margin: 7px;" value="저장"> 
+            <input type="button" class="btn btn-secondary" style="float: right; margin: 7px;"value="삭제">
+         </div> -->
+        </div>        
         <!-- /.row -->
       </div><!-- /.container-fluid -->
+      
     </section>
     <!-- /.content -->
   </div>
@@ -419,10 +437,9 @@ to get the desired effect
         var eventObject = {    // 새로 만들어진 이벤트의 value 값
           title: $.trim($(this).text()) // use the element's text as the event title
         }
-
+		
         // store the Event Object in the DOM element so we can get to it later
         $(this).data('eventObject', eventObject)
-
         // make the event draggable using jQuery UI
         $(this).draggable({
           zIndex        : 1070,
@@ -449,12 +466,14 @@ to get the desired effect
     var checkbox = document.getElementById('drop-remove');	       // 이벤트 체크하는 체크박스
     var calendarEl = document.getElementById('calendar');          // div 캘린더 id 값
     
+    
     // initialize the external events
     // -----------------------------------------------------------------
     
-    new Draggable(containerEl, {  // ui를 드래그 할 때 사용
+    new Draggable( containerEl, {  // ui를 드래그 할 때 사용
       itemSelector: '.external-event',
       eventData: function(eventEl) {
+    	//alert($('#calendar > div.fc-view-container > div > table > tbody > tr > td > div > div > div:nth-child(2) > div.fc-content-skeleton > table > tbody > tr:nth-child(1) > td.fc-event-container > a > div.fc-content > span').text());
         console.log(eventEl);
         return {
           title: eventEl.innerText,
@@ -463,45 +482,28 @@ to get the desired effect
           textColor: window.getComputedStyle( eventEl ,null).getPropertyValue('color'),
         };
       }
-    
     });
-    /*
-    #calendar > div.fc-view-container > 
-    div > table > tbody > tr > td > div > div > div:nth-child(2) > 
-    div.fc-content-skeleton > table > tbody > tr:nth-child(1) > 
-    td.fc-event-container > a > div.fc-content > span
-    */
-    $('#add-new-event').click(function(){
-    	alert("click");
-	    $('.fc-day-grid .fc-title').each(function(){
-	    	//alert("each");
-	    	//$('.fc-event-container')
-	    	alert($('.fc-title').text());
-	    }) // each
-    }) // click
-    //var tN = $('.fc-title').val();
-    //alert(tN);
-	//var vo = []; 
-	//var calendar1 = new Calendar();
-	//calendar1.render();
-	/*
-	<c:forEach var="v" items="${vo}">
-	 vo.push({  
-        title          :   "${v.title}",
-        start          :  "${v.start}",
-        backgroundColor:  "${v.backgroundColor}",
-        borderColor    :   "${v.borderColor}",
-        allDay         :  "${v.allDay}"
-      });
-	 </c:forEach>
-	 */
-    //vo.push("<c:out value='${vo}'/>");
-    //alert(vo[0].title);
-
-    //var ww = new Array();
-    //ww.push(1);
-    //alert(ww[0]);
-	//alert(vo.get(0).title);
+   
+    $('body.sidebar-mini').mouseover(function(){
+    	$('td.fc-event-container a').each(function(){
+    		$(this).removeClass('fc-draggable');
+    		//$(".class_name").css('css 속성', '변경 값');
+        }) // each
+        $('a.fc-time-grid-event').each(function(){
+        	$(this).removeClass('fc-draggable');
+        });
+    }) // mouseup
+    <!-- 
+    $('.btn-secondary').click(function(){
+    	$('a.event-full').each(function(){
+	    	alert($(this).text());
+	    	alert($(this).css("backgroundColor"));
+	    	alert($(this).parents('td').attr('colspan'));
+	    	alert("이게 스타트 날짜" + $(this).start);
+	//    	$( 'p' ).parent( 'div' ).css( 'color', 'green' );
+    	}) // each
+    });
+    -->
 	
     var calendar = new Calendar(calendarEl, {
       plugins: [ 'bootstrap', 'interaction', 'dayGrid', 'timeGrid' ],
@@ -517,10 +519,13 @@ to get the desired effect
     	  <c:forEach var="v" items="${vo}">
     	  	  {
     	        title          :   "${v.title}",
-    	        start          :  new Date(2020, 10, 14),
+    	        start          :  new Date(2020, 10, 28),
+    	        end			   :  new Date(2020, 10, 30),
     	        backgroundColor:  "${v.backgroundColor}",
     	        borderColor    :   "${v.borderColor}",
-    	        allDay         :  "${v.allDay}"
+    	        allDay         :  "${v.allDay}",
+    	        className: 'event-full'
+    	        //removeClass : 'fc-draggable'
     	      },
     		 </c:forEach>
         
@@ -530,14 +535,16 @@ to get the desired effect
           end            : new Date(2020, 10, 26),
           backgroundColor: '#f39c12', //yellow
           borderColor    : '#f39c12', //yellow
-          allDay : false
+          allDay : false,
+          className: 'event-full'
         },
         {
           title          : 'Meeting',
           start          : new Date(y, m, d, 10, 30),
           allDay         : false,
           backgroundColor: '#0073b7', //Blue
-          borderColor    : '#0073b7' //Blue
+          borderColor    : '#0073b7', //Blue
+          className: 'event-full'
         },
         {
           title          : 'Lunch',
@@ -545,7 +552,8 @@ to get the desired effect
           end            : new Date(y, m, d, 14, 0),
           allDay         : false,
           backgroundColor: '#00c0ef', //Info (aqua)
-          borderColor    : '#00c0ef' //Info (aqua)
+          borderColor    : '#00c0ef', //Info (aqua)
+          className: 'event-full'
         },
         {
           title          : 'Birthday Party',
@@ -553,7 +561,8 @@ to get the desired effect
           end            : new Date(y, m, d + 1, 22, 30),
           allDay         : false,
           backgroundColor: '#00a65a', //Success (green)
-          borderColor    : '#00a65a' //Success (green)
+          borderColor    : '#00a65a', //Success (green)
+          className: 'event-full'
         },
       ],
       editable  : true,
@@ -583,15 +592,17 @@ to get the desired effect
         'background-color': currColor,
         'border-color'    : currColor
       })
-    })
+    }) // 색깔 입히는 버튼의 click 발생
+    
     $('#add-new-event').click(function (e) {
+
       e.preventDefault()  // 현재 이벤트의 기본 동작을 중단한다.
       //Get value and make sure it is not null
       var val = $('#new-event').val()  // 새로운 이벤트를 적은 글 값
       if (val.trim().length == 0) {   // 새로운 이벤트를 만드는데 길이가 0이면 끝내기
         return
       }
-
+	  	
       //Create events
       var event = $('<div />')
       event.css({
@@ -601,15 +612,31 @@ to get the desired effect
       }).addClass('external-event')
       //alert(val)
       event.html(val)
+      
       $('#external-events').prepend(event)  // 콘텐츠를 선택한 요소 내부의 시작 부분에서 삽입
-
+		
       //Add draggable funtionality
       ini_events(event)
-
+	  
       //Remove event from text input
       $('#new-event').val('')  // 새로운 이벤트 쓰는 text 값 비우기
     })
+    
+    var date1 = new Date();
+    date1 = getFormatDate(date);
+    $("#timeSet").val(date1);
+    
+    function getFormatDate(date){
+        var year = date.getFullYear();              //yyyy
+        var month = (1 + date.getMonth());          //M
+        month = month >= 10 ? month : '0' + month;  //month 두자리로 저장
+        var day = date.getDate();                   //d
+        day = day >= 10 ? day : '0' + day;          //day 두자리로 저장
+        return  year + '-' + month + '-' + day;       //'-' 추가하여 yyyy-mm-dd 형태 생성 가능
+    }
   })
+
+ 
 </script>
 
 </body>

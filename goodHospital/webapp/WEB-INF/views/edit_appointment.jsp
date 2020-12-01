@@ -24,9 +24,13 @@
 	rel="stylesheet">
 
 <link rel="shortcut icon" href="resources/img/favicon.ico">
-
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
 
 <style type="text/css">
+
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
 a:link {
 	color: black;
 	text-decoration: none;
