@@ -55,7 +55,7 @@ body {
       </li>     
       
     </ul>
-    <!-- Left navbar links -->
+    <!-- navbar-nav ml-auto -->
     
 </nav>
 
