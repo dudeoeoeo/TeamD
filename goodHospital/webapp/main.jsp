@@ -31,17 +31,22 @@ body {
 	background-image: url("${pageContext.request.contextPath}/resorces/img/banner.jpg");
 	background-size : cover;
 }
+
 </style>
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 </head>
 <body>
-
+<aside class="main-sidebar ">
+	<div class="brand-text font-weight-light">
+	<span class="brand-text font-weight-light">
+	<h1><a href="#">&ensp; Dr.Link</a></h1></span>
+			
+		</div>
+</aside>
 <nav class="main-header navbar navbar-expand navbar-white navbar-light" >
-
 	<ul class="navbar-nav ml-auto" >
-      
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">로그인</a>           
       </li>     
@@ -51,35 +56,45 @@ body {
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">오시는길</a>           
       </li>     
+      
     </ul>
     <!-- Left navbar links -->
     
 </nav>
 
 
-<div id="header-wrapper" style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)">
-	<div id="header" class="container">
-		<div id="logo">
-			<h1><a href="#">Dr.Link</a></h1>
-		</div>
-		<div id="menu">
-			<ul>
-				<li><a href="#" accesskey="1" title="">병원이야기</a></li>
-				<li><a href="#" accesskey="2" title="">진료예약/안내</a></li>
-				<li><a href="#" accesskey="3" title="">AI/설문진단</a></li>
-				<li><a href="#" accesskey="4" title="">건강/약품정보</a></li>
-			</ul>
-		</div>
-			
-		
-		<!-- <div id="menu" style="position: absolute;">
-			<ul>
-				<li><a href="#" accesskey="1" title="">로그인</a></li>
-				<li><a href="#" accesskey="1" title="">회원가입</a></li>
-			</ul>
-		</div> -->
+<div style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+    <li class="nav-item active">
+        <a class="nav-link" href="#">병원이야기</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">진료예약/안내</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">건강/약품정보</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          AI/설문진단
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">AI진단</a>
+          <a class="dropdown-item" href="#">설문진단</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+	<div id="header" class="content-header">
+	<div class="container-fluid">
 	</div>
-	
+	</div>
 </div>
 <div id="wrapper">
 	<div id="staff" class="container">
@@ -174,7 +189,6 @@ body {
 <script src="resources/js/adminlte.js"></script>
 
 <!-- OPTIONAL SCRIPTS -->
-<script src="resources/plugins/chart.js/Chart.min.js"></script>
 <script src="resources/js/demo.js"></script>
 <script src="resources/js/pages/dashboard3.js"></script>
 
