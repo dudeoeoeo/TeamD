@@ -23,7 +23,7 @@
 
 <style>
 
-@font-face {
+body {
     font-family: "Nanum Gothic", sans-serif;
 }
 
