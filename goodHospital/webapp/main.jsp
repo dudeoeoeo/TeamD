@@ -32,6 +32,15 @@ body {
 	background-size : cover;
 }
 
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: black;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+
+
+
 </style>
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -67,7 +76,7 @@ body {
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-    <li class="nav-item active">
+    <li class="nav-item">
         <a class="nav-link" href="#">병원이야기</a>
       </li>
       <li class="nav-item">
@@ -77,7 +86,7 @@ body {
         <a class="nav-link" href="#">건강/약품정보</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           AI/설문진단
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
