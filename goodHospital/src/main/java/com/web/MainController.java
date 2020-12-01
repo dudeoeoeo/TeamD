@@ -40,10 +40,25 @@ public class MainController {
 		
 	}
 	
-	//AI 피부과 진료
+	//의약품 검색
 	@RequestMapping(value = "medicineSearch")
 	public String medicineSearch() {
 		return "patient/medicineSearch";
+		
+	}
+
+	
+	//의약품 검색
+	@RequestMapping(value = "main")
+	public String main() {
+		return "patient/main";
+		
+	}
+	
+	//의약품 검색
+	@RequestMapping(value = "DermatologyAddMain")
+	public String DermatologyAddMain() {
+		return "aiTest/DermatologyAddMain";
 		
 	}
 	
