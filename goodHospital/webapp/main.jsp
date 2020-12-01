@@ -129,7 +129,6 @@ body {
 	<div class="row">
 		<div class="col-sm-4">
 			<h2>소식/공지</h2>
-			<p>TESTtestTESTtestTEST</p>
 			<ul class="style4">
 				<li class="first"><a href="#">TESTtestTESTtestTEST</a></li>
 				<li><a href="#">TESTtestTESTtestTEST</a></li>
@@ -139,14 +138,12 @@ body {
 		<div class="col-sm-4">
 			<h2>Praesent<br />
 				<span> scelerisque scelerisque</span></h2>
-			<ul class="style3">
+			<ul class="style2">
 				<li class="first">
-					<p class="date"><a href="#">Jan<b>30</b></a></p>
 					<h3>Amet sed volutpat mauris</h3>
 					<p><a href="#">Mauris tempus nibh sodales adipiscing dolore.</a></p>
 				</li>
 				<li>
-					<p class="date"><a href="#">Jan<b>28</b></a></p>
 					<h3>Sagittis diam dolor amet</h3>
 					<p><a href="#">Duis arcu tortor fringilla sed  sed magna.</a></p>
 				</li>
