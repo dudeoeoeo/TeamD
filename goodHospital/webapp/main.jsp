@@ -41,7 +41,7 @@ body {
 <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto;" >
 	<div class="brand-text font-weight-light">
 	<span class="brand-text font-weight-light">
-	<h1><a href="#">&ensp; Dr.Link</a></h1></span>
+	<h1><a href="#">Dr.Link</a></h1></span>
 	</div>
 	<ul class="navbar-nav ml-auto" >
       <li class="nav-item d-none d-sm-inline-block">
