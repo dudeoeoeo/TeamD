@@ -47,6 +47,30 @@ public class MainController {
 		
 	}
 	
+	//설문 진단
+	@RequestMapping(value = "survey_main")
+	public String survey_main() {
+		return "survey/survey_main";
+				
+	}
+	//우울증 진단
+	@RequestMapping(value = "survey_depression")
+	public String survey_depression() {
+		return "survey/survey_depression";
+						
+	}
+	//조울중 진단
+	@RequestMapping(value = "survey_manicDepression")
+	public String survey_manicDepression() {
+		return "survey/survey_manicDepression";
+							
+	}
+	//진단 결과
+	@RequestMapping(value = "survey_result1")
+	public String survey_result1() {
+		return "survey/survey_result1";
+								
+	}
 	@RequestMapping(value = "testCal")
 	public String ophthalmology22() {
 		
