@@ -19,7 +19,14 @@
 <link rel="stylesheet" href="resources/css/adminlte.min.css">
 <!-- Google Font: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+
 <style>
+
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
 #header-wrapper{
 	background-image: url("${pageContext.request.contextPath}/resorces/img/banner.jpg");
 	background-size : cover;
@@ -57,7 +64,7 @@
 		</div>
 		<div id="menu">
 			<ul>
-				<li class="active"><a href="#" accesskey="1" title="">병원이야기</a></li>
+				<li><a href="#" accesskey="1" title="">병원이야기</a></li>
 				<li><a href="#" accesskey="2" title="">진료예약/안내</a></li>
 				<li><a href="#" accesskey="3" title="">AI/설문진단</a></li>
 				<li><a href="#" accesskey="4" title="">건강/약품정보</a></li>
@@ -77,8 +84,7 @@
 <div id="wrapper">
 	<div id="staff" class="container">
 		<div class="title">
-			<h2>test</h2>
-			<span>최선의 진료로 환자의 건강한 삶에 기여한다</span> 
+			<h3>최선의 진료로 환자의 건강한 삶에 기여한다</h3>
 		</div>
 		<div class="row">
 		<div class="col-sm-4">
@@ -99,9 +105,9 @@
 		</div>
 	</div>
 	<div id="page" class="container">
-		<div class="boxA">
-			<h2>TEST<br />
-				<span>TEST</span></h2>
+	<div class="row">
+		<div class="col-sm-4">
+			<h2>소식/공지</h2>
 			<p>TESTtestTESTtestTEST</p>
 			<ul class="style4">
 				<li class="first"><a href="#">TESTtestTESTtestTEST</a></li>
@@ -109,7 +115,7 @@
 				<li><a href="#">TESTtestTESTtestTEST</a></li>
 			</ul>
 		</div>
-		<div class="boxB">
+		<div class="col-sm-4">
 			<h2>Praesent<br />
 				<span> scelerisque scelerisque</span></h2>
 			<ul class="style3">
@@ -125,31 +131,26 @@
 				</li>
 			</ul>
 		</div>
-		<div class="boxC">
-			<h2>Etiam posuere<br />
-				<span>augue sit amet</span></h2>
-			<ul class="style4">
-				<li class="first"><a href="#">Consectetuer adipiscing elit</a></li>
-				<li><a href="#">Metus aliquam pellentesque</a></li>
-				<li><a href="#">Suspendisse iaculis mauris</a></li>
-				<li><a href="#">Urnanet non molestie semper</a></li>
-				<li><a href="#">Suspendisse iaculis mauris</a></li>
-			</ul>
+		<div class="col-sm-4">
+			<h2>온라인채널</h2>
+			<img width="300" src="${pageContext.request.contextPath}/resources/img/insta_empty.jpg">
+			<img width="300" src="${pageContext.request.contextPath}/resources/img/insta.jpg">
 		</div>
+	</div>
 	</div>
 </div>
 <div id="welcome-wrapper">
 	<div id="welcome" class="container">
 		<div class="title">
-			<h2>Welcome to our website</h2>
+			<h2>다람쥐</h2>
 		</div>
 			<p>
-				This is <strong>OpenSpace</strong>, a free, fully
-				standards-compliant CSS template designed by <a
-					href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos
-				in this template are from <a href="http://fotogrph.com/">
-					Fotogrph</a>. This free template is released under the <a
-					href="http://templated.co/license">Creative Commons Attribution</a>
+				쳇바퀴<strong>굴러간다</strong>도르르르르
+				<a href="http://templated.co" rel="nofollow">TEMPLATED</a>. 
+				The photos in this template are from 
+				<a href="http://fotogrph.com/"> Fotogrph</a>. 
+				This free template is released under the 
+				<a href="http://templated.co/license">Creative Commons Attribution</a>
 				license, so you're pretty much free to do whatever you want with it
 				(even use it commercially) provided you give us credit for it. Have
 				fun :)
