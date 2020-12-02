@@ -10,7 +10,7 @@
   
   
 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
@@ -82,16 +82,12 @@ width:auto !important;
 #bxslider{
 width:auto !important;
 }
-
-
 </style>
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 
-
-
-<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto;" >
+<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto;">
 	<div class="brand-text font-weight-light">
 	<span class="brand-text font-weight-light">
 	<h1><a id="drlink" href="#">Dr.Link</a></h1></span>
@@ -105,13 +101,11 @@ width:auto !important;
       </li>     
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">오시는길</a>           
-      </li>     
-      
-    </ul>
-    
+      </li>           
+    </ul>    
 </nav>
 
-<div id="header-wrapper" style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)"  >
+<div id="header-wrapper" style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

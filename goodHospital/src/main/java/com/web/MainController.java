@@ -57,6 +57,13 @@ public class MainController {
 		return "patient/testMain";
 		
 	}
+
+	//의약품 검색
+	@RequestMapping(value = "myPage")
+	public String myPage() {
+		return "patient/myPage";
+		
+	}
 	
 	//AI 탈모 진료
 	@RequestMapping(value = "aiHairLossTest")
