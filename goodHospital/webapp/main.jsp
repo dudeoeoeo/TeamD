@@ -90,8 +90,8 @@ body {
           AI/설문진단
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">AI진단</a>
-          <a class="dropdown-item" href="#">설문진단</a>
+          <a class="dropdown-item" href="">AI진단</a>
+          <a class="dropdown-item" href="survey_main">설문진단</a>
         </div>
       </li>
     </ul>
