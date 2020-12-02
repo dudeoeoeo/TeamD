@@ -145,19 +145,27 @@ width:auto !important;
 			<h3>최선의 진료로 환자의 건강한 삶에 기여한다</h3>
 		</div>
 		<div class="row">
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<div class="position-relative">
-			<img src="${pageContext.request.contextPath}/resources/img/pic01.jpg" width="225" height="350" alt="" />
+			<img src="${pageContext.request.contextPath}/resources/img/sub01.jpg" width="190" height="380" alt="" />
+			<%-- <img src="${pageContext.request.contextPath}/resources/img/pic01.jpg" width="225" height="350" alt="" /> --%>
 			</div>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<div class="position-relative">
-			<img src="${pageContext.request.contextPath}/resources/img/pic02.jpg" width="225" height="350" alt="" />
+			<img src="${pageContext.request.contextPath}/resources/img/sub02.jpg" width="190" height="380" alt="" />
+			<%-- <img src="${pageContext.request.contextPath}/resources/img/pic02.jpg" width="225" height="350" alt="" /> --%>
 			</div>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<div class="position-relative">
-			<img src="${pageContext.request.contextPath}/resources/img/pic03.jpg" width="225" height="350" alt="" />
+			<img src="${pageContext.request.contextPath}/resources/img/sub03.jpg" width="190" height="380" alt="" />
+			<%-- <img src="${pageContext.request.contextPath}/resources/img/pic03.jpg" width="225" height="350" alt="" /> --%>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="position-relative">
+			<img src="${pageContext.request.contextPath}/resources/img/sub04.jpg" width="190" height="380" alt="" />
 			</div>
 		</div>
 		</div>
@@ -174,7 +182,7 @@ width:auto !important;
 		</div>
 		<div class="col-sm-4">
 			<h2>진료시간</h2>
-			<table border="1" style="cellpadding : 5%; width:90%; text-align:center; ">
+			<table border="1" style="cellpadding : 10%; width:90%; text-align:center; ">
 				<tr>
 					<td>평일</td>
 					<td>7:00~16:00</td>
@@ -185,14 +193,15 @@ width:auto !important;
 				</tr>
 			</table>
 			<br/>
+			<h2>여기는 뭐 넣지</h2>
 			<ul class="style2">
-				<li class="first">
-					<h3>Amet sed volutpat mauris</h3>
-					<p><a href="#">Mauris tempus nibh sodales adipiscing dolore.</a></p>
+				<li class="second">
+					<h5>아이디어</h5>
+					<p><a href="#">받습니다</a></p>
 				</li>
 				<li>
-					<h3>Sagittis diam dolor amet</h3>
-					<p><a href="#">Duis arcu tortor fringilla sed  sed magna.</a></p>
+					<h5>아이디어</h5>
+					<p><a href="#">받습니다</a></p>
 				</li>
 			</ul>
 		</div>
