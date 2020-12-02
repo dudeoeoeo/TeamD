@@ -20,6 +20,8 @@
 <!-- Google Font: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 
 <style>
 
@@ -39,6 +41,9 @@ body {
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }	
 
+#drlink{
+font-family: 'Major Mono Display', monospace;
+}
 
 
 </style>
@@ -50,7 +55,7 @@ body {
 <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto;" >
 	<div class="brand-text font-weight-light">
 	<span class="brand-text font-weight-light">
-	<h1><a href="#">Dr.Link</a></h1></span>
+	<h1><a id="drlink" href="#">Dr.Link</a></h1></span>
 	</div>
 	<ul class="navbar-nav ml-auto" >
       <li class="nav-item d-none d-sm-inline-block">
