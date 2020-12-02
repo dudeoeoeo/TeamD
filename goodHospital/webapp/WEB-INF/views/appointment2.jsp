@@ -25,17 +25,47 @@
  a:visited { color: black; text-decoration: none;}
  a:hover { color: blue; text-decoration: underline;}
  
-. { position:relative; /*감싸는 레이어에 포지션 속성을 잡아주는 게 필수!(relative, absolute, fixed 중 택1*/ width:500px; height:500px; background:#F66; text-align:center; line-height:100px; margin:0 auto;  color:#000; font-size:12px; }
+. { position:relative; /*감싸는 레이어에 포지션 속성을 잡아주는 게 필수!(relative, absolute, fixed 중 택1*/ 
+	width:500px; 
+	height:500px; 
+	background:#F66; 
+	text-align:center; 
+	line-height:100px; 
+	margin:0 auto;  
+	color:#000; 
+	font-size:12px; 
+   }
+
+
+
+
+
+.content{ position:relative; 
+padding-top:56%; 
+width:100%; } 
+
 .iframebox { 
-position:absolute; 
-top:100px; 
-left:100px;/*위에 올라가는 레이어의 포지션은 top, bottom 둘 중 하나, left, right 둘 중 하나의 속성을 선택하여 잡아준다.*/ 
-width:300px; 
-height:300px; 
-background:#FFFFCC; 
-text-align:center; 
-line-height:300px;
-z-index: 1;
+	position:absolute;
+	width:500px; 
+	height:700px; 
+	background:#FFFFCC;
+	line-height:300px; 
+	text-align:center;
+	z-index: 1;
+	text-align:center;
+	transform : translate(160%, 10%);
+}
+iframe{ 
+	position:absolute;
+	background:#FFFFCC; 
+	top:0; 
+	left:0; 
+	width:100%; 
+	height:100%;
+	scrolling:auto;
+	allowTransparency:true;
+	seamless:seamless; 
+	frameBorder:0;
 }
 
  
@@ -225,7 +255,7 @@ to get the desired effect
 </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+<!--   <div class="content-wrapper"> -->
     <!-- Content Header (Page header) -->
     <div class="content-header"><!-- /.container-fluid -->
     </div>
@@ -233,8 +263,13 @@ to get the desired effect
 
     <!-- Main content -->
 			<div class="page-content" style="position:relative;">
+			
 				<div class="card mb-0">
 					<div class="card-body" >
+						<div class="iframebox"> 
+							<iframe class="product_de" name="NeBoard" src="edit_appointment_2" >
+							</iframe>  
+						</div>
 						<div class="table-responsive">
 							<table class="table table-hover">
 								<thead>
@@ -270,11 +305,12 @@ to get the desired effect
 										<td>Dr. Benjamin</td>
 										<td>mumps</td>
 										<td>
-											<div id="rightGroup" class=".iframebox"  style="position: relative;">
-											<!-- <p align="left" style="height: 200px;"></p> -->
-											<iframe class="product_de" src="edit_appointment_2" scrolling="no" seamless="seamless" width="50%" height="700px" frameborder="0" border="0" cellspacing="0"
-											        style="border-style: none; "> 이 페이지</iframe>
-											</div>
+										
+											<!-- <div id="rightGroup" class=".iframebox" >
+											<p align="left" style="height: 200px;"></p>
+											<iframe class="product_de" src="edit_appointment_2" scrolling="no" seamless="seamless" frameborder="0" border="0" cellspacing="0"
+											        style="border-style: none; "></iframe> 
+											</div>-->
 											<div class="actions">
 											<!--  <a class="btn btn-info btn-sm" href="edit_appointment"></a>
 												-->
@@ -530,25 +566,18 @@ to get the desired effect
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- AdminLTE App -->
 <script src="resources/js/adminlte.min.js"></script>
-</script>
 
-<script>
-
+<script type="text/javascript">
 $(function () {
-	
-$("#rightGroup").hide();
-  //$('#rightGroup').css({'display':'none' }); 
+$(".iframebox").hide();
 	var flag = false;
 	$('.btn-info').click(function(){
 	   flag = !flag;
 	   if(flag) {
-	     $("#rightGroup").show();
-	   } else {$("#rightGroup").hide();}
-		 //$('#rightGroup').toggle();
+	     $(".iframebox").show();
+	   } else {$(".iframebox").hide();}
 	}) // click
 })
-
- 
 </script>
 </body>
 </html>

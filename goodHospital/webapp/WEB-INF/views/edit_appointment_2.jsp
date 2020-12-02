@@ -63,18 +63,19 @@ to get the desired effect
 							</div>
 							<!-- /.card-header -->
 							<div class="card-body" id="bar-parent">
-								<form action="#" id="form_sample_1" class="form-horizontal"
-									novalidate="novalidate">
+							<form action="edit_po" class="form-horizontal" name="content_form" method="get" onkeydown="return captureReturnKey(event)">
+							<!--  	<form action="#" id="form_sample_1" class="form-horizontal"
+									novalidate="novalidate"> -->
 									<div class="form-body">
 										<div class="form-group row">
 											<label class="control-label col-md-3 text-right">성별 <span
 												class="required" aria-required="true"> * </span>
 											</label>
 											<div class="col-md-5">
-												<select class="form-control input-height" name="select">
+												<select class="form-control input-height" name="gender">
 													<option value="">Select...</option>
-													<option value="Category 1">여자</option>
-													<option value="Category 2">남자</option>
+													<option value="여자">여자</option>
+													<option value="남자">남자</option>
 												</select>
 											</div>
 										</div>
@@ -83,7 +84,7 @@ to get the desired effect
 											<span class="required" aria-required="true"> * </span>
 											</label>
 											<div class="col-md-5">
-												<input type="text" name="name" data-required="1"
+												<input type="text" name="user_name" data-required="1"
 													placeholder="이름" value=""
 													class="form-control input-height">
 											</div>
@@ -145,7 +146,7 @@ to get the desired effect
 													* </span>
 											</label>
 											<div class="col-md-5">
-												<select class="form-control input-height" name="select">
+												<select class="form-control input-height" name="doctor_select">
 													<option value="">Select...</option>
 													<option value="Category 1">Dr. Rajesh</option>
 													<option value="Category 2">Dr. Sarah Smith</option>
@@ -177,8 +178,8 @@ to get the desired effect
 									<div class="form-actions">
 										<div class="row">
 											<div class="offset-md-3 col-md-9">
-												<button type="submit" class="btn btn-info m-r-20" formaction="appointment">Submit</button>
-												<button type="button" class="btn btn-default" formaction="appointment">Cancel</button>
+												<button type="submit" class="btn btn-info m-r-20" name="btn_sub" onClick="checkForm()" onsubmit="return true;">Submit</button>
+												<button type="button" class="btn btn-default"  onClick="closeForm()" onsubmit="return true;">Cancel</button>
 											</div>
 										</div>
 									</div>
@@ -211,6 +212,22 @@ to get the desired effect
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- AdminLTE App -->
 	<script src="resources/js/adminlte.min.js"></script>
+<script>
 
+function checkForm(){ 
+
+    document.content_form.target="_parent"; 
+
+    document.content_form.submit(); 
+
+} 
+
+function closeForm(){ 
+
+    document.content_form.target="_parent"; 
+	
+    document.content_form.submit(); 
+} 
+</script>
 </body>
 </html>

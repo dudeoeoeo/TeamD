@@ -24,9 +24,13 @@
 	rel="stylesheet">
 
 <link rel="shortcut icon" href="resources/img/favicon.ico">
-
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
 
 <style type="text/css">
+
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
 a:link {
 	color: black;
 	text-decoration: none;
@@ -100,95 +104,150 @@ to get the desired effect
 
 			<!-- Sidebar Menu -->
 			<nav class="mt-2">
-				<ul class="nav nav-pills nav-sidebar flex-column"
-					data-widget="treeview" role="menu" data-accordion="false">
-					<!-- Add icons to the links using the .nav-icon class
-              with font-awesome or any other icon font library -->
-
-					<li class="nav-item has-treeview"><a href="#"
-						class="nav-link"> <i class="nav-icon fas fa-users"></i>
-							<p>
-								회원관리 <i class="fas fa-angle-left right"></i>
-							</p>
-					</a>
-						<ul class="nav nav-treeview">
-							<li class="nav-item"><a href="medical_user_management"
-								class="nav-link"> <i class="far fa-circle nav-icon"></i>
-									<p>의료진 회원</p>
-							</a></li>
-							<li class="nav-item"><a href="user_management"
-								class="nav-link"> <i class="far fa-circle nav-icon"></i>
-									<p>일반 회원</p>
-							</a></li>
-
-						</ul></li>
-					<li class="nav-item has-treeview"><a href="#"
-						class="nav-link"> <i class="nav-icon fas fa-chart-pie"></i>
-							<p>
-								통계 <i class="right fas fa-angle-left"></i>
-							</p>
-					</a>
-						<ul class="nav nav-treeview">
-							<li class="nav-item"><a href="chart_board" class="nav-link">
-									<i class="far fa-circle nav-icon"></i>
-									<p>통계</p>
-							</a></li>
-							<li class="nav-item"><a href="#" class="nav-link"> <i
-									class="far fa-circle nav-icon"></i>
-									<p>통계</p>
-							</a></li>
-							<li class="nav-item"><a href="#" class="nav-link"> <i
-									class="far fa-circle nav-icon"></i>
-									<p>통계</p>
-							</a></li>
-						</ul></li>
-					<li class="nav-item has-treeview"><a href="appointment"
-						class="nav-link"> <i class="nav-icon fas fa-calendar-check"></i>
-							<p>
-								예약현황
-								<!-- <span class="badge badge-info right">6</span> -->
-							</p>
-					</a></li>
-					<li class="nav-item has-treeview"><a href="#"
-						class="nav-link"> <i class="nav-icon fas fa-file-alt"></i>
-							<p>
-								설문 <i class="fas fa-angle-left right"></i>
-							</p>
-					</a>
-						<ul class="nav nav-treeview">
-							<li class="nav-item"><a href="survey_list" class="nav-link">
-									<i class="far fa-circle nav-icon"></i>
-									<p>설문관리</p>
-							</a></li>
-							<li class="nav-item"><a href="survey_result"
-								class="nav-link"> <i class="far fa-circle nav-icon"></i>
-									<p>설문결과</p>
-							</a></li>
-						</ul></li>
-					<li class="nav-item has-treeview"><a href="#"
-						class="nav-link"> <i class="nav-icon fas fa-edit"></i>
-							<p>
-								게시판 <i class="fas fa-angle-left right"></i>
-							</p>
-					</a>
-						<ul class="nav nav-treeview">
-							<li class="nav-item"><a href="notice_table"
-								class="nav-link"> <i class="far fa-circle nav-icon"></i>
-									<p>공지 게시판</p>
-							</a></li>
-							<li class="nav-item"><a href="qna_table" class="nav-link">
-									<i class="far fa-circle nav-icon"></i>
-									<p>Q&A</p>
-							</a></li>
-							<li class="nav-item"><a href="free_table" class="nav-link">
-									<i class="far fa-circle nav-icon"></i>
-									<p>자유게시판</p>
-							</a></li>
-						</ul></li>
-				</ul>
-				</li>
-				</ul>
-			</nav>
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                회원관리
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="medical_user_management" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>의료진 회원</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="user_management" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>일반 회원</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="schedules" class="nav-link">
+              <i class="nav-icon fas fa-clock"></i>
+              <p>
+                일정관리 <i class="fas fa-angle-left right"></i>
+                <!-- <span class="badge badge-info right">6</span> -->                
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="schedule_list" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>일정 리스트로 보기</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="schedule_calender" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>일정 달력으로 보기</p>
+                </a>
+              </li>            
+          </ul></li>
+          <li class="nav-item has-treeview">
+            <a href="appointment" class="nav-link">
+              <i class="nav-icon fas fa-calendar-check"></i>
+              <p>
+                예약현황
+                <!-- <span class="badge badge-info right">6</span> -->                
+              </p>
+            </a>            
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-file-alt"></i>
+              <p>
+				설문
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="survey_list" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>설문관리</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="survey_result" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>설문결과</p>
+                </a>
+              </li>
+            </ul>
+          </li><li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                통계
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="chart_board" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>통계</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>통계</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>통계</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                게시판
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="notice_table" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>공지 게시판</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="qna_table" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Q&A</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="free_table" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>자유게시판</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+                    
+        </ul>
+       </li>
+      </ul>
+    </nav>
 			<!-- /.sidebar-menu -->
 		</div>
 		<!-- /.sidebar -->
@@ -382,7 +441,7 @@ to get the desired effect
 <!-- jQuery UI -->
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- AdminLTE App -->
-	<script src="resources/js/adminlte.min.js"></script>
+<script src="resources/js/adminlte.min.js"></script>
 
 </body>
 </html>

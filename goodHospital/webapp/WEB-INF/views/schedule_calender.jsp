@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>°ü¸®ÀÚ ÆäÀÌÁö</title>
+  <title>ê´€ë¦¬ì í˜ì´ì§€</title>
   <!-- fullCalendar -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fullcalendar/main.min.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fullcalendar-daygrid/main.min.css">
@@ -21,13 +22,8 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
 
 <style type="text/css">
-
-body {
-    font-family: "Nanum Gothic", sans-serif;
-}
  a:link { color: black; text-decoration: none;}
  a:visited { color: black; text-decoration: none;}
  a:hover { color: blue; text-decoration: underline;}
@@ -54,7 +50,6 @@ to get the desired effect
         <a href="mainPage" class="nav-link">Home</a>
       </li>
     </ul>
-
     
 
     <!-- Right navbar links -->
@@ -70,7 +65,7 @@ to get the desired effect
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="admin_login" class="brand-link">
+    <a href="#" class="brand-link">
       <img src="resources/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">Dr.Link</span>
@@ -84,7 +79,7 @@ to get the desired effect
           <img src="resources/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">°ü¸®ÀÚ</a>
+          <a href="#" class="d-block">ê´€ë¦¬ì</a>
         </div>
       </div>
 
@@ -98,7 +93,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
-                È¸¿ø°ü¸®
+                íšŒì›ê´€ë¦¬
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -106,13 +101,13 @@ to get the desired effect
               <li class="nav-item">
                 <a href="medical_user_management" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ÀÇ·áÁø È¸¿ø</p>
+                  <p>ì˜ë£Œì§„ íšŒì›</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="user_management" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ÀÏ¹İ È¸¿ø</p>
+                  <p>ì¼ë°˜ íšŒì›</p>
                 </a>
               </li>
               
@@ -122,7 +117,7 @@ to get the desired effect
             <a href="schedules" class="nav-link">
               <i class="nav-icon fas fa-clock"></i>
               <p>
-                ÀÏÁ¤°ü¸® <i class="fas fa-angle-left right"></i>
+                ì¼ì •ê´€ë¦¬ <i class="fas fa-angle-left right"></i>
                 <!-- <span class="badge badge-info right">6</span> -->                
               </p>
             </a>
@@ -130,13 +125,13 @@ to get the desired effect
               <li class="nav-item">
                 <a href="schedule_list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ÀÏÁ¤ ¸®½ºÆ®·Î º¸±â</p>
+                  <p>ì¼ì • ë¦¬ìŠ¤íŠ¸ë¡œ ë³´ê¸°</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="schedule_calender" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ÀÏÁ¤ ´Ş·ÂÀ¸·Î º¸±â</p>
+                  <p>ì¼ì • ë‹¬ë ¥ìœ¼ë¡œ ë³´ê¸°</p>
                 </a>
               </li>            
           </ul></li>
@@ -144,7 +139,7 @@ to get the desired effect
             <a href="appointment" class="nav-link">
               <i class="nav-icon fas fa-calendar-check"></i>
               <p>
-                ¿¹¾àÇöÈ²
+                ì˜ˆì•½í˜„í™©
                 <!-- <span class="badge badge-info right">6</span> -->                
               </p>
             </a>            
@@ -153,7 +148,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
-				¼³¹®
+				ì„¤ë¬¸
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -161,13 +156,13 @@ to get the desired effect
               <li class="nav-item">
                 <a href="survey_list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¼³¹®°ü¸®</p>
+                  <p>ì„¤ë¬¸ê´€ë¦¬</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="survey_result" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>¼³¹®°á°ú</p>
+                  <p>ì„¤ë¬¸ê²°ê³¼</p>
                 </a>
               </li>
             </ul>
@@ -175,7 +170,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Åë°è
+                í†µê³„
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -183,19 +178,19 @@ to get the desired effect
               <li class="nav-item">
                 <a href="chart_board" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Åë°è</p>
+                  <p>í†µê³„</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Åë°è</p>
+                  <p>í†µê³„</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Åë°è</p>
+                  <p>í†µê³„</p>
                 </a>
               </li>
             </ul>
@@ -204,7 +199,7 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-                °Ô½ÃÆÇ
+                ê²Œì‹œíŒ
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -212,7 +207,7 @@ to get the desired effect
               <li class="nav-item">
                 <a href="notice_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>°øÁö °Ô½ÃÆÇ</p>
+                  <p>ê³µì§€ ê²Œì‹œíŒ</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -224,7 +219,7 @@ to get the desired effect
               <li class="nav-item">
                 <a href="free_table" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>ÀÚÀ¯°Ô½ÃÆÇ</p>
+                  <p>ììœ ê²Œì‹œíŒ</p>
                 </a>
               </li>
             </ul>
@@ -246,13 +241,14 @@ to get the desired effect
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">°ü¸®ÀÚ´Ô È¯¿µÇÕ´Ï´Ù :)</h1>
+            <h1 class="m-0 text-dark">ê´€ë¦¬ìë‹˜ í™˜ì˜í•©ë‹ˆë‹¤ :)</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
+          <!--  
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <!-- <li class="breadcrumb-item active">Dashboard v3</li> -->
-            </ol>
+              <!-- <li class="breadcrumb-item active">Dashboard v3</li> 
+            </ol>-->
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -266,34 +262,37 @@ to get the desired effect
           <div class="col-md-3">
             <div class="sticky-top mb-3">
               <div class="card">
+              <!--  
                 <div class="card-header">
                   <h4 class="card-title">Draggable Events</h4>
                 </div>
                 <div class="card-body">
+                -->
                   <!-- the events -->
                   <div id="external-events">
                     <!-- <div class="external-event bg-success">Lunch</div>
                     <div class="external-event bg-warning">Go home</div>
                     <div class="external-event bg-primary">Work on UI design</div>
-                    <div class="external-event bg-danger">Sleep tight</div> -->
+                    <div class="external-event bg-danger">Sleep tight</div> 
                     <div class="checkbox">
                       <label for="drop-remove">
                         <input type="checkbox" id="drop-remove">
                         remove after drop
                       </label>
                     </div>
-                  </div>
+                  </div>-->
                 </div>
                 <!-- /.card-body -->
               </div>
               <!-- /.card -->
               <div class="card">
                 <div class="card-header">
-                  <h3 class="card-title">Create Event</h3>
+                
+                <input type="text" id="timeSet" value="" disabled="disabled" style="border:0; background-color : transparent;"/>
+                  <!--  <h3 class="card-title">Create Event</h3>
                 </div>
                 <div class="card-body">
                   <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
-                    <!--<button type="button" id="color-chooser-btn" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Color <span class="caret"></span></button>-->
                     <ul class="fc-color-picker" id="color-chooser">
                       <li><a class="text-primary" href="#"><i class="fas fa-square"></i></a></li>
                       <li><a class="text-warning" href="#"><i class="fas fa-square"></i></a></li>
@@ -301,38 +300,44 @@ to get the desired effect
                       <li><a class="text-danger" href="#"><i class="fas fa-square"></i></a></li>
                       <li><a class="text-muted" href="#"><i class="fas fa-square"></i></a></li>
                     </ul>
-                  </div>
-                  <!-- /btn-group -->
+                  </div>-->
+                  <!-- /btn-group
                   <div class="input-group">
                     <input id="new-event" type="text" class="form-control" placeholder="Event Title">
 
                     <div class="input-group-append">
                       <button id="add-new-event" type="button" class="btn btn-primary">Add</button>
-                    </div>
+                    </div> -->
                     <!-- /btn-group -->
                   </div>
                   <!-- /input-group -->
                 </div>
               </div>
             </div>
-           <div class="card tagtrash" style="visibility: ">
-                <div class="card-header">
+            
+            <!--  ì´ë²¤íŠ¸ë¥¼ ë“œëí•´ì„œ ë²„ë¦¬ëŠ” ê³³ -->
+<!--              
+           <div id="card tagtrash" ondragenter="dragenter(event)"
+					ondragover="dragover(event)"
+					ondragleave="dragleave(event)" style="visibility: 'visible' ">
+           
+           <div class="card-header">
+                  <h3 class="card-title">Delete Event</h3>
                 </div>
-                <div class="card-body">                  
-                  <!-- /btn-group -->
-                  <div class="input-group">
-                    <!-- /btn-group -->
+                <div class="card-body">
+                  <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
                   </div>
-                  <!-- /input-group -->
+					<h5>DropZone</h5>
                 </div>
-              </div>
+                
+              </div>-->
+              <!-- Drop Zone ë -->
           </div>
           <!-- /.col -->
           <div class="col-md-9">
             <div class="card card-primary">
               <div class="card-body p-0">
                 <!-- THE CALENDAR  --> 
-                
                 <div id="calendar"></div>
               </div>
               <!-- /.card-body -->
@@ -340,13 +345,13 @@ to get the desired effect
             <!-- /.card -->
           </div>
                 
-			
+         
           <!-- /.col -->
+          <!-- 
           <div class="col-md-12">
-				<input type="button" class="btn bg-olive btn-info" style="float: right; margin: 7px;" value="ÀúÀå"> 
-				<input type="button" class="btn btn-secondary" style="float: right; margin: 7px;"value="»èÁ¦">
-				
-			</div>
+            <input type="button" class="btn bg-olive btn-info" style="float: right; margin: 7px;" value="ì €ì¥"> 
+            <input type="button" class="btn btn-secondary" style="float: right; margin: 7px;"value="ì‚­ì œ">
+         </div> -->
         </div>        
         <!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -402,21 +407,20 @@ to get the desired effect
 
 <script>
   $(function () {
-
+	
     /* initialize the external events
      -----------------------------------------------------------------*/
-    function ini_events(ele) {  // »õ·Î ¸¸µé¾îÁø ÀÌº¥Æ®¸¦ ¸Å°³º¯¼ö·Î ¹ŞÀ½
+    function ini_events(ele) {  // ìƒˆë¡œ ë§Œë“¤ì–´ì§„ ì´ë²¤íŠ¸ë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ìŒ
       ele.each(function () {
-
+    	 // alert(vo.get(0).getTitle());
         // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
         // it doesn't need to have a start or end
-        var eventObject = {    // »õ·Î ¸¸µé¾îÁø ÀÌº¥Æ®ÀÇ value °ª
+        var eventObject = {    // ìƒˆë¡œ ë§Œë“¤ì–´ì§„ ì´ë²¤íŠ¸ì˜ value ê°’
           title: $.trim($(this).text()) // use the element's text as the event title
         }
-
+		
         // store the Event Object in the DOM element so we can get to it later
         $(this).data('eventObject', eventObject)
-
         // make the event draggable using jQuery UI
         $(this).draggable({
           zIndex        : 1070,
@@ -439,16 +443,18 @@ to get the desired effect
     var Calendar = FullCalendar.Calendar;
     var Draggable = FullCalendarInteraction.Draggable;
     
-    var containerEl = document.getElementById('external-events');  // ÀÌº¥Æ®¸¦ °ü¸®ÇÏ´Â div ÅÂ±×
-    var checkbox = document.getElementById('drop-remove');	       // ÀÌº¥Æ® Ã¼Å©ÇÏ´Â Ã¼Å©¹Ú½º
-    var calendarEl = document.getElementById('calendar');          // div Ä¶¸°´õ id °ª
+    var containerEl = document.getElementById('external-events');  // ì´ë²¤íŠ¸ë¥¼ ê´€ë¦¬í•˜ëŠ” div íƒœê·¸
+    var checkbox = document.getElementById('drop-remove');	       // ì´ë²¤íŠ¸ ì²´í¬í•˜ëŠ” ì²´í¬ë°•ìŠ¤
+    var calendarEl = document.getElementById('calendar');          // div ìº˜ë¦°ë” id ê°’
+    
     
     // initialize the external events
     // -----------------------------------------------------------------
     
-    new Draggable(containerEl, {  // ui¸¦ µå·¡±× ÇÒ ¶§ »ç¿ë
+    new Draggable( containerEl, {  // uië¥¼ ë“œë˜ê·¸ í•  ë•Œ ì‚¬ìš©
       itemSelector: '.external-event',
       eventData: function(eventEl) {
+    	//alert($('#calendar > div.fc-view-container > div > table > tbody > tr > td > div > div > div:nth-child(2) > div.fc-content-skeleton > table > tbody > tr:nth-child(1) > td.fc-event-container > a > div.fc-content > span').text());
         console.log(eventEl);
         return {
           title: eventEl.innerText,
@@ -458,8 +464,28 @@ to get the desired effect
         };
       }
     });
-	//var calendar1 = new Calendar();
-	//calendar1.render();
+   
+    $('body.sidebar-mini').mouseover(function(){
+    	$('td.fc-event-container a').each(function(){
+    		$(this).removeClass('fc-draggable');
+    		//$(".class_name").css('css ì†ì„±', 'ë³€ê²½ ê°’');
+        }) // each
+        $('a.fc-time-grid-event').each(function(){
+        	$(this).removeClass('fc-draggable');
+        });
+    }) // mouseup
+    <!-- 
+    $('.btn-secondary').click(function(){
+    	$('a.event-full').each(function(){
+	    	alert($(this).text());
+	    	alert($(this).css("backgroundColor"));
+	    	alert($(this).parents('td').attr('colspan'));
+	    	alert("ì´ê²Œ ìŠ¤íƒ€íŠ¸ ë‚ ì§œ" + $(this).start);
+	//    	$( 'p' ).parent( 'div' ).css( 'color', 'green' );
+    	}) // each
+    });
+    -->
+	
     var calendar = new Calendar(calendarEl, {
       plugins: [ 'bootstrap', 'interaction', 'dayGrid', 'timeGrid' ],
       header    : {
@@ -471,34 +497,35 @@ to get the desired effect
       //Random default events
       
       events    : [
-        {
-          title          : 'All Day Event',
-          start          : new Date(y, m, 1),
-          backgroundColor: '#f56954', //red
-          borderColor    : '#f56954', //red
-          allDay         : true
-        },
-        {
-            title          : 'UI DeadLine',
-            start          : new Date(2020, 10, 25),
-            backgroundColor: '#f56954', //red
-            borderColor    : '#f56954', //red
-            allDay         : true
-          },
+    	  <c:forEach var="v" items="${vo}">
+    	  	  {
+    	        title          :   "${v.title}",
+    	        start          :  new Date(2020, 10, 28),
+    	        end			   :  new Date(2020, 10, 30),
+    	        backgroundColor:  "${v.backgroundColor}",
+    	        borderColor    :   "${v.borderColor}",
+    	        allDay         :  "${v.allDay}",
+    	        className: 'event-full'
+    	        //removeClass : 'fc-draggable'
+    	      },
+    		 </c:forEach>
+        
         {
           title          : 'Long Event',
           start          : new Date(2020, 10, 22),
           end            : new Date(2020, 10, 26),
           backgroundColor: '#f39c12', //yellow
           borderColor    : '#f39c12', //yellow
-          allDay : false
+          allDay : false,
+          className: 'event-full'
         },
         {
           title          : 'Meeting',
           start          : new Date(y, m, d, 10, 30),
           allDay         : false,
           backgroundColor: '#0073b7', //Blue
-          borderColor    : '#0073b7' //Blue
+          borderColor    : '#0073b7', //Blue
+          className: 'event-full'
         },
         {
           title          : 'Lunch',
@@ -506,7 +533,8 @@ to get the desired effect
           end            : new Date(y, m, d, 14, 0),
           allDay         : false,
           backgroundColor: '#00c0ef', //Info (aqua)
-          borderColor    : '#00c0ef' //Info (aqua)
+          borderColor    : '#00c0ef', //Info (aqua)
+          className: 'event-full'
         },
         {
           title          : 'Birthday Party',
@@ -514,14 +542,15 @@ to get the desired effect
           end            : new Date(y, m, d + 1, 22, 30),
           allDay         : false,
           backgroundColor: '#00a65a', //Success (green)
-          borderColor    : '#00a65a' //Success (green)
+          borderColor    : '#00a65a', //Success (green)
+          className: 'event-full'
         },
       ],
       editable  : true,
       droppable : true, // this allows things to be dropped onto the calendar !!!
       drop      : function(info) {
         // is the "remove after drop" checkbox checked?
-        if (checkbox.checked) { // Ã¼Å©µÈ »óÅÂ·Î drop ÇÏ¸é true
+        if (checkbox.checked) { // ì²´í¬ëœ ìƒíƒœë¡œ drop í•˜ë©´ true
           // if so, remove the element from the "Draggable Events" list
           info.draggedEl.parentNode.removeChild(info.draggedEl);
         }
@@ -536,7 +565,7 @@ to get the desired effect
     //Color chooser button
     var colorChooser = $('#color-chooser-btn')
     $('#color-chooser > li > a').click(function (e) {
-      e.preventDefault()  // ÇöÀç ÀÌº¥Æ®ÀÇ ±âº» µ¿ÀÛÀ» Áß´ÜÇÑ´Ù.
+      e.preventDefault()  // í˜„ì¬ ì´ë²¤íŠ¸ì˜ ê¸°ë³¸ ë™ì‘ì„ ì¤‘ë‹¨í•œë‹¤.
       //Save color
       currColor = $(this).css('color')
       //Add color effect to button
@@ -544,15 +573,17 @@ to get the desired effect
         'background-color': currColor,
         'border-color'    : currColor
       })
-    })
+    }) // ìƒ‰ê¹” ì…íˆëŠ” ë²„íŠ¼ì˜ click ë°œìƒ
+    
     $('#add-new-event').click(function (e) {
-      e.preventDefault()  // ÇöÀç ÀÌº¥Æ®ÀÇ ±âº» µ¿ÀÛÀ» Áß´ÜÇÑ´Ù.
+
+      e.preventDefault()  // í˜„ì¬ ì´ë²¤íŠ¸ì˜ ê¸°ë³¸ ë™ì‘ì„ ì¤‘ë‹¨í•œë‹¤.
       //Get value and make sure it is not null
-      var val = $('#new-event').val()  // »õ·Î¿î ÀÌº¥Æ®¸¦ ÀûÀº ±Û °ª
-      if (val.trim().length == 0) {   // »õ·Î¿î ÀÌº¥Æ®¸¦ ¸¸µå´Âµ¥ ±æÀÌ°¡ 0ÀÌ¸é ³¡³»±â
+      var val = $('#new-event').val()  // ìƒˆë¡œìš´ ì´ë²¤íŠ¸ë¥¼ ì ì€ ê¸€ ê°’
+      if (val.trim().length == 0) {   // ìƒˆë¡œìš´ ì´ë²¤íŠ¸ë¥¼ ë§Œë“œëŠ”ë° ê¸¸ì´ê°€ 0ì´ë©´ ëë‚´ê¸°
         return
       }
-
+	  	
       //Create events
       var event = $('<div />')
       event.css({
@@ -562,15 +593,31 @@ to get the desired effect
       }).addClass('external-event')
       //alert(val)
       event.html(val)
-      $('#external-events').prepend(event)  // ÄÜÅÙÃ÷¸¦ ¼±ÅÃÇÑ ¿ä¼Ò ³»ºÎÀÇ ½ÃÀÛ ºÎºĞ¿¡¼­ »ğÀÔ
-
+      
+      $('#external-events').prepend(event)  // ì½˜í…ì¸ ë¥¼ ì„ íƒí•œ ìš”ì†Œ ë‚´ë¶€ì˜ ì‹œì‘ ë¶€ë¶„ì—ì„œ ì‚½ì…
+		
       //Add draggable funtionality
       ini_events(event)
-
+	  
       //Remove event from text input
-      $('#new-event').val('')  // »õ·Î¿î ÀÌº¥Æ® ¾²´Â text °ª ºñ¿ì±â
+      $('#new-event').val('')  // ìƒˆë¡œìš´ ì´ë²¤íŠ¸ ì“°ëŠ” text ê°’ ë¹„ìš°ê¸°
     })
+    
+    var date1 = new Date();
+    date1 = getFormatDate(date);
+    $("#timeSet").val(date1);
+    
+    function getFormatDate(date){
+        var year = date.getFullYear();              //yyyy
+        var month = (1 + date.getMonth());          //M
+        month = month >= 10 ? month : '0' + month;  //month ë‘ìë¦¬ë¡œ ì €ì¥
+        var day = date.getDate();                   //d
+        day = day >= 10 ? day : '0' + day;          //day ë‘ìë¦¬ë¡œ ì €ì¥
+        return  year + '-' + month + '-' + day;       //'-' ì¶”ê°€í•˜ì—¬ yyyy-mm-dd í˜•íƒœ ìƒì„± ê°€ëŠ¥
+    }
   })
+
+ 
 </script>
 
 </body>

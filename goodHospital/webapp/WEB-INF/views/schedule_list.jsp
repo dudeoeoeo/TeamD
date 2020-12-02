@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>일반 회원</title>
+  <title>예약 현황</title>
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
@@ -243,83 +243,255 @@ to get the desired effect
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-	        <div class="col-12">
-	            <div class="card">
-	              <div class="card-header">
-	                <h3 class="card-title">일반 회원</h3>
-	
-	                <div class="card-tools">
-	                  <div class="input-group input-group-sm" style="width: 150px;">
-	                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-	
-	                    <div class="input-group-append">
-	                      <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-	                    </div>
-	                  </div>
-	                </div>
-	              </div>
-	              <!-- /.card-header -->
-	              <div class="card-body table-responsive p-0">
-	                <table class="table table-hover text-nowrap">
-	                  <thead>
-	                    <tr>
-	                      <th width="10%" >ID</th>
-	                      <th width="10%" >회원명</th>
-	                      <th width="10%" >Date</th>
-	                      <th width="25%" >이메일</th>
-	                      <th width="15%" >전화</th>
-	                      <th width="4%" >관리</th>
-	                    </tr>
-	                  </thead>
-	                  <tbody>
-		                  
-		                    <tr>
-		                      <td>dada97</td>
-		                      <td>김다다</td>
-		                      <td>2020.11.20</td>
-		                      <td><span class="tag tag-success">dada97@naver.com</span></td>
-		                      <td>01025689876</td>
-		                      <td>
-									<button type="button" class="btn btn-block btn-info btn-xs">수정</button>
-                   			 </td>
-		                    </tr>
-	                  
-	                  
-						<c:forEach var="m" items="${list}">
-	                    <tr>
-	                      <td>${m.userid}</td>
-	                      <td>${m.username}</td>
-	                      <td>${m.signupdate}</td>
-	                      <td><span class="tag tag-success">${m.eamil}</span></td>
-	                      <td>${m.phone}</td>
-	                      <td>
-								<button type="button" class="btn btn-block btn-info btn-xs">수정</button>
-               			 </td>
-	                    </tr>
-						</c:forEach>
-	                  </tbody>
-	                </table>
-	              </div>
-	              <!-- /.card-body -->
-	            </div>
-	            <!-- /.card -->
-	          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-			<div>
-			
-			<a href="add_user">
-				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;">회원등록</button>
-			</a>
+			<div class="page-content">
+				<div class="card mb-0">
+					<div class="card-body">
+						<div class="table-responsive">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th scope="col">Photo</th>
+										<th scope="col">Name</th>
+										<th scope="col">Email</th>
+										<th scope="col">Date</th>
+										<th scope="col">Visit time</th>
+										<th scope="col">Number</th>
+										<th scope="col">Doctor</th>
+										<th scope="col">Injury / Condition</th>
+										<th scope="col">Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="${pageContext.request.contextPath}/resources/img/AdminLTELogo.png" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Liam</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												liam@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">10 Feb 2018</div></td>
+										<td><div class="text-muted text-nowrap">9:15 - 9:45</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Benjamin</td>
+										<td>mumps</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="edit_appointment"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-2.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Emma</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												emma@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">5 Dec 2018</div></td>
+										<td><div class="text-muted text-nowrap">9:00 - 9:30</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Liam</td>
+										<td>arthritis</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-3.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Olivia</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												olivia@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">13 Oct 2018</div></td>
+										<td><div class="text-muted text-nowrap">12:00 -
+												12:45</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Noah</td>
+										<td>depression</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-4.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Ava</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												ava@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">26 Dec 2018</div></td>
+										<td><div class="text-muted text-nowrap">14:15 -
+												14:30</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Emma</td>
+										<td>diarrhoea</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-5.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Noah</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												noah@gmail.co
+											</div></td>
+										<td><div class="text-muted text-nowrap">15 Jun 2018</div></td>
+										<td><div class="text-muted text-nowrap">17:30 -
+												18:00</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. James</td>
+										<td>dyslexia</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-6.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Isabella</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												isabella@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">2 Jul 2018</div></td>
+										<td><div class="text-muted text-nowrap">10:00 -
+												10:15</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Noah</td>
+										<td>flu</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-7.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Sophia</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												sophia@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">9 Oct 2018</div></td>
+										<td><div class="text-muted text-nowrap">8:30 - 8:45</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Olivia</td>
+										<td>fracture</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									<tr>
+										<td><img src="../assets/content/user-40-8.jpg" alt=""
+											width="40" height="40" class="rounded-500"></td>
+										<td><strong>Mia</strong></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-email p-0 mr-2"></span>
+												mia000@gmail.com
+											</div></td>
+										<td><div class="text-muted text-nowrap">17 Mar 2018</div></td>
+										<td><div class="text-muted text-nowrap">11:30 -
+												11:40</div></td>
+										<td><div
+												class="d-flex align-items-center nowrap text-primary">
+												<span class="icofont-ui-cell-phone p-0 mr-2"></span>
+												0126595743
+											</div></td>
+										<td>Dr. Emma</td>
+										<td>hypothermia</td>
+										<td><div class="actions">
+												<a class="btn btn-info btn-sm" href="#"> <i
+													class="fas fa-pencil-alt"> </i>
+												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+													class="fas fa-trash"> </i> 	</a>
+
+											</div></td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>						
+						
+						<ul class="pagination pagination-sm m-0 float-middle">
+		                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+		                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+		                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+		                </ul>
+								
+					</div>
+				</div>
 				
 			</div>
+			<!-- /.content -->
+			
 		</div>
   </div>
   <!-- /.content-wrapper -->

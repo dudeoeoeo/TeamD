@@ -116,6 +116,59 @@ to get the desired effect
             </ul>
           </li>
           <li class="nav-item has-treeview">
+            <a href="schedules" class="nav-link">
+              <i class="nav-icon fas fa-clock"></i>
+              <p>
+                일정관리 <i class="fas fa-angle-left right"></i>
+                <!-- <span class="badge badge-info right">6</span> -->                
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="schedule_list" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>일정 리스트로 보기</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="schedule_calender" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>일정 달력으로 보기</p>
+                </a>
+              </li>            
+          </ul></li>
+          <li class="nav-item has-treeview">
+            <a href="appointment" class="nav-link">
+              <i class="nav-icon fas fa-calendar-check"></i>
+              <p>
+                예약현황
+                <!-- <span class="badge badge-info right">6</span> -->                
+              </p>
+            </a>            
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-file-alt"></i>
+              <p>
+				설문
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="survey_list" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>설문관리</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="survey_result" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>설문결과</p>
+                </a>
+              </li>
+            </ul>
+          </li><li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
@@ -140,77 +193,6 @@ to get the desired effect
                 <a href="" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>통계</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-calendar-check"></i>
-              <p>
-                예약관리
-                <i class="fas fa-angle-left right"></i>
-                <!-- <span class="badge badge-info right">6</span> -->                
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-file-alt"></i>
-              <p>
-            설문
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="survey_add" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>설문등록</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="survey_list" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>설문관리</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="survey_result" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>설문결과</p>
                 </a>
               </li>
             </ul>
@@ -243,7 +225,8 @@ to get the desired effect
                 </a>
               </li>
             </ul>
-          </li>          
+          </li>
+                    
         </ul>
        </li>
       </ul>
@@ -519,8 +502,8 @@ to get the desired effect
     	  <c:forEach var="v" items="${vo}">
     	  	  {
     	        title          :   "${v.title}",
-    	        start          :  new Date(2020, 10, 28),
-    	        end			   :  new Date(2020, 10, 30),
+    	        start          :  new Date(2020, 11, 5),
+    	        end			   :  new Date(2020, 11, 15),
     	        backgroundColor:  "${v.backgroundColor}",
     	        borderColor    :   "${v.borderColor}",
     	        allDay         :  "${v.allDay}",
