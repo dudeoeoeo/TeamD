@@ -47,7 +47,7 @@ body {
 
 </head>
 <body>
-<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto;" >
+<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto"; >
 	<div class="brand-text font-weight-light">
 	<span class="brand-text font-weight-light">
 	<h1><a href="#">Dr.Link</a></h1></span>
@@ -69,7 +69,7 @@ body {
 </nav>
 
 
-<div style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)">
+<div style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)"  >
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

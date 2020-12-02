@@ -52,16 +52,16 @@ body {
 	
   -webkit-box-shadow: 0px 6px 0px #d35400;
   -moz-box-shadow: 0px 6px 0px #d35400;
-  box-shadow: 0px 6px 0px #d35400;
+  box-shadow: 0px 6px 0px #d35400; */
 }
 
-.button-3d:active{
+ .button-3d:active{
     -webkit-box-shadow: 0px 2px 0px #d35400;
     -moz-box-shadow: 0px 2px 0px #d35400;
     box-shadow: 0px 2px 0px #d35400;
     position:relative;
     top:4px;
-}
+} 
 </style>
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -113,9 +113,9 @@ body {
 		<div class="title">
 			<h2>◆우울증</h2>
 			</div>							
-		<div class="boxA"><img src="${pageContext.request.contextPath}/resources/img/depression1.jpg" width="330" height="330" alt="" /></div>
-		<div class="boxB"><img src="${pageContext.request.contextPath}/resources/img/depression2.jpg" width="330" height="330" alt="" /></div>
-		<div class="boxC"><img src="${pageContext.request.contextPath}/resources/img/depression3.jpg" width="330" height="330" alt="" /></div>				
+		<div class="boxA"><img src="${pageContext.request.contextPath}/resources/img/survey/depression1.jpg" width="300" height="300" alt="" /></div>
+		<div class="boxB"><img src="${pageContext.request.contextPath}/resources/img/survey/depression2.jpg" width="300" height="300" alt="" /></div>
+		<div class="boxC"><img src="${pageContext.request.contextPath}/resources/img/survey/depression3.jpg" width="300" height="300" alt="" /></div>				
 	
 	
 	<div id="page1" class="container"  >
@@ -192,9 +192,9 @@ body {
 		<div class="title">
 		<h2>◆조울증</h2>
 		</div>
-		<div class="boxD"><img src="${pageContext.request.contextPath}/resources/img/bipolarDisorder1.png" width="300" height="300" alt="" /></div>
-		<div class="boxE"><img src="${pageContext.request.contextPath}/resources/img/bipolarDisorder2.png" width="300" height="300" alt="" /></div>
-		<div class="boxF"><img src="${pageContext.request.contextPath}/resources/img/bipolarDisorder3.png" width="300" height="300" alt="" /></div>
+		<div class="boxD"><img src="${pageContext.request.contextPath}/resources/img/survey/bipolarDisorder1.png" width="300" height="300" alt="" /></div>
+		<div class="boxE"><img src="${pageContext.request.contextPath}/resources/img/survey/bipolarDisorder2.png" width="300" height="300" alt="" /></div>
+		<div class="boxF"><img src="${pageContext.request.contextPath}/resources/img/survey/bipolarDisorder3.png" width="300" height="300" alt="" /></div>
 		
 		<div id="page1" class="container" >
 		<div class="boxD"><br/>
@@ -245,7 +245,7 @@ body {
 	
 </div>
 
-<div id="copyright" class="container">
+<div id="welcome" class="footer">
 		<p>
 			&copy; Untitled. All rights reserved. | Photos by <a
 				href="http://fotogrph.com/">Fotogrph</a> | Design by <a

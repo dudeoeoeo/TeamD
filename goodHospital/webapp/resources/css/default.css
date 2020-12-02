@@ -437,8 +437,13 @@ ul.contact li a.icon-rss:before
 /* Footer                                                                        */
 /*********************************************************************************/
 
-	#footer
-{
+
+.footer {
+    width: 100%;
+    padding-top: 4em;
+    padding-bottom: 6em;
+    overflow: hidden;
+	text-align : center;
 }
 
 /*********************************************************************************/
@@ -494,7 +499,7 @@ ul.contact li a.icon-rss:before
 
 #staff
 {
-	padding: 5em 0em;
+	padding: 3em 0em;
 }
 
 /*********************************************************************************/
