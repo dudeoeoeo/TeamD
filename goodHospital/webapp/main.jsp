@@ -8,7 +8,6 @@
 <title></title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 <link href="resources/css/main_default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="resources/css/main_fonts.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -18,10 +17,35 @@
 <!-- Theme style -->
 <link rel="stylesheet" href="resources/css/adminlte.min.css">
 <!-- Google Font: Source Sans Pro -->
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="resources/js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="resources/css/jquery.bxslider.css" rel="stylesheet" />
+
+<script>
+$(document).ready(function(){
+    $('.bxslider').bxSlider( {
+        mode: 'horizontal',// 가로 방향 수평 슬라이드
+        speed: 300,        // 이동 속도를 설정
+        pager: false,      // 현재 위치 페이징 표시 여부 설정
+        moveSlides: 1,     // 슬라이드 이동시 개수
+        minSlides: 4,      // 최소 노출 개수
+        maxSlides: 4,      // 최대 노출 개수
+        slideMargin: 2,    // 슬라이드간의 간격
+        auto: true,        // 자동 실행 여부
+        autoHover: true,   // 마우스 호버시 정지 여부
+        controls: false    // 이전 다음 버튼 노출 여부
+    });
+})
+</script>
 
 <style>
 
@@ -141,8 +165,17 @@ font-family: 'Major Mono Display', monospace;
 			</ul>
 		</div>
 		<div class="col-sm-4">
-			<h2>Praesent<br />
-				<span> scelerisque scelerisque</span></h2>
+			<h2>진료시간</h2>
+			<table border="1" style="cellpadding : 10%;">
+			<tr>
+			<td>평일</td>
+			<td>7:00~16:00</td>
+			</tr>
+			<tr>			
+			<td>토요일</td>
+			<td>7:00~13:00</td>
+			</tr>
+			</table>
 			<ul class="style2">
 				<li class="first">
 					<h3>Amet sed volutpat mauris</h3>
@@ -162,23 +195,20 @@ font-family: 'Major Mono Display', monospace;
 	</div>
 	</div>
 </div>
+
+
 <div id="welcome-wrapper">
-	<div id="welcome" class="container">
-		<div class="title">
-			<h2>다람쥐</h2>
-		</div>
-			<p>
-				쳇바퀴<strong>굴러간다</strong>도르르르르
-				<a href="http://templated.co" rel="nofollow">TEMPLATED</a>. 
-				The photos in this template are from 
-				<a href="http://fotogrph.com/"> Fotogrph</a>. 
-				This free template is released under the 
-				<a href="http://templated.co/license">Creative Commons Attribution</a>
-				license, so you're pretty much free to do whatever you want with it
-				(even use it commercially) provided you give us credit for it. Have
-				fun :)
-			</p>
-		</div>
+	<div id="" class="container">
+	
+	<ul class="bxslider">
+	  <li style="width: 100px; float: left; list-style: none; position: relative; margin-right: 2px;"><img src="${pageContext.request.contextPath}/resources/img/hos1.jpg" /></li>
+	  <li style="width:100px"><img src="${pageContext.request.contextPath}/resources/img/hos2.jpg" /></li>
+	  <li style="width:100px"><img src="${pageContext.request.contextPath}/resources/img/hos3.jpg" /></li>
+	  <li style="width:100px"><img src="${pageContext.request.contextPath}/resources/img/hos4.jpg" /></li>
+	  <li style="width:100px"><img src="${pageContext.request.contextPath}/resources/img/hos5.jpg" /></li>
+	</ul>
+		
+	</div>
 </div>
 <div id="copyright" class="container">
 		<p>
@@ -189,8 +219,6 @@ font-family: 'Major Mono Display', monospace;
 	</div>
 	
 	
-<!-- jQuery -->
-<script src="resources/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE -->
