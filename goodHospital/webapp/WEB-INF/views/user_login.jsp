@@ -30,6 +30,8 @@
 <!-- bxSlider CSS file -->
 <link href="resources/css/jquery.bxslider.css" rel="stylesheet" />
 
+<link rel="stylesheet" type="text/css" href="resources/css/login.css" media="all" />
+
 <script>
 $(document).ready(function(){
     $('.bxslider').bxSlider( {
@@ -45,6 +47,33 @@ $(document).ready(function(){
         controls: false    // 이전 다음 버튼 노출 여부
     });
 })
+
+
+    $(function(){  
+      	    	
+    	var member = $('#tab1');    	
+    	var admin = $('#tab2');    	
+    	var memberFrom = $('.loginFrom');    	
+    	var adminFrom = $('.adminFrom');    	
+    	
+    	adminFrom.hide();    	
+    	memberFrom.show();
+    	
+    	
+    	member.click(function(){    		
+    		adminFrom.hide();        	
+        	memberFrom.show();  	    
+   
+    	});	
+    	
+    	
+    	admin.click(function(){    		
+    		adminFrom.show();        	
+        	memberFrom.hide();
+    	       
+    	});	  
+   });	 	
+
 </script>
 
 <style>
@@ -84,6 +113,8 @@ width:auto !important;
 
 </head>
 <body>
+
+
 <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto;" >
 	<div class="brand-text font-weight-light">
 	<span class="brand-text font-weight-light">
@@ -138,79 +169,95 @@ width:auto !important;
 	</div>
 	</div>
 </div>
-<div id="wrapper">
-	<div id="staff" class="container">
-		<div class="title">
-			<h3>최선의 진료로 환자의 건강한 삶에 기여한다</h3>
+
+	
+<div class="wrapper fadeInDown">
+	<div class="container">
+		<div class="title" style="margin: 1em !important;">
+			<h3>로그인</h3>
 		</div>
-		<div class="row">
-			<div class="col-sm-3">
-				<div class="position-relative">
-				<img src="${pageContext.request.contextPath}/resources/img/sub01.jpg" width="190" height="380" alt="" />
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="position-relative">
-				<img src="${pageContext.request.contextPath}/resources/img/sub02.jpg" width="190" height="380" alt="" />
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="position-relative">
-				<img src="${pageContext.request.contextPath}/resources/img/sub03.jpg" width="190" height="380" alt="" />
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="position-relative">
-				<img src="${pageContext.request.contextPath}/resources/img/sub04.jpg" width="190" height="380" alt="" />
-				</div>
-			</div>
-		</div>
+	
+		<div class="card login-card" style="margin: 1rem !important;">
+	        <div class="row no-gutters">
+		        <div class="col-md-5">
+		          	<div class="loginCont2">
+						<ul>
+							<li>회원님의 개인정보보호를 위하여 약 10분 동안 화면 이동이 없을 경우 자동으로<br>로그아웃 처리됩니다.</li>
+							<li>비밀번호는 주기적으로 변경하고 타인에게 노출되지 않도록 주의하시기 바랍니다.</li>
+							<li>로그인 후 모든 정보는 암호화하여 전송됩니다.</li>							
+						</ul>
+					</div>
+		       	 </div>		
+	       		<div class="col-md-7">
+	            	<div class="card-body">
+	              		<div id="formContent" class="card-body login-card-body">
+							  
+							<p class="login-card-description">
+							<li id="tab1" class="btnCon"><a href="#tab1">회원</a></li>
+							<li id="tab2" class="btnCon"><a href="#tab2">의료진</a></li>    
+							</p>
+							
+							<form class="loginFrom" action="" method="post">  
+								<div class="input-group mb-3">
+						          <input type="email" class="form-control" placeholder="Email">
+						          <div class="input-group-append">
+						            <div class="input-group-text">
+						              <span class="fas fa-envelope"></span>
+						            </div>
+						          </div>
+						        </div>
+						        <div class="input-group mb-3">
+						          <input type="password" class="form-control" placeholder="Password">
+						          <div class="input-group-append">
+						            <div class="input-group-text">
+						              <span class="fas fa-lock"></span>
+						            </div>
+						          </div>
+						        </div>
+									<input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
+									<div class="col-8" style = "margin : auto;">
+				            <button type="submit" class="btn btn-block btn-primary float-sm-right" style="width:100px !important;" formaction = "">ID찾기</button>
+				            <button type="submit" class="btn btn-block btn-primary" style="width:100px !important;" formaction = "">회원가입</button>
+						</div>
+							 </form> 
+		    
+							<form class="adminFrom"  action="" method="post">
+						    <div class="input-group mb-3">
+					          <input type="email" class="form-control" placeholder="의료진 번호">
+					          <div class="input-group-append">
+					            <div class="input-group-text">
+					              <span class="fas fa-envelope"></span>
+					            </div>
+					          </div>
+					        </div>
+					        <div class="input-group mb-3">
+					          <input type="password" class="form-control" placeholder="Password">
+					          <div class="input-group-append">
+					            <div class="input-group-text">
+					              <span class="fas fa-lock"></span>
+					            </div>
+					          </div>
+					        </div>
+							  <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
+							  <div class="col-8" style = "margin : auto;">
+				            <button type="submit" class="btn btn-block btn-primary float-sm-right" style="width:100px !important;" formaction = "">ID찾기</button>
+				            <button type="submit" class="btn btn-block btn-primary" style="width:100px !important;" formaction = "">회원가입</button>
+						</div>
+							</form>
+							
+          				
+						</div>
+	                
+	                <nav class="login-card-footer-nav">
+	                </nav>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
 	</div>
-	<div id="page" class="container">
-	<div class="row">
-		<div class="col-sm-4">
-			<h2>소식/공지</h2>
-			<ul class="style4">
-				<li class="first"><a href="#">TESTtestTESTtestTEST</a></li>
-				<li><a href="#">TESTtestTESTtestTEST</a></li>
-				<li><a href="#">TESTtestTESTtestTEST</a></li>
-				<li><a href="#">TESTtestTESTtestTEST</a></li>
-				<li><a href="#">TESTtestTESTtestTEST</a></li>
-			</ul>
-		</div>
-		<div class="col-sm-4">
-			<h2>진료시간</h2>
-			<table border="1" style="cellpadding : 10%; width:90%; text-align:center; ">
-				<tr>
-					<td>평일</td>
-					<td>7:00~16:00</td>
-				</tr>
-				<tr>			
-					<td>토요일</td>
-					<td>7:00~13:00</td>
-				</tr>
-			</table>
-			<br/>
-			<h2>여기는 뭐 넣지</h2>
-			<ul class="style2">
-				<li class="second">
-					<h5>아이디어</h5>
-					<p><a href="#">받습니다</a></p>
-				</li>
-				<li>
-					<h5>아이디어</h5>
-					<p><a href="#">받습니다</a></p>
-				</li>
-			</ul>
-		</div>
-		<div class="col-sm-4">
-			<h2>온라인채널</h2>
-			<img width="300" src="${pageContext.request.contextPath}/resources/img/insta_empty.jpg">
-			<img width="300" src="${pageContext.request.contextPath}/resources/img/insta.jpg">
-		</div>
-	</div>
-	</div>
+
 </div>
+	
 
 
 <div id="welcome-wrapper">
