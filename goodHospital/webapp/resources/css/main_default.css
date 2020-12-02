@@ -394,7 +394,7 @@ ul.contact li a.icon-rss:before
 	
 	#page h2
 	{
-		padding-bottom: 1em;
+		padding-bottom: 1.5em;
 		text-transform: uppercase;
 		font-size: 1.5em;
 	}
@@ -430,7 +430,7 @@ ul.contact li a.icon-rss:before
 	#copyright
 {
 	overflow: hidden;
-	padding: 2em 0em;
+	padding: 5em 0em;
 }
 
 #copyright p

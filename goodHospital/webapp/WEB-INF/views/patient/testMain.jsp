@@ -82,8 +82,9 @@ width:auto !important;
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
-</head>
-<body>
+
+
+
 <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto;" >
 	<div class="brand-text font-weight-light">
 	<span class="brand-text font-weight-light">
@@ -126,7 +127,9 @@ width:auto !important;
           AI/설문진단
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">AI진단</a>
+          <a class="dropdown-item" href="#">AI 눈 진단</a>
+          <a class="dropdown-item" href="#">AI 피부 진단</a>
+          <a class="dropdown-item" href="#">AI 탈모 진단</a>
           <a class="dropdown-item" href="#">설문진단</a>
         </div>
       </li>
@@ -138,6 +141,12 @@ width:auto !important;
 	</div>
 	</div>
 </div>
+
+
+
+</head>
+<body>
+
 <div id="wrapper">
 	<div id="staff" class="container">
 		<div class="title">
@@ -227,7 +236,7 @@ width:auto !important;
 	</div>
 </div>
 
-<div class="main-footer" style="text-align: center !important; margin:0 !important;">
+<div class="main-footer" style="text-align: center !important;">
 		<p>
 			서울 금천구 가산디지털2로 123 월드메르디앙2차 | 대표자 : 고현영 |
 			<span style="color:red">응급의료센터</span> 02-2626-1114<br/>
