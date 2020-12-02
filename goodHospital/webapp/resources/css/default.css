@@ -223,19 +223,37 @@ ul.contact li a.icon-rss:before
 /*********************************************************************************/
 /* 3-column                                                                      */
 /*********************************************************************************/
-
 	.boxA,  .boxB,  .boxC
 {
 	width: 300px;
+	text-align: center;
+
 }
 
 .boxA,  .boxB
 {
 	float: left;
-	margin-right: 50px;
+	margin-right: 105px;
 }
 
-.boxC
+ .boxC
+{
+	float: right;
+} 
+
+ .boxD , .boxE , .boxF
+ {
+ 	width: 300px;
+ 	text-align: center;
+ }
+ 
+.boxD,  .boxE 
+{
+	float: left;
+	margin-right: 105px;
+}
+
+.boxF
 {
 	float: right;
 }
@@ -388,6 +406,17 @@ ul.contact li a.icon-rss:before
 		font-size: 1.5em;
 	}
 
+		#page1
+	{
+		padding-bottom: 0em;
+	}
+	
+	#page1 h2
+	{
+		
+		text-transform: uppercase;
+		font-size: 1.5em;
+	}
 /*********************************************************************************/
 /* Content                                                                       */
 /*********************************************************************************/
