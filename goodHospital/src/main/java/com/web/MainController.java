@@ -27,31 +27,38 @@ public class MainController {
 		return "main/Main";
 	}
 	//AI 안과 진료
-	@RequestMapping(value = "ophthalmology")
-	public String ophthalmology() {
-		return "aiTest/ophthalmology";
+	@RequestMapping(value = "aiEyeTest")
+	public String aiEyeTest() {
+		return "aiTest/aiEyeTest";
 		
 	}
 	
 	//AI 피부과 진료
-	@RequestMapping(value = "Dermatology")
-	public String Dermatology() {
-		return "aiTest/Dermatology";
+	@RequestMapping(value = "aiSkinTest")
+	public String aiSkinTest() {
+		return "aiTest/aiSkinTest";
 		
 	}
 	
 	//의약품 검색
-	@RequestMapping(value = "medicineSearch")
-	public String medicineSearch() {
-		return "patient/medicineSearch";
+	@RequestMapping(value = "searchMedicine")
+	public String searchMedicine() {
+		return "patient/searchMedicine";
 		
 	}
 
 	
 	//의약품 검색
-	@RequestMapping(value = "main")
-	public String main() {
-		return "patient/main";
+	@RequestMapping(value = "testMain")
+	public String testMain() {
+		return "patient/testMain";
+		
+	}
+	
+	//의약품 검색
+	@RequestMapping(value = "main2")
+	public String main2() {
+		return "patient/main2";
 		
 	}
 	
