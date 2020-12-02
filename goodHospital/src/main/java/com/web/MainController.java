@@ -50,11 +50,18 @@ public class MainController {
 		
 	}
 
-	
+
 	//의약품 검색
 	@RequestMapping(value = "testMain")
 	public String testMain() {
 		return "patient/testMain";
+		
+	}
+	
+	//AI 탈모 진료
+	@RequestMapping(value = "aiHairLossTest")
+	public String aiHairLossTest() {
+		return "aiTest/aiHairLossTest";
 		
 	}
 	

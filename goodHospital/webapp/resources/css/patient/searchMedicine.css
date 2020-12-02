@@ -103,7 +103,6 @@
   grid-gap: 10px 10px;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto;
-  height: auto;
   margin: 0 auto 60px;
 }
 
@@ -154,6 +153,7 @@
 .u-section-2 .u-image-3 {
   width: 233px;
   height: 132px;
+  object-position: 0% 80.09%;
   margin: 30px auto 0 55px;
 }
 
@@ -168,6 +168,10 @@
 }
 
 @media (max-width: 1199px) {
+  .u-section-2 .u-list-1 {
+    height: auto;
+  }
+
   .u-section-2 .u-text-1 {
     margin-top: -167px;
   }

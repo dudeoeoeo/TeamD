@@ -3,16 +3,170 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
+  
+  
+  
+  
+  
+  
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="resources/css/main_default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="resources/css/main_fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
+<!-- IonIcons -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="resources/css/adminlte.min.css">
+<!-- Google Font: Source Sans Pro -->
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="resources/js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="resources/css/jquery.bxslider.css" rel="stylesheet" />
+
+<script>
+$(document).ready(function(){
+    $('.bxslider').bxSlider( {
+        mode: 'horizontal',// 가로 방향 수평 슬라이드
+        speed: 300,        // 이동 속도를 설정
+        pager: false,      // 현재 위치 페이징 표시 여부 설정
+        moveSlides: 1,     // 슬라이드 이동시 개수
+        minSlides: 5,      // 최소 노출 개수
+        maxSlides: 5,      // 최대 노출 개수
+        slideMargin: 1,    // 슬라이드간의 간격
+        auto: true,        // 자동 실행 여부
+        //autoHover: true,   // 마우스 호버시 정지 여부
+        controls: false    // 이전 다음 버튼 노출 여부
+    });
+})
+</script>
+
+<style>
+
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+#header-wrapper{
+	background-image: url("${pageContext.request.contextPath}/resorces/img/banner.jpg");
+	background-size : cover;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: black;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+
+#drlink{
+font-family: 'Major Mono Display', monospace; 
+}
+
+ul .bxslider{
+width:auto !important;
+}
+
+#bxslider{
+width:auto !important;
+}
+
+
+</style>
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+
+
+
+<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto;" >
+	<div class="brand-text font-weight-light">
+	<span class="brand-text font-weight-light">
+	<h1><a id="drlink" href="#">Dr.Link</a></h1></span>
+	</div>
+	<ul class="navbar-nav ml-auto" >
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">로그인</a>           
+      </li>     
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">회원가입</a>           
+      </li>     
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">오시는길</a>           
+      </li>     
+      
+    </ul>
+    
+</nav>
+
+<div id="header-wrapper" style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)"  >
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="#">병원이야기</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">진료예약/안내</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">건강/약품정보</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          AI/설문진단
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">AI 눈 진단</a>
+          <a class="dropdown-item" href="#">AI 피부 진단</a>
+          <a class="dropdown-item" href="#">AI 탈모 진단</a>
+          <a class="dropdown-item" href="#">설문진단</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+	<div id="header" class="content-header">
+	<div class="container-fluid">
+	</div>
+	</div>
+</div>
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="안녕하세요. 약품검색 서비스입니다.">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>searchMedicine</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/aiTest/aiTestPage.css" media="screen">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/patient/medicinePage.css" media="screen">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/patient/searchMedicine.css" media="screen">
-    <script class="u-script" type="text/javascript" src="${pageContext.request.contextPath}/resources/js/aiTest/jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="${pageContext.request.contextPath}/resources/js/aiTest/aiTestPage.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="${pageContext.request.contextPath}/resources/js/patient/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="${pageContext.request.contextPath}/resources/js/patient/medicinePage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.0.9, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,990i">
@@ -32,116 +186,8 @@
     <link rel="canonical" href="index.html">
     <meta property="og:url" content="index.html">
   </head>
-  <body class="u-body"><header class="u-align-left u-clearfix u-header u-header" id="sec-f235"><div class="u-clearfix u-sheet u-sheet-1">
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-          <div class="menu-collapse" style="font-size: 0.75rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 700;">
-            <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-grey-50 u-text-hover-grey-90" href="#">
-              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</symbol>
-</defs></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-50 u-text-hover-grey-90" href="index.html" style="padding: 10px 0px;">홈</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-50 u-text-hover-grey-90" style="padding: 10px 0px;">로그인</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-50 u-text-hover-grey-90" style="padding: 10px 0px;">회원가입</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-50 u-text-hover-grey-90" style="padding: 10px 0px;">마이페이지</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-50 u-text-hover-grey-90" style="padding: 10px 0px;">오시는길</a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html" style="padding: 10px 0px;">홈</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 0px;">로그인</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 0px;">회원가입</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 0px;">마이페이지</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 0px;">오시는길</a>
-</li></ul>
-              </div>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-        <a href="#" class="u-image u-logo u-image-1" data-image-width="128" data-image-height="128">
-          <img src="${pageContext.request.contextPath}/resources/img/aiTest/AdminLTELogo.png" class="u-logo-image u-logo-image-1" data-image-width="121">
-        </a>
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-2">
-          <div class="menu-collapse" style="font-size: 0.75rem; letter-spacing: 0px; font-weight: 700;">
-            <a class="u-active-palette-1-light-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hover-palette-1-light-3 u-nav-link u-palette-1-light-2 u-text-active-white u-text-grey-70 u-text-hover-grey-90" href="#">
-              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</symbol>
-</defs></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-spacing-2 u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-active-palette-1-light-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-light-2 u-text-active-white u-text-grey-70 u-text-hover-grey-90" style="padding: 10px 38px;">병원이야기</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4"><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black">1</a>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black">2</a>
-</li></ul>
-</div>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-light-2 u-text-active-white u-text-grey-70 u-text-hover-grey-90" style="padding: 10px 38px;">진료예약/안내</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-5"><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black">1</a>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black">2</a>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black">3</a>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black">4</a>
-</li></ul>
-</div>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-light-2 u-text-active-white u-text-grey-70 u-text-hover-grey-90" style="padding: 10px 38px;">건강/약품정보</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-6"><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black" href="약품검색.html">약품검색</a>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black">2</a>
-</li></ul>
-</div>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-light-2 u-text-active-white u-text-grey-70 u-text-hover-grey-90" style="padding: 10px 38px;">AI/설문진단</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-7"><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black" href="AI-눈-진단.html">AI 눈 진단</a>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black" href="AI-피부-진단.html">AI 피부 진단</a>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black">3</a>
-</li></ul>
-</div>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-light-2 u-text-active-white u-text-grey-70 u-text-hover-grey-90" style="padding: 10px 38px;">의사/간호사</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-8"><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black">1</a>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black">2</a>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black">3</a>
-</li><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-2 u-nav-link u-palette-1-light-3 u-text-active-black u-text-grey-70 u-text-hover-black">4</a>
-</li></ul>
-</div>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-9"><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 38px;">병원이야기</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-10"><li class="u-nav-item"><a class="u-button-style u-nav-link">1</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link">2</a>
-</li></ul>
-</div>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 38px;">진료예약/안내</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-11"><li class="u-nav-item"><a class="u-button-style u-nav-link">1</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link">2</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link">3</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link">4</a>
-</li></ul>
-</div>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 38px;">건강/약품정보</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-12"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="약품검색.html">약품검색</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link">2</a>
-</li></ul>
-</div>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 38px;">AI/설문진단</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-13"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="AI-눈-진단.html">AI 눈 진단</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="AI-피부-진단.html">AI 피부 진단</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link">3</a>
-</li></ul>
-</div>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 38px;">의사/간호사</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-14"><li class="u-nav-item"><a class="u-button-style u-nav-link">1</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link">2</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link">3</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link">4</a>
-</li></ul>
-</div>
-</li></ul>
-              </div>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-        <img src="${pageContext.request.contextPath}/resources/img/aiTest/banner1.jpg" alt="" class="u-image u-image-default u-image-2" data-image-width="1920" data-image-height="550">
-      </div></header>
+  
+  <body class="u-body">
     <section class="u-clearfix u-section-1" id="sec-4783">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-align-center u-custom-font u-font-merriweather u-text u-text-default u-text-1">안녕하세요. 약품검색 서비스입니다.</h2>
@@ -171,21 +217,21 @@
         <div class="u-expanded-width-xs u-list u-repeater u-list-1">
           <div class="u-container-style u-list-item u-repeater-item">
             <div class="u-container-layout u-similar-container u-container-layout-1">
-              <img alt="" class="u-image u-image-default u-image-1" data-image-width="2000" data-image-height="1333" src="${pageContext.request.contextPath}/resources/img/patient/3.svg">
+              <img alt="" class="u-image u-image-default u-image-1" data-image-width="1024" data-image-height="710" src="${pageContext.request.contextPath}/resources/img/patient/medicine1.jpg">
               <h4 class="u-text u-text-1">약품이름1</h4>
               <p class="u-text u-text-2">약품설명1약품설명1약품설명1약품설명1약품설명1</p>
             </div>
           </div>
           <div class="u-container-style u-list-item u-repeater-item">
             <div class="u-container-layout u-similar-container u-container-layout-2">
-              <img alt="" class="u-image u-image-default u-image-2" data-image-width="2000" data-image-height="1333" src="${pageContext.request.contextPath}/resources/img/patient/3.svg">
+              <img alt="" class="u-image u-image-default u-image-2" data-image-width="384" data-image-height="322" src="${pageContext.request.contextPath}/resources/img/patient/medicine2.jpg">
               <h4 class="u-text u-text-3">약품이름2</h4>
               <p class="u-text u-text-4">약품설명2약품설명2약품설명2약품설명2약품설명2</p>
             </div>
           </div>
           <div class="u-container-style u-list-item u-repeater-item">
             <div class="u-container-layout u-similar-container u-container-layout-3">
-              <img alt="" class="u-image u-image-default u-image-3" data-image-width="2000" data-image-height="1333" src="${pageContext.request.contextPath}/resources/img/patient/3.svg">
+              <img alt="" class="u-image u-image-default u-image-3" data-image-width="600" data-image-height="862" src="${pageContext.request.contextPath}/resources/img/patient/medicine3.jpg">
               <h4 class="u-text u-text-5">약품이름3</h4>
               <p class="u-text u-text-6">약품설명3약품설명3약품설명3약품설명3약품설명3</p>
             </div>
@@ -198,16 +244,5 @@
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-1d97"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
       </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
-        <span>HTML Templates</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.com/" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
-    </section>
   </body>
 </html>
