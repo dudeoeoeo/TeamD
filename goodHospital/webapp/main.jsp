@@ -145,29 +145,26 @@ width:auto !important;
 			<h3>최선의 진료로 환자의 건강한 삶에 기여한다</h3>
 		</div>
 		<div class="row">
-		<div class="col-sm-3">
-			<div class="position-relative">
-			<img src="${pageContext.request.contextPath}/resources/img/sub01.jpg" width="190" height="380" alt="" />
-			<%-- <img src="${pageContext.request.contextPath}/resources/img/pic01.jpg" width="225" height="350" alt="" /> --%>
+			<div class="col-sm-3">
+				<div class="position-relative">
+				<img src="${pageContext.request.contextPath}/resources/img/sub01.jpg" width="190" height="380" alt="" />
+				</div>
 			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="position-relative">
-			<img src="${pageContext.request.contextPath}/resources/img/sub02.jpg" width="190" height="380" alt="" />
-			<%-- <img src="${pageContext.request.contextPath}/resources/img/pic02.jpg" width="225" height="350" alt="" /> --%>
+			<div class="col-sm-3">
+				<div class="position-relative">
+				<img src="${pageContext.request.contextPath}/resources/img/sub02.jpg" width="190" height="380" alt="" />
+				</div>
 			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="position-relative">
-			<img src="${pageContext.request.contextPath}/resources/img/sub03.jpg" width="190" height="380" alt="" />
-			<%-- <img src="${pageContext.request.contextPath}/resources/img/pic03.jpg" width="225" height="350" alt="" /> --%>
+			<div class="col-sm-3">
+				<div class="position-relative">
+				<img src="${pageContext.request.contextPath}/resources/img/sub03.jpg" width="190" height="380" alt="" />
+				</div>
 			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="position-relative">
-			<img src="${pageContext.request.contextPath}/resources/img/sub04.jpg" width="190" height="380" alt="" />
+			<div class="col-sm-3">
+				<div class="position-relative">
+				<img src="${pageContext.request.contextPath}/resources/img/sub04.jpg" width="190" height="380" alt="" />
+				</div>
 			</div>
-		</div>
 		</div>
 	</div>
 	<div id="page" class="container">
@@ -221,19 +218,21 @@ width:auto !important;
 	<ul class="bxslider">
 	  <li id="bxslider"><img src="${pageContext.request.contextPath}/resources/img/hos1.jpg" /></li>
 	  <li id="bxslider"><img src="${pageContext.request.contextPath}/resources/img/hos2.jpg" /></li>
+	  <li id="bxslider"><img src="${pageContext.request.contextPath}/resources/img/hos6.jpg" /></li>
 	  <li id="bxslider"><img src="${pageContext.request.contextPath}/resources/img/hos3.jpg" /></li>
 	  <li id="bxslider"><img src="${pageContext.request.contextPath}/resources/img/hos4.jpg" /></li>
 	  <li id="bxslider"><img src="${pageContext.request.contextPath}/resources/img/hos5.jpg" /></li>
+	  <li id="bxslider"><img src="${pageContext.request.contextPath}/resources/img/hos7.jpg" /></li>
 	</ul>
 		
 	</div>
 </div>
 
-<div id="copyright" class="container">
+<div class="main-footer" style="text-align: center !important;">
 		<p>
-			&copy; Untitled. All rights reserved. | Photos by <a
-				href="http://fotogrph.com/">Fotogrph</a> | Design by <a
-				href="http://templated.co" rel="nofollow">TEMPLATED</a>.
+			서울 금천구 가산디지털2로 123 월드메르디앙2차 | 대표자 : 고현영 |
+			<span style="color:red">응급의료센터</span> 02-2626-1114<br/>
+			Copyright &copy; by Dr.Link All Rights Reserved.
 		</p>
 	</div>
 	
