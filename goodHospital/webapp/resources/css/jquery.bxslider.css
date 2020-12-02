@@ -14,10 +14,11 @@
   max-width: 100%;
   display: block;
 }
-.bxslider {
+/* .bxslider {
     margin: 15px;
     padding: 15px;
-}
+} */
+
 ul.bxslider {
   list-style: none;
 }

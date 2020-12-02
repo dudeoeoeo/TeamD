@@ -37,11 +37,11 @@ $(document).ready(function(){
         speed: 300,        // 이동 속도를 설정
         pager: false,      // 현재 위치 페이징 표시 여부 설정
         moveSlides: 1,     // 슬라이드 이동시 개수
-        minSlides: 4,      // 최소 노출 개수
-        maxSlides: 4,      // 최대 노출 개수
-        slideMargin: 2,    // 슬라이드간의 간격
+        minSlides: 5,      // 최소 노출 개수
+        maxSlides: 5,      // 최대 노출 개수
+        slideMargin: 1,    // 슬라이드간의 간격
         auto: true,        // 자동 실행 여부
-        autoHover: true,   // 마우스 호버시 정지 여부
+        //autoHover: true,   // 마우스 호버시 정지 여부
         controls: false    // 이전 다음 버튼 노출 여부
     });
 })
@@ -66,7 +66,15 @@ body {
 }	
 
 #drlink{
-font-family: 'Major Mono Display', monospace;
+font-family: 'Major Mono Display', monospace; 
+}
+
+ul .bxslider{
+width:auto !important;
+}
+
+#bxslider{
+width:auto !important;
 }
 
 
@@ -201,11 +209,11 @@ font-family: 'Major Mono Display', monospace;
 	<div id="" class="container">
 	
 	<ul class="bxslider">
-	  <li style="width: 100px; float: left; list-style: none; position: relative; margin-right: 2px;"><img src="${pageContext.request.contextPath}/resources/img/hos1.jpg" /></li>
-	  <li style="width:100px"><img src="${pageContext.request.contextPath}/resources/img/hos2.jpg" /></li>
-	  <li style="width:100px"><img src="${pageContext.request.contextPath}/resources/img/hos3.jpg" /></li>
-	  <li style="width:100px"><img src="${pageContext.request.contextPath}/resources/img/hos4.jpg" /></li>
-	  <li style="width:100px"><img src="${pageContext.request.contextPath}/resources/img/hos5.jpg" /></li>
+	  <li id="bxslider"><img src="${pageContext.request.contextPath}/resources/img/hos1.jpg" /></li>
+	  <li id="bxslider"><img src="${pageContext.request.contextPath}/resources/img/hos2.jpg" /></li>
+	  <li id="bxslider"><img src="${pageContext.request.contextPath}/resources/img/hos3.jpg" /></li>
+	  <li id="bxslider"><img src="${pageContext.request.contextPath}/resources/img/hos4.jpg" /></li>
+	  <li id="bxslider"><img src="${pageContext.request.contextPath}/resources/img/hos5.jpg" /></li>
 	</ul>
 		
 	</div>
