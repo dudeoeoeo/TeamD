@@ -54,8 +54,6 @@
           </div>
         </div>
         
-        
-<!-- 파일업로드 링크 -->
 <div class="file-upload">
 	<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">검사하기</button>
 

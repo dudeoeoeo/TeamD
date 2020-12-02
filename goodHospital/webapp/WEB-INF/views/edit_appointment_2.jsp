@@ -38,6 +38,7 @@ a:visited {
 }
 
 a:hover {
+
 	color: blue;
 	text-decoration: underline;
 }
