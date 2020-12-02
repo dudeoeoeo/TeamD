@@ -174,16 +174,17 @@ width:auto !important;
 		</div>
 		<div class="col-sm-4">
 			<h2>진료시간</h2>
-			<table border="1" style="cellpadding : 10%;">
-			<tr>
-			<td>평일</td>
-			<td>7:00~16:00</td>
-			</tr>
-			<tr>			
-			<td>토요일</td>
-			<td>7:00~13:00</td>
-			</tr>
+			<table border="1" style="cellpadding : 5%; width:90%; text-align:center; ">
+				<tr>
+					<td>평일</td>
+					<td>7:00~16:00</td>
+				</tr>
+				<tr>			
+					<td>토요일</td>
+					<td>7:00~13:00</td>
+				</tr>
 			</table>
+			<br/>
 			<ul class="style2">
 				<li class="first">
 					<h3>Amet sed volutpat mauris</h3>
@@ -218,6 +219,7 @@ width:auto !important;
 		
 	</div>
 </div>
+
 <div id="copyright" class="container">
 		<p>
 			&copy; Untitled. All rights reserved. | Photos by <a
