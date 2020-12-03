@@ -29,6 +29,7 @@ public class MainController {
 		model.addAttribute("selectTableList", test);
 		return "main/Main";
 	}
+	
 	//AI 안과 진료
 	@RequestMapping(value = "aiEyeTest")
 	public String aiEyeTest() {
@@ -43,10 +44,17 @@ public class MainController {
 		
 	}
 	
+
+	//AI 피부과 진료
+	@RequestMapping(value = "medicineSearch")
+	public String medicineSearch() {
+		return "patient/medicineSearch";
+	}
 	//의약품 검색
 	@RequestMapping(value = "searchMedicine")
 	public String searchMedicine() {
 		return "patient/searchMedicine";
+
 		
 	}
 
@@ -85,6 +93,7 @@ public class MainController {
 		return "aiTest/DermatologyAddMain";
 		
 	}
+
 	
 	//설문 진단
 	@RequestMapping(value = "survey_main")

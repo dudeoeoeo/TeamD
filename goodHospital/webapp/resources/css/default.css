@@ -57,7 +57,12 @@ a:hover
 	margin: 0em auto;
 	width: 1000px;
 }
-
+.container1
+{
+	overflow: hidden;
+	margin: 0em auto;
+	width: 1000px;
+}
 /*********************************************************************************/
 /* Image Style                                                                   */
 /*********************************************************************************/
@@ -223,19 +228,37 @@ ul.contact li a.icon-rss:before
 /*********************************************************************************/
 /* 3-column                                                                      */
 /*********************************************************************************/
-
 	.boxA,  .boxB,  .boxC
 {
 	width: 300px;
+	text-align: center;
+
 }
 
 .boxA,  .boxB
 {
 	float: left;
-	margin-right: 50px;
+	margin-right: 105px;
 }
 
-.boxC
+ .boxC
+{
+	float: right;
+} 
+
+ .boxD , .boxE , .boxF
+ {
+ 	width: 300px;
+ 	text-align: center;
+ }
+ 
+.boxD,  .boxE 
+{
+	float: left;
+	margin-right: 105px;
+}
+
+.boxF
 {
 	float: right;
 }
@@ -388,6 +411,17 @@ ul.contact li a.icon-rss:before
 		font-size: 1.5em;
 	}
 
+		#page1
+	{
+		padding-bottom: 0em;
+	}
+	
+	#page1 h2
+	{
+		
+		text-transform: uppercase;
+		font-size: 1.5em;
+	}
 /*********************************************************************************/
 /* Content                                                                       */
 /*********************************************************************************/
@@ -408,8 +442,13 @@ ul.contact li a.icon-rss:before
 /* Footer                                                                        */
 /*********************************************************************************/
 
-	#footer
-{
+
+.footer {
+    width: 100%;
+    padding-top: 4em;
+    padding-bottom: 6em;
+    overflow: hidden;
+	text-align : center;
 }
 
 /*********************************************************************************/
@@ -465,7 +504,7 @@ ul.contact li a.icon-rss:before
 
 #staff
 {
-	padding: 5em 0em;
+	padding: 3em 0em;
 }
 
 /*********************************************************************************/
