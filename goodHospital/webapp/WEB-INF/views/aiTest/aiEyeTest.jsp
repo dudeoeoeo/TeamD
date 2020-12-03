@@ -124,11 +124,12 @@ width:auto !important;
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           AI/설문진단
         </a>
+        
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">AI 눈 진단</a>
-          <a class="dropdown-item" href="#">AI 피부 진단</a>
-          <a class="dropdown-item" href="#">AI 탈모 진단</a>
-          <a class="dropdown-item" href="#">설문진단</a>
+          <a class="dropdown-item" href="aiEyeTest">AI 눈 진단</a>
+          <a class="dropdown-item" href="aiSkinTest">AI 피부 진단</a>
+          <a class="dropdown-item" href="aiHairLossTest">AI 탈모 진단</a>
+          <a class="dropdown-item" href="survey_main">설문진단</a>
         </div>
       </li>
     </ul>
