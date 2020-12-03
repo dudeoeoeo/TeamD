@@ -1,0 +1,153 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 870px;
+}
+
+.u-section-1 .u-form-1 {
+  height: 796px;
+  width: 818px;
+  margin: 29px auto 0;
+}
+
+.u-section-1 .u-form-group-1 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-input-1 {
+  font-size: 0.75rem;
+}
+
+.u-section-1 .u-input-2 {
+  font-size: 0.75rem;
+}
+
+.u-section-1 .u-form-group-3 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-input-3 {
+  font-size: 0.75rem;
+}
+
+.u-section-1 .u-form-group-4 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-input-4 {
+  font-size: 0.75rem;
+}
+
+.u-section-1 .u-form-group-5 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-input-5 {
+  font-size: 0.75rem;
+}
+
+.u-section-1 .u-input-6 {
+  font-size: 0.75rem;
+}
+
+.u-section-1 .u-form-group-7 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-input-7 {
+  font-size: 0.75rem;
+}
+
+.u-section-1 .u-form-group-8 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-input-8 {
+  font-size: 0.75rem;
+}
+
+.u-section-1 .u-form-group-9 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: solid;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.u-section-1 .u-btn-2 {
+  border-style: solid;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: -47px 257px 46px auto;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-btn-2 {
+    letter-spacing: normal;
+    margin-right: 57px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-form-1 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-form-1 {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-form-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-form-group-1 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-2 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-3 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-4 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-5 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-6 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-7 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-8 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-9 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-10 {
+    width: 100%;
+  }
+}

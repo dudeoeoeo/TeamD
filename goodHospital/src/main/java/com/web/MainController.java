@@ -34,66 +34,37 @@ public class MainController {
 	@RequestMapping(value = "aiEyeTest")
 	public String aiEyeTest() {
 		return "aiTest/aiEyeTest";
-		
 	}
 	
 	//AI 피부과 진료
 	@RequestMapping(value = "aiSkinTest")
 	public String aiSkinTest() {
 		return "aiTest/aiSkinTest";
-		
 	}
 	
-
-	//AI 피부과 진료
-	@RequestMapping(value = "medicineSearch")
-	public String medicineSearch() {
-		return "patient/medicineSearch";
-	}
 	//의약품 검색
 	@RequestMapping(value = "searchMedicine")
 	public String searchMedicine() {
 		return "patient/searchMedicine";
-
-		
 	}
 
-
-	//의약품 검색
+	//메인 테스트용(sungmin)
 	@RequestMapping(value = "testMain")
 	public String testMain() {
 		return "patient/testMain";
-		
 	}
 
-	//의약품 검색
+	//환자 - 마이페이지
 	@RequestMapping(value = "myPage")
 	public String myPage() {
 		return "patient/myPage";
-		
 	}
 	
 	//AI 탈모 진료
 	@RequestMapping(value = "aiHairLossTest")
 	public String aiHairLossTest() {
 		return "aiTest/aiHairLossTest";
-		
 	}
-	
-	//의약품 검색
-	@RequestMapping(value = "main2")
-	public String main2() {
-		return "patient/main2";
-		
-	}
-	
-	//의약품 검색
-	@RequestMapping(value = "DermatologyAddMain")
-	public String DermatologyAddMain() {
-		return "aiTest/DermatologyAddMain";
-		
-	}
-
 	
 	//설문 진단
 	@RequestMapping(value = "survey_main")
