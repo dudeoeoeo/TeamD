@@ -118,34 +118,27 @@ to get the desired effect
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+            <a href="schedules" class="nav-link">
+              <i class="nav-icon fas fa-clock"></i>
               <p>
-                통계
-                <i class="right fas fa-angle-left"></i>
+                일정관리 <i class="fas fa-angle-left right"></i>
+                <!-- <span class="badge badge-info right">6</span> -->                
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="chart_board" class="nav-link">
+                <a href="schedule_list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>통계</p>
+                  <p>일정 리스트로 보기</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="schedule_calender" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>통계</p>
+                  <p>일정 달력으로 보기</p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>통계</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+              </li>            
+          </ul></li>
           <li class="nav-item has-treeview">
             <a href="appointment" class="nav-link">
               <i class="nav-icon fas fa-calendar-check"></i>
@@ -174,6 +167,34 @@ to get the desired effect
                 <a href="survey_result" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>설문결과</p>
+                </a>
+              </li>
+            </ul>
+          </li><li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                통계
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="chart_board" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>통계</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>통계</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>통계</p>
                 </a>
               </li>
             </ul>
@@ -206,7 +227,8 @@ to get the desired effect
                 </a>
               </li>
             </ul>
-          </li>          
+          </li>
+                    
         </ul>
        </li>
       </ul>

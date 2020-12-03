@@ -337,8 +337,8 @@ to get the desired effect
             <!--  이벤트를 드랍해서 버리는 곳 -->
 <!--              
            <div id="card tagtrash" ondragenter="dragenter(event)"
-					ondragover="dragover(event)"
-					ondragleave="dragleave(event)" style="visibility: 'visible' ">
+               ondragover="dragover(event)"
+               ondragleave="dragleave(event)" style="visibility: 'visible' ">
            
            <div class="card-header">
                   <h3 class="card-title">Delete Event</h3>
@@ -346,7 +346,7 @@ to get the desired effect
                 <div class="card-body">
                   <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
                   </div>
-					<h5>DropZone</h5>
+               <h5>DropZone</h5>
                 </div>
                 
               </div>-->
@@ -426,18 +426,18 @@ to get the desired effect
 
 <script>
   $(function () {
-	
+   
     /* initialize the external events
      -----------------------------------------------------------------*/
     function ini_events(ele) {  // 새로 만들어진 이벤트를 매개변수로 받음
       ele.each(function () {
-    	 // alert(vo.get(0).getTitle());
+        // alert(vo.get(0).getTitle());
         // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
         // it doesn't need to have a start or end
         var eventObject = {    // 새로 만들어진 이벤트의 value 값
           title: $.trim($(this).text()) // use the element's text as the event title
         }
-		
+      
         // store the Event Object in the DOM element so we can get to it later
         $(this).data('eventObject', eventObject)
         // make the event draggable using jQuery UI
@@ -448,9 +448,9 @@ to get the desired effect
         })
       })
     }
-	
+   
     //ini_events($('#external-events div.external-event'))
-	
+   
     /* initialize the calendar
      -----------------------------------------------------------------*/
     //Date for the calendar events (dummy data)
@@ -463,7 +463,7 @@ to get the desired effect
     var Draggable = FullCalendarInteraction.Draggable;
     
     var containerEl = document.getElementById('external-events');  // 이벤트를 관리하는 div 태그
-    var checkbox = document.getElementById('drop-remove');	       // 이벤트 체크하는 체크박스
+    var checkbox = document.getElementById('drop-remove');          // 이벤트 체크하는 체크박스
     var calendarEl = document.getElementById('calendar');          // div 캘린더 id 값
     
     
@@ -473,7 +473,7 @@ to get the desired effect
     new Draggable( containerEl, {  // ui를 드래그 할 때 사용
       itemSelector: '.external-event',
       eventData: function(eventEl) {
-    	//alert($('#calendar > div.fc-view-container > div > table > tbody > tr > td > div > div > div:nth-child(2) > div.fc-content-skeleton > table > tbody > tr:nth-child(1) > td.fc-event-container > a > div.fc-content > span').text());
+       //alert($('#calendar > div.fc-view-container > div > table > tbody > tr > td > div > div > div:nth-child(2) > div.fc-content-skeleton > table > tbody > tr:nth-child(1) > td.fc-event-container > a > div.fc-content > span').text());
         console.log(eventEl);
         return {
           title: eventEl.innerText,
@@ -485,26 +485,26 @@ to get the desired effect
     });
    
     $('body.sidebar-mini').mouseover(function(){
-    	$('td.fc-event-container a').each(function(){
-    		$(this).removeClass('fc-draggable');
-    		//$(".class_name").css('css 속성', '변경 값');
+       $('td.fc-event-container a').each(function(){
+          $(this).removeClass('fc-draggable');
+          //$(".class_name").css('css 속성', '변경 값');
         }) // each
         $('a.fc-time-grid-event').each(function(){
-        	$(this).removeClass('fc-draggable');
+           $(this).removeClass('fc-draggable');
         });
     }) // mouseup
     <!-- 
     $('.btn-secondary').click(function(){
-    	$('a.event-full').each(function(){
-	    	alert($(this).text());
-	    	alert($(this).css("backgroundColor"));
-	    	alert($(this).parents('td').attr('colspan'));
-	    	alert("이게 스타트 날짜" + $(this).start);
-	//    	$( 'p' ).parent( 'div' ).css( 'color', 'green' );
-    	}) // each
+       $('a.event-full').each(function(){
+          alert($(this).text());
+          alert($(this).css("backgroundColor"));
+          alert($(this).parents('td').attr('colspan'));
+          alert("이게 스타트 날짜" + $(this).start);
+   //       $( 'p' ).parent( 'div' ).css( 'color', 'green' );
+       }) // each
     });
     -->
-	
+   
     var calendar = new Calendar(calendarEl, {
       plugins: [ 'bootstrap', 'interaction', 'dayGrid', 'timeGrid' ],
       header    : {
@@ -516,18 +516,18 @@ to get the desired effect
       //Random default events
       
       events    : [
-    	  <c:forEach var="v" items="${vo}">
-    	  	  {
-    	        title          :   "${v.title}",
-    	        start          :  new Date(2020, 10, 28),
-    	        end			   :  new Date(2020, 10, 30),
-    	        backgroundColor:  "${v.backgroundColor}",
-    	        borderColor    :   "${v.borderColor}",
-    	        allDay         :  "${v.allDay}",
-    	        className: 'event-full'
-    	        //removeClass : 'fc-draggable'
-    	      },
-    		 </c:forEach>
+         <c:forEach var="v" items="${vo}">
+              {
+               title          :   "${v.title}",
+               start          :  new Date(2020, 10, 28),
+               end            :  new Date(2020, 10, 30),
+               backgroundColor:  "${v.backgroundColor}",
+               borderColor    :   "${v.borderColor}",
+               allDay         :  "${v.allDay}",
+               className: 'event-full'
+               //removeClass : 'fc-draggable'
+             },
+           </c:forEach>
         
         {
           title          : 'Long Event',
@@ -602,7 +602,7 @@ to get the desired effect
       if (val.trim().length == 0) {   // 새로운 이벤트를 만드는데 길이가 0이면 끝내기
         return
       }
-	  	
+        
       //Create events
       var event = $('<div />')
       event.css({
@@ -614,10 +614,10 @@ to get the desired effect
       event.html(val)
       
       $('#external-events').prepend(event)  // 콘텐츠를 선택한 요소 내부의 시작 부분에서 삽입
-		
+      
       //Add draggable funtionality
       ini_events(event)
-	  
+     
       //Remove event from text input
       $('#new-event').val('')  // 새로운 이벤트 쓰는 text 값 비우기
     })

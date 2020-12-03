@@ -28,6 +28,32 @@ body {
  a:link { color: black; text-decoration: none;}
  a:visited { color: black; text-decoration: none;}
  a:hover { color: blue; text-decoration: underline;}
+ 
+ 
+ .iframebox { 
+	position:absolute;
+	width:500px; 
+	height:700px; 
+	background:#FFFFCC;
+	line-height:300px; 
+	text-align:center;
+	z-index: 1;
+	text-align:center;
+	transform : translate(90%, 0%);
+}
+iframe{ 
+	position:absolute;
+	background:#FFFFCC; 
+	top:0; 
+	left:0; 
+	width:100%; 
+	height:100%;
+	scrolling:auto;
+	allowTransparency:true;
+	seamless:seamless; 
+	frameBorder:0;
+}
+
 </style>
 
 </head>
@@ -115,34 +141,27 @@ to get the desired effect
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+            <a href="schedules" class="nav-link">
+              <i class="nav-icon fas fa-clock"></i>
               <p>
-                통계
-                <i class="right fas fa-angle-left"></i>
+                일정관리 <i class="fas fa-angle-left right"></i>
+                <!-- <span class="badge badge-info right">6</span> -->                
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="chart_board" class="nav-link">
+                <a href="schedule_list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>통계</p>
+                  <p>일정 리스트로 보기</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="schedule_calender" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>통계</p>
+                  <p>일정 달력으로 보기</p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>통계</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+              </li>            
+          </ul></li>
           <li class="nav-item has-treeview">
             <a href="appointment" class="nav-link">
               <i class="nav-icon fas fa-calendar-check"></i>
@@ -171,6 +190,34 @@ to get the desired effect
                 <a href="survey_result" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>설문결과</p>
+                </a>
+              </li>
+            </ul>
+          </li><li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                통계
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="chart_board" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>통계</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>통계</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>통계</p>
                 </a>
               </li>
             </ul>
@@ -203,7 +250,8 @@ to get the desired effect
                 </a>
               </li>
             </ul>
-          </li>          
+          </li>
+                    
         </ul>
        </li>
       </ul>
@@ -224,6 +272,10 @@ to get the desired effect
 			<div class="page-content">
 				<div class="card mb-0">
 					<div class="card-body">
+						<div class="iframebox"> 
+							<iframe class="product_de" id="edit_manage" name="iframename" src="edit_appointment_2" >
+							</iframe>  
+						</div>
 						<div class="table-responsive">
 							<table class="table table-hover">
 								<thead>
@@ -243,7 +295,7 @@ to get the desired effect
 									<tr>
 										<td><img src="${pageContext.request.contextPath}/resources/img/AdminLTELogo.png" alt=""
 											width="40" height="40" class="rounded-500"></td>
-										<td><strong>Liam</strong></td>
+										<td name="user"><strong>Liam</strong></td>
 										<td><div
 												class="d-flex align-items-center nowrap text-primary">
 												<span class="icofont-ui-email p-0 mr-2"></span>
@@ -258,10 +310,21 @@ to get the desired effect
 											</div></td>
 										<td>Dr. Benjamin</td>
 										<td>mumps</td>
-										<td><div class="actions">
-												<a class="btn btn-info btn-sm" href="edit_appointment"> <i
-													class="fas fa-pencil-alt"> </i>
-												</a> <a class="btn btn-danger btn-sm" href="#"> <i
+										<td>
+										
+											<!-- <div id="rightGroup" class=".iframebox" >
+											<p align="left" style="height: 200px;"></p>
+											<iframe class="product_de" src="edit_appointment_2" scrolling="no" seamless="seamless" frameborder="0" border="0" cellspacing="0"
+											        style="border-style: none; "></iframe> 
+											</div>-->
+											<div class="actions">
+											<!--  <a class="btn btn-info btn-sm" href="edit_appointment"></a>
+												-->
+											<button class="btn btn-info btn-sm">
+												<i class="fas fa-pencil-alt"> </i>
+												</button>
+												
+												 <a class="btn btn-danger btn-sm" href="#"> <i
 													class="fas fa-trash"> </i> 	</a>
 
 											</div></td>
@@ -510,5 +573,24 @@ to get the desired effect
 <!-- AdminLTE App -->
 <script src="resources/js/adminlte.min.js"></script>
 
+<script type="text/javascript">
+$(function () {
+$(".iframebox").hide();
+	var flag = false;
+	$('.btn-info').click(function(){
+	   flag = !flag;
+	   if(flag) {
+	     $(".iframebox").show();
+	   } else {$(".iframebox").hide();}
+	}) // click
+	$('.btn-danger').click(function(){
+		if(confirm("정말 삭제하시겠습니까 ?")) {
+			
+			alert($('[name=user]').text());	
+		}
+	});
+
+})
+</script>
 </body>
 </html>
