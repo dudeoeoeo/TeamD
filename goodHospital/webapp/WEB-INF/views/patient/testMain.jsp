@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -82,17 +83,16 @@ width:auto !important;
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
-
-
-
-<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto;" >
+</head>
+<body>
+<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto"; >
 	<div class="brand-text font-weight-light">
 	<span class="brand-text font-weight-light">
 	<h1><a id="drlink" href="#">Dr.Link</a></h1></span>
 	</div>
 	<ul class="navbar-nav ml-auto" >
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">로그인</a>           
+        <a href="user_login" class="nav-link">로그인</a>           
       </li>     
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">회원가입</a>           
@@ -106,6 +106,8 @@ width:auto !important;
     
 </nav>
 
+
+<div id="header-wrapper"style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)"  >
 <div id="header-wrapper" style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)"  >
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -119,18 +121,23 @@ width:auto !important;
       <li class="nav-item">
         <a class="nav-link" href="#">진료예약/안내</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">건강/약품정보</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link" dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       	건강/약품정보</a>
+       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">건강정보</a>
+          <a class="dropdown-item" href="searchMedicine">약품정보</a>
+      </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           AI/설문진단
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">AI 눈 진단</a>
-          <a class="dropdown-item" href="#">AI 피부 진단</a>
-          <a class="dropdown-item" href="#">AI 탈모 진단</a>
-          <a class="dropdown-item" href="#">설문진단</a>
+          <a class="dropdown-item" href="aiEyeTest">AI 눈 진단</a>
+          <a class="dropdown-item" href="aiSkinTest">AI 피부 진단</a>
+          <a class="dropdown-item" href="aiHairLossTest">AI 탈모 진단</a>
+          <a class="dropdown-item" href="survey_main">설문진단</a>
         </div>
       </li>
     </ul>
@@ -141,12 +148,6 @@ width:auto !important;
 	</div>
 	</div>
 </div>
-
-
-
-</head>
-<body>
-
 <div id="wrapper">
 	<div id="staff" class="container">
 		<div class="title">
@@ -181,6 +182,8 @@ width:auto !important;
 			<h2>소식/공지</h2>
 			<ul class="style4">
 				<li class="first"><a href="#">TESTtestTESTtestTEST</a></li>
+				<li><a href="#">TESTtestTESTtestTEST</a></li>
+				<li><a href="#">TESTtestTESTtestTEST</a></li>
 				<li><a href="#">TESTtestTESTtestTEST</a></li>
 				<li><a href="#">TESTtestTESTtestTEST</a></li>
 			</ul>
@@ -236,7 +239,7 @@ width:auto !important;
 	</div>
 </div>
 
-<div class="main-footer" style="text-align: center !important;">
+<div class="main-footer" style="text-align: center !important; margin:0 !important;">
 		<p>
 			서울 금천구 가산디지털2로 123 월드메르디앙2차 | 대표자 : 고현영 |
 			<span style="color:red">응급의료센터</span> 02-2626-1114<br/>
