@@ -26,6 +26,7 @@ public class MainController {
 		model.addAttribute("selectTableList", test);
 		return "main/Main";
 	}
+	
 	//AI 안과 진료
 	@RequestMapping(value = "ophthalmology")
 	public String ophthalmology() {

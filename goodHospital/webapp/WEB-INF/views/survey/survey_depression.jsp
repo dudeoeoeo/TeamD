@@ -55,7 +55,7 @@
 		</div>
 		<div id="menu">
 			<ul>
-				<li class="active"><a href="main.jsp" accesskey="1" title="">Homepage</a></li>
+				<li class="active"><a href="main.jsp" accesskey="1" title="">Home</a></li>
 				<li class="active"><a href="survey_main" accesskey="2" title="">설문진단</a></li>					
 			<!-- 	<li><a href="survey_depression" accesskey="2" title="">우울증 진단</a></li>
 				<li><a href="survey_manicDepression" accesskey="3" title="">조울증 진단</a></li>
