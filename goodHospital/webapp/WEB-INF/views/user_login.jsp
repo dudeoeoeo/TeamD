@@ -221,7 +221,7 @@ width:auto !important;
 						</div>
 							 </form> 
 		    
-							<form class="adminFrom"  action="" method="post">
+							<form class="doctor_main"  action="" method="post">
 						    <div class="input-group mb-3">
 					          <input type="email" class="form-control" placeholder="의료진 번호">
 					          <div class="input-group-append">

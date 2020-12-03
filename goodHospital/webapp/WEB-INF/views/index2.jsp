@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-<!--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>환자상세페이지</title>
+  <title>의료진 페이지</title>
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="resources/plugins/fontawesome-free/css/all.min.css">
@@ -75,7 +74,7 @@ to get the desired effect
         </div>
       </div>
 
-     <!-- Sidebar Menu -->
+      <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
@@ -184,11 +183,11 @@ to get the desired effect
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">환자상세페이지</h1>
+            <h1 class="m-0 text-dark">박충자(의사)님 환영합니다 :)</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Main</a></li>
               <!-- <li class="breadcrumb-item active">Dashboard v3</li> -->
             </ol>
           </div><!-- /.col -->
@@ -199,86 +198,22 @@ to get the desired effect
 
     <!-- Main content -->
     <section class="content">
+    
+    
+        
+                
       <div class="container-fluid">
         <div class="row">
-	        <div class="col-12">
-		            <div class="card">
-		              <div class="card-header">
-		                <h3 class="card-title"></h3>
-		
-		                <div class="card-tools">
-		                  <div class="input-group input-group-sm" style="width: 150px;">
-		                    <button>수정</button> <button>삭제</button>
-		
-		                  </div>
-		                </div>
-		              </div>
-		              <!-- /.card-header -->
-		              <div class="card-body table-responsive p-0">
-		                <table class="table table-hover text-nowrap">
-		                  <thead>
-		                    <tr>
-		                      <th>환자사진</th>
-		                      <th>환자명</th>
-		                      <th>환자번호</th>
-		                      <th>나이/성</th>
-		                      <th>생년월일</th> 
-		                    </tr>
-		                  </thead>
-		                  <tbody>
-		                  
-		                    <tr>
-		                      <td><img src="../assets/content/user-40-2.jpg" alt=""
-									width="40" height="40" class="rounded-500"></td>
-		                      <td>박말자</td>
-		                      <td>11223</td>
-		                      <td>66/F</td>
-		                      <td>521026</td>
-		                    </tr>
-		                  
-							<thead>
-		                    <tr>
-		                      <th>진료과</th>
-		                      <th>담당의사</th>
-		                      <th>예약시간</th>
-		                      <th>진료상태</th>
-		                      <th>수납</th> 
-		                    </tr>
-		                  </thead>
-		                  
-		                   <tr>
-		                      <td>정형외과</th>
-		                      <td>김길동</td>
-		                      <td>13:00</td>
-		                      <td>실시</td>
-		                      <td>완료</td>
-		                    </tr>
-		                    
-		                    <thead>
-		                    <tr>
-		                      <th>예약 내용 상세</th>
-		                      <th>과거 진료 내역</th>
-		                      <th>특이 사항</th>
-		                      <th>입원병실</th>
-		                      <th>비고</th>
-		                       
-		                    </tr>
-		                  </thead>
-		                  
-		                  <tr>
-		                      <td>왼쪽 무릎 arthritis으로 인한 내원,<br> 걸음 시 통증 있음</th>
-		                      <td>10/26 내원 시 초음파 후 약 처방 받음</td>
-		                      <td><span style="color:red">항생제 부작용 있음</span></td>
-		                      <td>1304호</td>
-		                      <td></td>
-		                    </tr>
-		                  </tbody>
-		                </table>
-		              </div>
-		              <!-- /.card-body -->
-		            </div>
-		            <!-- /.card -->
-		          </div>
+          <div class="col-md-9">
+            <div class="card card-primary">
+              <div class="card-body p-0">
+                <!-- THE CALENDAR -->
+                <div id="calendar"></div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
           <!-- /.col -->
         </div>
         <!-- /.row -->
@@ -293,6 +228,8 @@ to get the desired effect
     <!-- Control sidebar content goes here -->
   <!-- </aside> -->
   <!-- /.control-sidebar -->
+  
+
 
   <!-- Main Footer -->
   <footer class="main-footer">

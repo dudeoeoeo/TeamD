@@ -107,7 +107,7 @@ to get the desired effect
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="popup.jsp" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 환자관리
@@ -116,13 +116,13 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="DoctorChart.jsp" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>진료차트</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="DoctorDetail.jsp" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>검진결과조회</p>
                 </a>
@@ -140,7 +140,7 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="inout_check.jsp" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>입퇴원조회/내역</p>
                 </a>
@@ -149,6 +149,12 @@ to get the desired effect
                 <a href="operation_schedule.jsp" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>환자수술일정조회</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="room_check.jsp" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>병실조회</p>
                 </a>
               </li>
             </ul>
