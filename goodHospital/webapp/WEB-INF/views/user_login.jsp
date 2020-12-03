@@ -214,14 +214,14 @@ width:auto !important;
 						            </div>
 						          </div>
 						        </div>
-									<input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
+					         <button type="submit" class="btn btn-block btn-primary float-sm-right" style="width:100px !important;" formaction = "doctor_main">로그인</button>
 									<div class="col-8" style = "margin : auto;">
 				            <button type="submit" class="btn btn-block btn-primary float-sm-right" style="width:100px !important;" formaction = "">ID찾기</button>
 				            <button type="submit" class="btn btn-block btn-primary" style="width:100px !important;" formaction = "">회원가입</button>
 						</div>
 							 </form> 
 		    
-							<form class="doctor_main"  action="" method="post">
+							<form class="adminFrom"  action="doctor/doctor_main" method="post">
 						    <div class="input-group mb-3">
 					          <input type="email" class="form-control" placeholder="의료진 번호">
 					          <div class="input-group-append">
@@ -238,16 +238,14 @@ width:auto !important;
 					            </div>
 					          </div>
 					        </div>
-							  <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
+					         <button type="submit" class="btn btn-block btn-primary float-sm-right" style="width:100px !important;" formaction = "doctor_main">로그인</button>
 							  <div class="col-8" style = "margin : auto;">
 				            <button type="submit" class="btn btn-block btn-primary float-sm-right" style="width:100px !important;" formaction = "">ID찾기</button>
 				            <button type="submit" class="btn btn-block btn-primary" style="width:100px !important;" formaction = "">회원가입</button>
-						</div>
+							</div>
 							</form>
-							
           				
 						</div>
-	                
 	                <nav class="login-card-footer-nav">
 	                </nav>
 	            </div>
