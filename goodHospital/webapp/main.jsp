@@ -125,8 +125,8 @@ width:auto !important;
         <a class="nav-link" dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
        	건강/약품정보</a>
        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="health_info">건강정보</a>
-          <a class="dropdown-item" href="survey_main">약품정보</a>
+          <a class="dropdown-item" href="#">건강정보</a>
+          <a class="dropdown-item" href="searchMedicine">약품정보</a>
       </div>
       </li>
       <li class="nav-item dropdown">
