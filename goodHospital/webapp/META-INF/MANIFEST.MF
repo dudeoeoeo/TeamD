@@ -1,3 +1,5 @@
 Manifest-Version: 1.0
-Class-Path: 
+Built-By: kosmo_01
+Build-Jdk: 1.8.0_91
+Created-By: Maven Integration for Eclipse
 

@@ -32,7 +32,7 @@
                 	</tr>
                 </table>
                 <br>
-               	<button><a href="DoctorReservation.jsp">확인</a></button>
+               	<button><a href="DoctorReservation">확인</a></button>
 					
 <script>
 

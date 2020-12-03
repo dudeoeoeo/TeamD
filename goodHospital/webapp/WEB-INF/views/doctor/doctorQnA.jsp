@@ -93,19 +93,7 @@ to get the desired effect
       <span class="brand-text font-weight-light">kosmoD팀</span>
     </a>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="resources/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">김은진(간호사)님 환영합니다</a>
-        </div>
-      </div>
-
-      <!-- Sidebar Menu -->
+   <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
@@ -120,30 +108,16 @@ to get the desired effect
           </li>
           
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="DoctorReservation" class="nav-link">
               <i class="nav-icon fas fa-calendar-check"></i>
               <p>
                 예약현황
-                <i class="fas fa-angle-left right"></i>
+                
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="DoctorReservation.jsp" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약현황</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>예약관리</p>
-                </a>
-              </li>
-            </ul>
-            </li>
+          </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+            <a href="popup" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 환자관리
@@ -152,13 +126,13 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="DoctorChart" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>진료차트</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="DoctorDetail" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>검진결과조회</p>
                 </a>
@@ -176,19 +150,19 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="inout_check" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>입퇴원조회/내역</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="operation_schedule" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>환자수술일정조회</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="room_check" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>병실조회</p>
                 </a>
@@ -205,7 +179,7 @@ to get the desired effect
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="doctorQnA" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Q&A</p>
                 </a>

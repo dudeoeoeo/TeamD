@@ -85,7 +85,7 @@ width:auto !important;
 
 </head>
 <body>
-<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto;" >
+<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto"; >
 	<div class="brand-text font-weight-light">
 	<span class="brand-text font-weight-light">
 	<h1><a id="drlink" href="#">Dr.Link</a></h1></span>
@@ -106,6 +106,8 @@ width:auto !important;
     
 </nav>
 
+
+<div id="header-wrapper"style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)"  >
 <div id="header-wrapper" style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)"  >
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -119,16 +121,23 @@ width:auto !important;
       <li class="nav-item">
         <a class="nav-link" href="#">진료예약/안내</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">건강/약품정보</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link" dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       	건강/약품정보</a>
+       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">건강정보</a>
+          <a class="dropdown-item" href="searchMedicine">약품정보</a>
+      </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           AI/설문진단
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">AI진단</a>
-          <a class="dropdown-item" href="#">설문진단</a>
+          <a class="dropdown-item" href="aiEyeTest">AI 눈 진단</a>
+          <a class="dropdown-item" href="aiSkinTest">AI 피부 진단</a>
+          <a class="dropdown-item" href="aiHairLossTest">AI 탈모 진단</a>
+          <a class="dropdown-item" href="survey_main">설문진단</a>
         </div>
       </li>
     </ul>
