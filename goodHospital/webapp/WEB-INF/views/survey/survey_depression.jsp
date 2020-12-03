@@ -16,18 +16,35 @@
 <!-- Theme style -->
 <link rel="stylesheet" href="resources/css/adminlte.min.css">
 <!-- Google Font: Source Sans Pro -->
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+<style>
+
+#drlink{
+font-family: 'Major Mono Display', monospace; 
+}
+
+
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+</style>
 
 </head>
 <body>
 
-<nav class="main-header navbar navbar-expand navbar-white navbar-light" >
-
+<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto"; >
+	<div class="brand-text font-weight-light">
+	<span class="brand-text font-weight-light">
+	<h1><a id="drlink" href="#">Dr.Link</a></h1></span>
+	</div>
 	<ul class="navbar-nav ml-auto" >
-      
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">로그인</a>           
+        <a href="user_login" class="nav-link">로그인</a>           
       </li>     
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">회원가입</a>           
@@ -35,40 +52,52 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">오시는길</a>           
       </li>     
+      
     </ul>
-    <!-- Left navbar links -->
+    <!-- navbar-nav ml-auto -->
     
 </nav>
 
 
-
-
-
-
-
-
-
-<div id="header-wrapper" style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)">
-	<div id="header" class="container">
-		<div id="logo">
-			<h1><a href="survey_depression">우울증 진단</a></h1>
-		</div>
-		<div id="menu">
-			<ul>
-				<li class="active"><a href="main.jsp" accesskey="1" title="">Home</a></li>
-				<li class="active"><a href="survey_main" accesskey="2" title="">설문진단</a></li>					
-			<!-- 	<li><a href="survey_depression" accesskey="2" title="">우울증 진단</a></li>
-				<li><a href="survey_manicDepression" accesskey="3" title="">조울증 진단</a></li>
-				<li><a href="survey_result1" accesskey="4" title="">진단 결과</a></li>			
-			</ul>
-			<ul>
-				<li><a href="admin_login" accesskey="1" title="">로그인</a></li>
-			</ul> -->
-		</div>
+<div id="header-wrapper"style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)"  >
+<div id="header-wrapper" style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)"  >
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="#">병원이야기</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">진료예약/안내</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       	건강/약품정보</a>
+       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="health_info">건강정보</a>
+          <a class="dropdown-item" href="survey_main">약품정보</a>
+      </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          AI/설문진단
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="">AI진단</a>
+          <a class="dropdown-item" href="survey_main">설문진단</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+	<div id="header" class="content-header">
+	<div class="container-fluid">
+	</div>
 	</div>
 </div>
-
- <body>
 
  <div id="wrapper">
 		<div id="staff" class="container">	
