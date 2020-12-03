@@ -487,6 +487,9 @@ to get the desired effect
 		                </ul>
 								
 					</div>
+					<div>
+				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;" formaction="survey_add">새글등록</button>
+			</div>
 				</div>
 				
 			</div>

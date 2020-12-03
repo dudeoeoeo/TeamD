@@ -21,7 +21,6 @@
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
 
 <style type="text/css">
-textarea.autosize { min-height: 100px; }
 
 body {
     font-family: "Nanum Gothic", sans-serif;
@@ -246,82 +245,64 @@ to get the desired effect
 
     <!-- Main content -->
     <section class="content">
-      <div class="card">
-							<div class="card-header">
-								<h3 class="card-title">일정 등록</h3>
-							</div>
-							<!-- /.card-header -->
-							<div class="card-body" id="bar-parent">
-							<form action="schedule_list" class="form-horizontal" name="content_form" method="post">
-							<!--  	<form action="#" id="form_sample_1" class="form-horizontal"
-									novalidate="novalidate"> -->
-									<div class="form-body">
-										<div class="form-group row">
-											<label class="control-label col-md-3 text-right">일정 분류 <span
-												class="required" aria-required="true"> * </span>
-											</label>
-											<div class="col-md-5">
-												<select class="form-control input-height" name="schedule_category">
-													<option value="">Select...</option>
-													<option value="내부">병원/내부</option>
-													<option value="외부">공지/외부</option>
-												</select>
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="control-label col-md-3 text-right">일정 제목
-											<span class="required" aria-required="true"> * </span>
-											</label>
-											<div class="col-md-5">
-												<input type="text" name="schedule_title" data-required="1"
-													placeholder="이름" value=""
-													class="form-control input-height">
-											</div>
-										</div>
-										
-										<div class="form-group row">
-											<label class="control-label col-md-3 text-right">일정 기간<span class="required" aria-required="true">
-													* </span>
-											</label>
-											<div class="col-md-5">
-												<div class="row">
-													<div class="col-md-5 input-append date" id="dp1">
-														<input type="date" value="" name="schedule_date1" 
-														min="1980-01-01" max="" class="form-control formDatePicker" >
-													</div>
-													<label class="control-label small-label col-md-2 text-right">To</label>
-													<div class="col-md-5 input-append date" id="dp1">
-														<input class="form-control formDatePicker" type="date" name="schedule_date2"
-															value="" id="" min="1980-01-01" max="" >
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="form-group row">
-											<label class="control-label col-md-3 text-right">일정 내용<span
-												class="required" aria-required="true"> * </span>
-											</label>
-											<div class="col-md-5">
-												<textarea name="schedule_content" placeholder="일정 내용을 입력해주세요."
-													class="form-control form-control-textarea autosize" ></textarea>
-											</div>
-										</div>
-									</div>
-									<div class="form-actions">
-										<div class="row">
-											<div class="offset-md-3 col-md-9">
-												<button type="submit" class="btn btn-info m-r-20" name="btn_sub">일정 등록</button>
-												<button type="button" class="btn btn-default">취소</button>
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-							<!-- /.card-body -->
-						</div>
+      <div class="container-fluid">
+        <div class="row">
+	        <div class="col-12">
+	            <div class="card">
+	              <div class="card-header">
+	                <h3 class="card-title">일정 관리</h3>
+	              </div>
+	              <!-- /.card-header -->
+	              <div class="card-body table-responsive p-0">
+	                <table class="table table-hover text-nowrap">
+	                  
+	                  <thead>
+	                    <tr>
+	                      <th width="100px;" >title</th>
+	                      <th width="40%" >date</th>
+	                      <th width="5%" >allDay</th>
+	                    </tr>
+	                  </thead>
+	                  
+	                  <div class="row">
+                   <div class="col-lg-2">
+                     <input type="text" class="form-control" placeholder="이름*">
+                   </div>
+                   <div class="col-lg-3">
+                     <input type="text" class="form-control" placeholder="비밀번호*">
+                   </div>
+                   <div class="col-lg-4">
+                     <input type="text" class="form-control" placeholder="이메일">
+                   </div>
+                   
+               </div>
+	                  <tbody>
+		                    <tr>
+		                      <td><input type="text" class="form-control" ></td>
+		                    </tr>
+		                    <tr>  
+		                      <td><input type="text" class="form-control" ></td>
+		                    </tr>
+		                    <tr> 
+		                      <td><input type="text" class="form-control" ></td>
+		                    </tr>  
+	                  
+	                  </tbody>
+	                </table>
+	              </div>
+	              <!-- /.card-body -->
+	            </div>
+	            <!-- /.card -->
+	          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-		
+			<div>
+				<button type="submit" class="btn btn-primary" style="float: right; margin: 20px;" formaction="survey_add">새글등록</button>
+			</div>
 		</div>
   </div>
   <!-- /.content-wrapper -->
@@ -361,10 +342,6 @@ to get the desired effect
 <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- AdminLTE App -->
 <script src="resources/js/adminlte.min.js"></script>
-<script>
-$("textarea.autosize").on('keydown keyup', function () {
-  $(this).height(1).height( $(this).prop('scrollHeight')+12 );	
-});
-</script>
+
 </body>
 </html>

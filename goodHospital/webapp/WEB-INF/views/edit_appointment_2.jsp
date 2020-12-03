@@ -180,7 +180,7 @@ to get the desired effect
 										<div class="row">
 											<div class="offset-md-3 col-md-9">
 												<button type="submit" class="btn btn-info m-r-20" name="btn_sub" onClick="checkForm()" onsubmit="return true;">Submit</button>
-												<button type="button" class="btn btn-default"  onClick="closeForm()" onsubmit="return true;">Cancel</button>
+												<button type="button" class="btn btn-default" onClick="closeForm()" onsubmit="return true;">Cancel</button>
 											</div>
 										</div>
 									</div>
@@ -222,13 +222,36 @@ function checkForm(){
     document.content_form.submit(); 
 
 } 
-
-function closeForm(){ 
-
-    document.content_form.target="_parent"; 
+$(function(){
+	/*
+	$('.btn-default').click(function(){
+		//location.reload();
+		//closeForm();
+		window.open("about:blank","_self").close(); 
+	});
+	*/
+}) // ready
+function closeForm(){
+	document.content_form.target="_parent";
+	document.content_form.submit(); 
+    //document.content_form.selt.close()
+	/*
+	window.open('','_self').close();     
+	//document.content_form.self.close()
 	
-    document.content_form.submit(); 
-} 
+	self.opener = self; 
+	self.close()
+	
+	//self.opener = null;
+	*/
+}
+/*
+if(parent.document.referrer==''){
+	alert('비정상적인 접근입니다.')
+	//parent.opener=self
+	//parent.window.open('about:blank','_self').close()
+	self.close()
+}*/
 </script>
 </body>
 </html>

@@ -1,0 +1,74 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <style>
+ .h4_type3 {
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+div.ra_bx_skin_t2 div.con1 p, div.ra_bx_skin_t2 div.con2 p {
+    min-height: 60px;
+}
+.button_wrap {
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.ra_bx_skin_t2 div.con1 {
+    float: left;
+    width: 315px;
+    padding: 29px 29px;
+    border-right: 1px solid #ddd;
+}
+div.ra_bx_skin_t2 {
+    overflow: hidden;
+    width: 748px;
+    border: 1px solid #ddd;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, legend {
+    margin: 0;
+    padding: 0;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+ </style>
+ <body>
+  <div class="ra_bx_skin_t2">
+<div class="con1">
+<h4 class="h4_type3">내원일자 조회</h4>
+<p>내원하셨던 기록을 제공합니다.</p>
+<div class="button_wrap"><span class="button2 point left"><a href="/appnt/result/visit_hstry/">내원일자조회</a></span></div>
+</div>
+<div class="con2">
+<h4 class="h4_type3">입퇴원내역 조회</h4>
+<p>입퇴원 기록을 제공합니다.</p>
+<div class="button_wrap"><span class="button2 point left"><a href="/appnt/result/hospitalization_hstry/">입퇴원내역조회</a></span></div>
+</div>
+</div>
+<div class="ra_bx_skin_t2 ra_line">
+<div class="con1">
+<h4 class="h4_type3">진료 기록</h4>
+<p>진료 기록을 제공합니다.</p>
+<div class="button_wrap"><span class="button2 point left"><a href="/appnt/result/trtmnt_rslt/">약처방 조회</a></span></div>
+</div>
+<div class="con2">
+<h4 class="h4_type3">AI 진단 검사결과 조회</h4>
+<p>AI 자가진단 결과를 제공합니다.</p>
+<div class="button_wrap"><span class="button2 point left"><a href="/appnt/result/test_rslt/">검사결과조회</a></span></div>
+</div>
+</div>
+ </body>
+</html>

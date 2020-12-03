@@ -34,12 +34,13 @@ body {
 	position:absolute;
 	width:500px; 
 	height:700px; 
-	background:#FFFFCC;
+	background-color:#FFFFFF;
 	line-height:300px; 
 	text-align:center;
 	z-index: 1;
 	text-align:center;
 	transform : translate(90%, 0%);
+	display : none;
 }
 iframe{ 
 	position:absolute;
@@ -273,7 +274,7 @@ to get the desired effect
 				<div class="card mb-0">
 					<div class="card-body">
 						<div class="iframebox"> 
-							<iframe class="product_de" id="edit_manage" name="iframename" src="edit_appointment_2" >
+							<iframe class="product_de" id="edit_manage" name="iframename" src="edit_appointment_2">
 							</iframe>  
 						</div>
 						<div class="table-responsive">
@@ -318,11 +319,13 @@ to get the desired effect
 											        style="border-style: none; "></iframe> 
 											</div>-->
 											<div class="actions">
-											<!--  <a class="btn btn-info btn-sm" href="edit_appointment"></a>
+											<!--  <button class="btn btn-info btn-sm"></button>
 												-->
-											<button class="btn btn-info btn-sm">
+											
+											<a class="btn btn-info btn-sm">
 												<i class="fas fa-pencil-alt"> </i>
-												</button>
+												</a>
+												
 												
 												 <a class="btn btn-danger btn-sm" href="#"> <i
 													class="fas fa-trash"> </i> 	</a>
@@ -575,22 +578,47 @@ to get the desired effect
 
 <script type="text/javascript">
 $(function () {
-$(".iframebox").hide();
+//$(".iframebox").hide();
+//$(".iframebox").css({"display":"none"});
+	var ifrm = getIframe("#edit_manage");
 	var flag = false;
 	$('.btn-info').click(function(){
 	   flag = !flag;
 	   if(flag) {
-	     $(".iframebox").show();
-	   } else {$(".iframebox").hide();}
+	       //$('#edit_manage').attr('src', "edit_appointment_2");
+	       //ifrm = getIframe("#edit_manage");
+	       $(".iframebox").css({"display":"block"});
+	    } else {
+	    	$(".iframebox").css({"display":"none"});
+	    }
 	}) // click
+	
 	$('.btn-danger').click(function(){
+		
 		if(confirm("정말 삭제하시겠습니까 ?")) {
 			
 			alert($('[name=user]').text());	
 		}
-	});
-
+	}); // click
+	
+	
+	$(ifrm.document).find("button.btn-defaul").click(function(){
+		alert(1);
+		flag = false;
+		if(flag) {
+			   $(".iframebox").css({"display":"block"});
+		    } else {
+		    	$(".iframebox").css({"display":"none"});
+		    }
+	}) // click
+	
 })
+
+function getIframe(selector) {
+var obj = $(selector).get(0);
+var objDoc = obj.contentWindow || obj.contentDocument;
+return objDoc;
+};
 </script>
 </body>
 </html>

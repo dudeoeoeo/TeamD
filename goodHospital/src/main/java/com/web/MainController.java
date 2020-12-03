@@ -112,7 +112,6 @@ public class MainController {
 	@RequestMapping(value = "edit_po")
 	public String edit_go(HttpServletRequest httpServletRequest) {
 		try {
-			System.out.println("들어옴");
 			String id = httpServletRequest.getParameter("gender");
 			String name = httpServletRequest.getParameter("user_name");
 			String doctor = httpServletRequest.getParameter("doctor_select");
@@ -124,12 +123,11 @@ public class MainController {
 		}
 		return "redirect:appointment";		
 	}
+	
 	@RequestMapping(value = "/{step}")
     public String viewPage(@PathVariable String step, Model mm, HttpServletRequest httpServletRequest) {
-			System.out.println("마사카..?;");
+			SimpleDateFormat ss = new SimpleDateFormat("yyyy-MM-dd");	
 			Date today = new Date();
-			String id = "id는 뭐였지";
-			String dy = "2020-10-23";
 			scheduleVO vo = new scheduleVO();
 			vo.setTitle("UI 어서오고");
 			vo.setStart("2020-11-23");
@@ -145,15 +143,9 @@ public class MainController {
 			vo1.setBorderColor("#00c0ef");
 			vo1.setAllDay(false);
 			voList.add(vo1);
-		    SimpleDateFormat ss = new SimpleDateFormat("yyyy-MM-dd");
-		    mm.addAttribute("id", id);
-		    mm.addAttribute("title", "UI DeadLine");
-		    mm.addAttribute("start", ss.format(today));
-		    mm.addAttribute("backgroundColor", "#f56954");
-		    mm.addAttribute("borderColor", "#f56954");
-		    mm.addAttribute("allDay", true);
 		    mm.addAttribute("vo",voList);
-		
+		    
         return step;
     }
+	
 }
