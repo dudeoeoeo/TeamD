@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -84,7 +85,7 @@ width:auto !important;
 
 </head>
 <body>
-<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto;" >
+<nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: auto"; >
 	<div class="brand-text font-weight-light">
 	<span class="brand-text font-weight-light">
 	<h1><a id="drlink" href="#">Dr.Link</a></h1></span>
@@ -105,7 +106,12 @@ width:auto !important;
     
 </nav>
 
+<<<<<<< HEAD
+
+<div id="header-wrapper"style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)"  >
+=======
 <div id="header-wrapper" style="background-image: URL(${pageContext.request.contextPath}/resources/img/banner.jpg)"  >
+>>>>>>> branch 'main' of https://github.com/dudeoeoeo/TeamD.git
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -118,16 +124,21 @@ width:auto !important;
       <li class="nav-item">
         <a class="nav-link" href="#">진료예약/안내</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">건강/약품정보</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link" dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       	건강/약품정보</a>
+       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="health_info">건강정보</a>
+          <a class="dropdown-item" href="survey_main">약품정보</a>
+      </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           AI/설문진단
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">AI진단</a>
-          <a class="dropdown-item" href="#">설문진단</a>
+          <a class="dropdown-item" href="">AI진단</a>
+          <a class="dropdown-item" href="survey_main">설문진단</a>
         </div>
       </li>
     </ul>

@@ -1,13 +1,16 @@
 package main.java.com.web;
 
-import java.text.SimpleDateFormat;
+import java.text.SimpleDateFormat; 
 import java.util.*;
 import javax.annotation.Resource;
+import javax.security.auth.message.callback.PrivateKeyCallback.Request;
+import javax.servlet.http.*;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import main.java.com.web.service.MainService;
 import main.java.com.web.vo.scheduleVO;
@@ -26,6 +29,7 @@ public class MainController {
 		model.addAttribute("selectTableList", test);
 		return "main/Main";
 	}
+	
 	//AI 안과 진료
 	@RequestMapping(value = "aiEyeTest")
 	public String aiEyeTest() {
@@ -40,18 +44,39 @@ public class MainController {
 		
 	}
 	
+
+	//AI 피부과 진료
+	@RequestMapping(value = "medicineSearch")
+	public String medicineSearch() {
+		return "patient/medicineSearch";
+	}
 	//의약품 검색
 	@RequestMapping(value = "searchMedicine")
 	public String searchMedicine() {
 		return "patient/searchMedicine";
+
 		
 	}
 
-	
+
 	//의약품 검색
 	@RequestMapping(value = "testMain")
 	public String testMain() {
 		return "patient/testMain";
+		
+	}
+
+	//의약품 검색
+	@RequestMapping(value = "myPage")
+	public String myPage() {
+		return "patient/myPage";
+		
+	}
+	
+	//AI 탈모 진료
+	@RequestMapping(value = "aiHairLossTest")
+	public String aiHairLossTest() {
+		return "aiTest/aiHairLossTest";
 		
 	}
 	
@@ -68,6 +93,7 @@ public class MainController {
 		return "aiTest/DermatologyAddMain";
 		
 	}
+
 	
 	//설문 진단
 	@RequestMapping(value = "survey_main")
@@ -99,38 +125,58 @@ public class MainController {
 		return "mainPage";
 		
 	}
- 
-	@RequestMapping("/{step}")
-    public String viewPage(@PathVariable String step, Model mm) {
-//	   Model m = new Model(); 
-		Date today = new Date();
-		String id = "�떎�떎�떎�떎";
-		String dy = "2020-10-23";
-		scheduleVO vo = new scheduleVO();
-		vo.setTitle("UI 留욎텛�뒗 �궇吏�");
-		vo.setStart("2020-11-23");
-		vo.setBackgroundColor("#f56954");
-		vo.setBorderColor("#f56954");
-		vo.setAllDay(true);
-		List<scheduleVO> voList = new ArrayList<scheduleVO>();
-		voList.add(vo);
-		scheduleVO vo1 = new scheduleVO();
-		vo1.setTitle("Test �젣諛�");
-		vo1.setStart("2020-11-23");
-		vo1.setBackgroundColor("#00c0ef");
-		vo1.setBorderColor("#00c0ef");
-		vo1.setAllDay(false);
-		voList.add(vo1);
-	    SimpleDateFormat ss = new SimpleDateFormat("yyyy-MM-dd");
-	    System.out.println(ss.format(today));
-	    mm.addAttribute("id", id);
-	    mm.addAttribute("title", "UI DeadLine");
-	    mm.addAttribute("start", ss.format(today));
-	    mm.addAttribute("backgroundColor", "#f56954");
-	    mm.addAttribute("borderColor", "#f56954");
-	    mm.addAttribute("allDay", true);
-	    mm.addAttribute("vo",voList);
-	    System.out.println(new Date(2020, 10, 22));
+	
+	@RequestMapping(value = "edit_appointment_2")
+	public String edit_appoint() {
+		
+		return "edit_appointment_2";
+		
+	}
+	@RequestMapping(value = "edit_po")
+	public String edit_go(HttpServletRequest httpServletRequest) {
+		try {
+			System.out.println("들어옴");
+			String id = httpServletRequest.getParameter("gender");
+			String name = httpServletRequest.getParameter("user_name");
+			String doctor = httpServletRequest.getParameter("doctor_select");
+			System.out.println(id);
+			System.out.println(name);
+			System.out.println(doctor);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "redirect:appointment";		
+	}
+	@RequestMapping(value = "/{step}")
+    public String viewPage(@PathVariable String step, Model mm, HttpServletRequest httpServletRequest) {
+			System.out.println("마사카..?;");
+			Date today = new Date();
+			String id = "id는 뭐였지";
+			String dy = "2020-10-23";
+			scheduleVO vo = new scheduleVO();
+			vo.setTitle("UI 어서오고");
+			vo.setStart("2020-11-23");
+			vo.setBackgroundColor("#f56954");
+			vo.setBorderColor("#f56954");
+			vo.setAllDay(true);
+			List<scheduleVO> voList = new ArrayList<scheduleVO>();
+			voList.add(vo);
+			scheduleVO vo1 = new scheduleVO();
+			vo1.setTitle("Test 됐고");
+			vo1.setStart("2020-11-23");
+			vo1.setBackgroundColor("#00c0ef");
+			vo1.setBorderColor("#00c0ef");
+			vo1.setAllDay(false);
+			voList.add(vo1);
+		    SimpleDateFormat ss = new SimpleDateFormat("yyyy-MM-dd");
+		    mm.addAttribute("id", id);
+		    mm.addAttribute("title", "UI DeadLine");
+		    mm.addAttribute("start", ss.format(today));
+		    mm.addAttribute("backgroundColor", "#f56954");
+		    mm.addAttribute("borderColor", "#f56954");
+		    mm.addAttribute("allDay", true);
+		    mm.addAttribute("vo",voList);
+		
         return step;
     }
 }
