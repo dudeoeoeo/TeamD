@@ -44,21 +44,19 @@ public class MainController {
 		
 	}
 	
-<<<<<<< HEAD
+
 	//AI 피부과 진료
 	@RequestMapping(value = "medicineSearch")
 	public String medicineSearch() {
 		return "patient/medicineSearch";
-=======
+	}
 	//의약품 검색
 	@RequestMapping(value = "searchMedicine")
 	public String searchMedicine() {
 		return "patient/searchMedicine";
->>>>>>> branch 'main' of https://github.com/dudeoeoeo/TeamD.git
+
 		
 	}
-<<<<<<< HEAD
-=======
 
 
 	//의약품 검색
@@ -95,7 +93,7 @@ public class MainController {
 		return "aiTest/DermatologyAddMain";
 		
 	}
->>>>>>> branch 'main' of https://github.com/dudeoeoeo/TeamD.git
+
 	
 	//설문 진단
 	@RequestMapping(value = "survey_main")
