@@ -207,4 +207,8 @@ public class MainController {
 		return "doctor/room_check";
 						
 	}
+	
+	
+	
+
 }
